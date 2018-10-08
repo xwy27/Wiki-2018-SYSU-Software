@@ -1,28 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
-    <link href="css/main.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>FKPageTransitions响应式jQuery插件滑动翻页组件</title>
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <!-- FKPageTransitions Javascript file -->
+    <script src="js/fkpagetransitions.min.js"></script>
+    <!-- FKPageTransitions CSS file -->
+    <link href="css/fkpagetransitions.min.css" rel="stylesheet" />
+    
+    <style type="text/css">
+  
+  html, body { height: 100%; }
+    </style>
 </head>
+
 <body>
-<div class="background">
-    <div class="cover"></div>
-    <div class="navigation"></div>
-    <div class="menu"></div>
-    <div class="info_window"></div>
-</div>
-<div class="right_window">
-    <div class="cover"></div>
-    <div class="right_head"><h2></h2></div>
-    <div class="right_placeholder"></div>
-    <div class="right_main"></div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="js/data.js"></script>
-<script src="js/main.js"></script>
+    <ul class="myfkpage">
+      <li style="background: #0ac2d2">第一页</li>
+      <li style="background: #7bb7fa">第二页</li>
+      <li style="background: #60d7a9">第三页</li>
+      <li style="background: #fdc162">第四页</li>
+      <li style="background: #fd6a62">第五页</li>
+      <li style="background: #f68dbb">第六页</li>
+    </ul>
+
+    <div  style="position: absolute; bottom: 0; left: 0; text-align: center; width: 100%;">
+      <button onclick="fkpage.goToPrevSlide();">上一页</button>
+      <button onclick="alert(fkpage.getCurrentSlide());">当前页码</button>
+      <button onclick="alert(fkpage.getSlideCount());">总数</button>
+      <button onclick="fkpage.goToNextSlide();">下一页</button>
+      <br/>
+       <button onclick="fkpage.goToSlide(3);">跳至4页</button>
+      <br/>
+      <p style="font-size: 12px;">手机上用指左右滑动屏幕操作，电脑上鼠标上下滚轮操作</p>
+    </div>
+
 </body>
+
+<script type="text/javascript">
+let fkpage;
+$(document).ready(function(){
+    fkpage = $('.myfkpage').FKPageTransitions();
+});
+</script>
+
+
+
+<!-- script>
+
+
+
+
+      
+//使用FKPageTransitions插件
+var testing = $('#pt-main').FKPageTransitions({
+  // 常规设置
+  mode: 25, //0淡入 1在右 2上下 .... 详情参考说明
+  slideSelector: '', //指定子元素的对象[一般不指定]
+  infiniteLoop: true, //是否循环
+  speed: 5000, //速度[毫秒]
+  easing: null, //动画曲线
+  //startSlide: 2, //开始页ID
+  slideZIndex: 50, //初始z-index数
+  responsive: true, //绑定resize事件
+  wrapperClass: 'fk-page-wrapper', //主框架类名
+
+  //鼠标设置
+  mouseWheel:true, //是否支持滚轮
+  wheelThreshold:2, //灵敏度阀值
+
+  // 触摸设置
+  swipeThreshold: 50, //灵敏度阀值
+  preventDefaultSwipeX: true, //左右拉
+  preventDefaultSwipeY: false, //上下拉
+
+  pagerunstat:false, //是否在翻页动画进行时禁止页面内元素动画渲染
+
+  // 回调设置
+  // 加载完成时回调
+  onSliderLoad: function(currentIndex){
+    alert('滑块完成加载。当前页码为：'+currentIndex+' ，单击“确定”按钮继续！');
+  },
+  // 在每动画过渡开始前回调
+  onSlideBefore: function(newIndex,oldIndex,newElement,oldElement){
+    console.log(index_obj);
+    alert('幻灯片动画效果过渡开始。要进入的页码为：'+newIndex+' 当前页码为：'+oldIndex+' 新页DOM对象输出在控制台！');
+  },
+  // 在每动画过渡结束后回调
+  onSlideAfter: function(newIndex,oldIndex,newElement,oldElement){
+    console.log(prev_obj);
+    alert('幻灯片动画效果过渡完毕。当前页码为：'+newIndex+' 之前页码为：'+oldIndex+' 当前页DOM对象输出在控制台！');
+  },
+  // 下一页时回调
+  onSlideNext: function(newIndex,oldIndex,newElement,oldElement){
+    console.log(prev_obj);
+    alert('你的操作是[下一页]。当前页码为：'+newIndex+' 之前页码为：'+oldIndex+' 当前页DOM对象输出在控制台！');
+  },
+  // 上一页时回调
+  onSlidePrev: function(newIndex,oldIndex,newElement,oldElement){
+    console.log(index_obj);
+    alert('你的操作是[上一页]。当前页码为：'+newIndex+' 之前页码为：'+oldIndex+' 当前页DOM对象输出在控制台！');
+  },
+  // 窗口发生变化时回调[responsive=true]
+  onSliderResize: function(currentIndex) {
+    //slider.settings.onSliderResize.call(el, slider.active.index);
+    console.log('页面大小有变化。当前页码为：'+currentIndex);
+  }
+});
+
+var cindex = 37;
+//myttttt动态设置新的翻页效果（0-37）
+function myttttt(){
+  if (cindex<0) cindex =37;
+  var tmp = testing.setSlideMode(cindex);
+  console.log('设置翻页效果ID为：'+tmp);
+  testing.goToNextSlide(); //下一页
+  cindex --;
+}
+console.log('查看FKPageTransitions对象：')
+console.log(testing);
+
+
+
+</script -->
+
 </html>
