@@ -1,0 +1,35 @@
+.pusher {
+  display: block;
+  min-height: 0px;
+  flex-direction: initial;
+}
+
+.pusher > .full.height {
+  background-color: #000;
+  display: block;
+  flex: none !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.following.bar {
+  position: fixed;
+  top: 0px;
+  z-index: 900;
+  left: 0%;
+  padding: 2em 0em;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px transparent;
+  border-bottom: 1px solid transparent;
+  transition:
+    padding 0.5s ease,
+    background 0.5s ease,
+    box-shadow 0.5s ease,
+    border 0.5s ease
+  ;
+}
