@@ -28,7 +28,17 @@
               这个是LOGO
             </div>
             <a class="item" id="home">Home</a>
-            <a class="item" id="project">Project</a>
+            <div class="ui dropdown link item" id="project">
+              <div class="default text">Project</div>
+              <div class="menu">
+                <div class="item" style="color: white !important;" data-value="1">Description</div>
+                <div class="item" style="color: white !important;" data-value="2">Design</div>
+                <div class="item" style="color: white !important;" data-value="3">Feature</div>
+                <div class="item" style="color: white !important;" data-value="4">Techniques</div>
+                <div class="item" style="color: white !important;" data-value="5">Validation</div>
+                <div class="item" style="color: white !important;" data-value="6">Demo</div>
+              </div>
+            </div>
             <a class="item" id="modeling">Modeling</a>
             <a class="item" id="human-practice">Human Practice</a>
             <a class="item" id="collaboration">Collaboration</a>
@@ -115,8 +125,13 @@
     fkpage.goToPrevSlide();
   });
 
-  $('.myfkpage').children('li').each(function(index, ele) {
+  $('.myfkpage').children('li').each(function (index, ele) {
     $(this).addClass('test');
+  });
+
+  $('.dropdown').dropdown();
+  $('#project').on('mouseenter', function() {
+    $(this).dropdown('show');
   });
 </script>
 
