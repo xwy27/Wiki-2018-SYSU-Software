@@ -26,3 +26,10 @@ js的ctype是 [text/javascript]
 
 http://2018.igem.org/Team:SYSU-Software/页面名
 
+3. 已创建的文件
+
+**semantic.min.css** http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/semantic.min.css&action=raw&ctype=text/css
+> 显然吧
+
+**jquery.min.js** http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/jquery.min.js&action=raw&ctype=text/javascript
+> 显然吧
