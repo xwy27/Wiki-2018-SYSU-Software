@@ -19,61 +19,83 @@
 </head>
 
 <body>
-  <ul class="myfkpage">
-    <li id="Home"></li>
-    <!-- Project -->
-    <li id="Description"></li>
-    <li id="Design"></li>
-    <li id="Feature"></li>
-    <li id="Techniques"></li>
-    <li id="Validation"></li>
-    <li id="Demo"></li>
-    <!-- Modeling -->
-    <li id="Modeling-Overview"></li>
-    <li id="Searching-Engine"></li>
-    <li id="Simulation-Circuits"></li>
-    <li id="Evolution-Algorithm"></li>
-    <li id="Reference"></li>
-    <!-- Human Practice -->
-    <li id="HP-Overview"></li>
-    <li id="HP-Siliver"></li>
-    <li id="HP-Gold"></li>
-    <li id="Human-Practice"></li>
-    <li id="Public-Engagement"></li>
-    <!-- Collaboration -->
-    <li id="XMU"></li>
-    <li id="SCUT"></li>
-    <li id="WHU"></li>
-    <li id="SYSU"></li>
-    <!-- Interlab -->
-    <li id="I-Overview"></li>
-    <li id="Experiment"></li>
-    <li id="Material-Methods"></li>
-    <li id="Results"></li>
-    <!-- Medal -->
-    <li id="Medal-Overview"></li>
-    <li id="Medal-Bronze"></li>
-    <li id="Medal-Sliver"></li>
-    <li id="Medal-Gold"></li>
-    <!-- Team -->
-    <li id="T-Overview"></li>
-    <li id="Members"></li>
-    <li id="Advisors"></li>
-    <li id="Instructors"></li>
-    <li id="Notebook"></li>
-    <li id="Notebook"></li>
-    <!-- Attributions -->
-    <li id="A-Overview"></li>
-    <li id="Group"></li>
-    <li id="Attribution"></li>
-    <li id="Acknowlegement"></li>
-  </ul>
+  <div class="pusher">
+    <div class="full height">
+      <div class="following bar">
+        <div class="ui container">
+          <div class="ui large secondary network menu inverted">
+            <div class="item">
+              这个是LOGO
+            </div>
+            <a class="item" id="home">Home</a>
+            <a class="item" id="project">Project</a>
+            <a class="item" id="modeling">Modeling</a>
+            <a class="item" id="human-practice">Human Practice</a>
+            <a class="item" id="collaboration">Collaboration</a>
+            <a class="item" id="interlab">Interlab</a>
+            <a class="item" id="medal">Medal</a>
+            <a class="item" id="team">Team</a>
+            <a class="item" id="attributions">Attributions</a>
+          </div>
+        </div>
+      </div>
 
-  <div class="bottom">
-    <button class="prev">上一页</button>
-    <button class="next">下一页</button>
+      <ul class="myfkpage">
+        <li id="Home"></li>
+        <!-- Project -->
+        <li id="Description"></li>
+        <li id="Design"></li>
+        <li id="Feature"></li>
+        <li id="Techniques"></li>
+        <li id="Validation"></li>
+        <li id="Demo"></li>
+        <!-- Modeling -->
+        <li id="Modeling-Overview"></li>
+        <li id="Searching-Engine"></li>
+        <li id="Simulation-Circuits"></li>
+        <li id="Evolution-Algorithm"></li>
+        <li id="Reference"></li>
+        <!-- Human Practice -->
+        <li id="HP-Overview"></li>
+        <li id="HP-Siliver"></li>
+        <li id="HP-Gold"></li>
+        <li id="Human-Practice"></li>
+        <li id="Public-Engagement"></li>
+        <!-- Collaboration -->
+        <li id="XMU"></li>
+        <li id="SCUT"></li>
+        <li id="WHU"></li>
+        <li id="SYSU"></li>
+        <!-- Interlab -->
+        <li id="I-Overview"></li>
+        <li id="Experiment"></li>
+        <li id="Material-Methods"></li>
+        <li id="Results"></li>
+        <!-- Medal -->
+        <li id="Medal-Overview"></li>
+        <li id="Medal-Bronze"></li>
+        <li id="Medal-Sliver"></li>
+        <li id="Medal-Gold"></li>
+        <!-- Team -->
+        <li id="T-Overview"></li>
+        <li id="Members"></li>
+        <li id="Advisors"></li>
+        <li id="Instructors"></li>
+        <li id="Notebook"></li>
+        <li id="Notebook"></li>
+        <!-- Attributions -->
+        <li id="A-Overview"></li>
+        <li id="Group"></li>
+        <li id="Attribution"></li>
+        <li id="Acknowlegement"></li>
+      </ul>
+
+      <div class="bottom">
+        <button class="prev">上一页</button>
+        <button class="next">下一页</button>
+      </div>
+    </div>
   </div>
-
 </body>
 
 <script type="text/javascript">
@@ -91,6 +113,10 @@
 
   $('.prev').on('click', function () {
     fkpage.goToPrevSlide();
+  });
+
+  $('.myfkpage').children('li').each(function(index, ele) {
+    $(this).addClass('test');
   });
 </script>
 
