@@ -1,0 +1,66 @@
+@font-face{
+    font-family: 'Trajan Pro';
+    src : url('../fonts/TrajanPro3-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Geneva';
+    src : url('../fonts/Geneva.dfont');
+}
+
+@font-face{
+    font-family: 'Chalkboard';
+    src : url('../fonts/Chalkboard.ttc');
+}
+
+.page-container {
+    padding-top: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.header1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px; 
+    height: 60px;
+    line-height: 60px;
+    color: #FFF;
+    text-align: right;
+    font-size: 40px;
+    border-right: 20px solid #FFF;
+    font-weight: 700;
+    font-family: 'Trajan Pro';
+}
+
+.header2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Trajan Pro';
+    text-decoration: underline;
+}
+
+.header3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Trajan Pro';
+}
+
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Geneva';
+}
+
+

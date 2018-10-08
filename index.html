@@ -15,6 +15,7 @@
   <link href="css/fkpagetransitions.min.css" rel="stylesheet" />
 
   <link href="css/semantic.min.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
   <link href="css/index.css" rel="stylesheet" />
 </head>
 
@@ -27,7 +28,7 @@
             <div class="item">
               这个是LOGO
             </div>
-            <a class="item" id="home">Home</a>
+            <a class="item" id="home" data-value="0">Home</a>
             <div class="ui dropdown link item" id="project">
               <div class="default text">Project</div>
               <div class="menu">
@@ -51,7 +52,15 @@
       </div>
 
       <ul class="myfkpage">
-        <li id="Home"></li>
+        <li id="Home">
+          <div class="page-container">
+            <div class="header1">Project</div>
+            <div class="header2">Background</div>
+            <div class="header3">Solution</div>
+            <div class="content">Use the form below to upload files. To view or search previously uploaded files go to the list of uploaded files,
+            (re)uploads are also logged in the upload log, deletions in the deletion log.</div>
+          </div>
+        </li>
         <!-- Project -->
         <li id="Description"></li>
         <li id="Design"></li>
