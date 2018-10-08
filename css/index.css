@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#Home {
+  background: url(../images/123.jpg);
+}
+
+#Project {
+  background: url(../images/456.jpg);
+}
+
+#Modeling {
+  background: url(../images/123.jpg);
+}
+
+#Human-Practice {
+  background: url(../images/456.jpg);
+}
+
+#Collaboration {
+  background: url(../images/123.jpg);
+}
+
+#Interlab {
+  background: url(../images/456.jpg);
+}
+
+#Model {
+  background: url(../images/123.jpg);
+}
+
+#Team {
+  background: url(../images/456.jpg);
+}
+
+#Attributions {
+  background: url(../images/123.jpg);
+}

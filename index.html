@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
-    <title>FKPageTransitions响应式jQuery插件滑动翻页组件</title>
-    <!-- jQuery library -->
-    <script src="js/jquery.min.js"></script>
-    <!-- FKPageTransitions Javascript file -->
-    <script src="js/fkpagetransitions.min.js"></script>
-    <!-- FKPageTransitions CSS file -->
-    <link href="css/fkpagetransitions.min.css" rel="stylesheet" />
-    
-    <style type="text/css">
-  
-  html, body { height: 100%; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
+  <title>Index</title>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/semantic.min.js"></script>
+
+  <!-- FKPageTransitions Javascript file -->
+  <script src="js/fkpagetransitions.min.js"></script>
+  <!-- FKPageTransitions CSS file -->
+  <link href="css/fkpagetransitions.min.css" rel="stylesheet" />
+
+  <link href="css/semantic.min.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <ul class="myfkpage">
-      <li style="background: #0ac2d2">第一页</li>
-      <li style="background: #7bb7fa">第二页</li>
-      <li style="background: #60d7a9">第三页</li>
-      <li style="background: #fdc162">第四页</li>
-      <li style="background: #fd6a62">第五页</li>
-      <li style="background: #f68dbb">第六页</li>
-    </ul>
+  <ul class="myfkpage">
+    <li id="Home"></li>
+    <!-- Project -->
+    <li id="Description"></li>
+    <li id="Design"></li>
+    <li id="Feature"></li>
+    <li id="Techniques"></li>
+    <li id="Validation"></li>
+    <li id="Demo"></li>
+    <!-- Modeling -->
+    <li id="Modeling-Overview"></li>
+    <li id="Searching-Engine"></li>
+    <li id="Simulation-Circuits"></li>
+    <li id="Evolution-Algorithm"></li>
+    <li id="Reference"></li>
+    <!-- Human Practice -->
+    <li id="HP-Overview"></li>
+    <li id="HP-Siliver"></li>
+    <li id="HP-Gold"></li>
+    <li id="Human-Practice"></li>
+    <li id="Public-Engagement"></li>
+    <!-- Collaboration -->
+    <li id="XMU"></li>
+    <li id="SCUT"></li>
+    <li id="WHU"></li>
+    <li id="SYSU"></li>
+    <!-- Interlab -->
+    <li id="I-Overview"></li>
+    <li id="Experiment"></li>
+    <li id="Material-Methods"></li>
+    <li id="Results"></li>
+    <!-- Medal -->
+    <li id="Medal-Overview"></li>
+    <li id="Medal-Bronze"></li>
+    <li id="Medal-Sliver"></li>
+    <li id="Medal-Gold"></li>
+    <!-- Team -->
+    <li id="T-Overview"></li>
+    <li id="Members"></li>
+    <li id="Advisors"></li>
+    <li id="Instructors"></li>
+    <li id="Notebook"></li>
+    <li id="Notebook"></li>
+    <!-- Attributions -->
+    <li id="A-Overview"></li>
+    <li id="Group"></li>
+    <li id="Attribution"></li>
+    <li id="Acknowlegement"></li>
+  </ul>
 
-    <div  style="position: absolute; bottom: 0; left: 0; text-align: center; width: 100%;">
-      <button onclick="fkpage.goToPrevSlide();">上一页</button>
-      <button onclick="alert(fkpage.getCurrentSlide());">当前页码</button>
-      <button onclick="alert(fkpage.getSlideCount());">总数</button>
-      <button onclick="fkpage.goToNextSlide();">下一页</button>
-      <br/>
-       <button onclick="fkpage.goToSlide(3);">跳至4页</button>
-      <br/>
-      <p style="font-size: 12px;">手机上用指左右滑动屏幕操作，电脑上鼠标上下滚轮操作</p>
-    </div>
+  <div class="bottom">
+    <button class="prev">上一页</button>
+    <button class="next">下一页</button>
+  </div>
 
 </body>
 
 <script type="text/javascript">
-let fkpage;
-$(document).ready(function(){
-    fkpage = $('.myfkpage').FKPageTransitions();
-});
+  let fkpage;
+  $(document).ready(function () {
+    fkpage = $('.myfkpage').FKPageTransitions({
+      mode: 35,
+      mouseWheel: false
+    });
+  });
+
+  $('.next').on('click', function () {
+    fkpage.goToNextSlide();
+  });
+
+  $('.prev').on('click', function () {
+    fkpage.goToPrevSlide();
+  });
 </script>
 
 
