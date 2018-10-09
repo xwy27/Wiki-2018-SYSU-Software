@@ -26,6 +26,7 @@ body {
 
 .test {
   background: url(../images/oft.png);
+  overflow-y: scroll !important;
 }
 
 .pusher {

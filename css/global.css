@@ -15,8 +15,9 @@
 
 .page-container {
     padding-top: 300px;
-    margin-left: 300px;
-    margin-right: 300px;
+    padding-left: 300px;
+    padding-right: 300px;
+
 }
 
 .header1 {
