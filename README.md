@@ -2,12 +2,6 @@
 
 Wiki for 2018 SYSU Software
 
-## 关于 Data
-
-由于 wiki 不支持 json，采用了在 data.js 中声明变量后再引用变量
-
-现在 index.html 中的 data 采用此方式加载
-
 ## Wiki的编辑方式
 
 1. 创建js/css文件
@@ -36,6 +30,7 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 
 
 ## 子页面的书写格式
+
 最外层为一个带有page-container样式的div，其余自便
 
 ``` html
@@ -43,3 +38,10 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 内容
 </div>
 ```
+
+## 本地测试的小trick
+因为chrome不允许ajax访问文件系统，可以运行
+``` python
+python3 -m http.server
+```
+临时建立一个后端

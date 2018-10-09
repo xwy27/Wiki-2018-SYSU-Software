@@ -1,3 +1,7 @@
+/* TODO:
+1. ul and ol
+2. .header4
+3. 副标题 */
 @font-face{
     font-family: 'Trajan Pro';
     src : url('../fonts/TrajanPro3-Regular.otf');
@@ -55,6 +59,18 @@
     font-family: 'Trajan Pro';
 }
 
+
+.header4 {
+    margin-top: 10px;
+    margin-bottom: 9px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Geneva';
+}
+
+
 .content {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -62,6 +78,35 @@
     font-size: 18px;
     line-height: 24px;
     font-family: 'Geneva';
+    text-align: justify;
 }
 
+/* divider */
+.ui.divider {
+    border-bottom-color: #ffffff !important;
+    border-top-color: #ffffff !important;
+}
 
+/* card */
+.card {
+    width: 200px !important;
+    margin-right: 20px !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.card .image {
+    padding: 30px !important;
+}
+
+.card .content {
+    text-align: left;
+}
+
+.card .content .header {
+    text-align: center;
+}
+
+img {
+  width: 85%;
+}

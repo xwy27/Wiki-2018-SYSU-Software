@@ -1,8 +1,8 @@
 var pages = {
     "Home": { "url": "1" },
-    "Description": { "url": "" },
-    "Design": { "url": "" },
-    "Feature": { "url": "" },
+    "Description": { "url": "../html/Projects/Description.html" },
+    "Design": { "url": "../html/Projects/Design.html" },
+    "Feature": { "url": "../html/Projects/Feature.html" },
     "Techniques": { "url": "" },
     "Validation": { "url": "" },
     "Demo": { "url": "" },
@@ -45,9 +45,9 @@ var nowLoadingID = 0;
 function loadPages() {
     for (let page in pages) {
         if (pages[page].url === "") continue;
-        //$.get(pages[page].url, function (data) {
-        //    $('#' + page).html(data);
-        //})
+        $.get(pages[page].url, function (data) {
+           $('#' + page).html(data);
+        })
         nowLoadingID += 1;
         // main menu
         $('#' + page + '>.page-container')
