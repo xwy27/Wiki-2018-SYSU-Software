@@ -28,9 +28,9 @@
             <div class="item">
               <img src="images/logo.png" />
             </div>
-            <a class="item" id="home" data-value="0">Home</a>
+            <a class="item" id="home" data-value="1">Home</a>
             <div class="ui dropdown link item" id="project">
-              <div class="default text">Project</div>
+              <!-- <div class="default text">Project</div>
               <div class="menu">
                 <div class="item" style="color: white !important;" data-value="1">Description</div>
                 <div class="item" style="color: white !important;" data-value="2">Design</div>
@@ -38,27 +38,29 @@
                 <div class="item" style="color: white !important;" data-value="4">Techniques</div>
                 <div class="item" style="color: white !important;" data-value="5">Validation</div>
                 <div class="item" style="color: white !important;" data-value="6">Demo</div>
-              </div>
+              </div> -->
             </div>
-            <a class="item" id="modeling">Modeling</a>
-            <a class="item" id="human-practice">Human Practice</a>
-            <a class="item" id="collaboration">Collaboration</a>
-            <a class="item" id="interlab">Interlab</a>
-            <a class="item" id="medal">Medal</a>
-            <a class="item" id="team">Team</a>
-            <a class="item" id="attributions">Attributions</a>
+            <div class="ui dropdown link item" id="modeling"></div>
+            <div class="ui dropdown link item" id="humanPractice"></div>
+            <div class="ui dropdown link item" id="collaboration"></div>
+            <div class="ui dropdown link item" id="interlab"></div>
+            <div class="ui dropdown link item" id="medal"></div>
+            <div class="ui dropdown link item" id="team"></div>
+            <div class="ui dropdown link item" id="attributions"></div>
           </div>
         </div>
       </div>
 
       <ul class="myfkpage">
+        <li id="virtual"></li>
         <li id="Home">
           <div class="page-container">
             <div class="header1">Project</div>
             <div class="header2">Background</div>
             <div class="header3">Solution</div>
-            <div class="content">Use the form below to upload files. To view or search previously uploaded files go to the list of uploaded files,
-            (re)uploads are also logged in the upload log, deletions in the deletion log.</div>
+            <div class="content">Use the form below to upload files. To view or search previously uploaded files go to
+              the list of uploaded files,
+              (re)uploads are also logged in the upload log, deletions in the deletion log.</div>
           </div>
         </li>
         <!-- Project -->
@@ -109,51 +111,18 @@
         <li id="Acknowlegement"></li>
       </ul>
 
-      <div class="bottom">
-        <button class="prev">上一页</button>
-        <button class="next">下一页</button>
-      </div>
     </div>
   </div>
 </body>
 
 <script src="js/loader.js"></script>
 <script src="js/navigator.js"></script>
-<script type="text/javascript">
-  let fkpage;
-  $(document).ready(function () {
-    fkpage = $('.myfkpage').FKPageTransitions({
-      mode: 35,
-      mouseWheel: false
-    });
-  });
-
-  $('.next').on('click', function () {
-    fkpage.goToNextSlide();
-  });
-
-  $('.prev').on('click', function () {
-    fkpage.goToPrevSlide();
-  });
-
-  $('.myfkpage').children('li').each(function (index, ele) {
-    $(this).addClass('test');
-  });
-
-  $('.dropdown').dropdown();
-  $('#project').on('mouseenter', function() {
-    $(this).dropdown('show');
-  });
-</script>
+<script src="js/index.js"></script>
 
 
 
 <!-- script>
 
-
-
-
-      
 //使用FKPageTransitions插件
 var testing = $('#pt-main').FKPageTransitions({
   // 常规设置
@@ -221,8 +190,6 @@ function myttttt(){
 }
 console.log('查看FKPageTransitions对象：')
 console.log(testing);
-
-
 
 </script -->
 
