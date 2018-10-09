@@ -23,7 +23,7 @@ body {
 
 .myfkpage {
   margin: 0 !important;
-  /* height: 1000px !important; */
+  height: 1000px !important;
 }
 
 .dropdown.link.item .menu {
@@ -84,4 +84,11 @@ body {
 
 img {
   width: 85%;
+}
+
+.next-page {
+  text-align: right;
+  color: #FFFFFF;
+  padding: 30px;
+  opacity: 0;
 }

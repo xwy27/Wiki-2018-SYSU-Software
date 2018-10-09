@@ -1,5 +1,9 @@
 let fkpage;
+
+
 $(document).ready(function () {
+  
+
   fkpage = $('.myfkpage').FKPageTransitions({
     mode: 35,
     mouseWheel: false
@@ -22,10 +26,7 @@ $('.ui.dropdown.link.item').on('mouseenter', function () {
   $('.ui.dropdown.link.item').not($(this)).dropdown('hide');
   $(this).dropdown('show');
 });
-<<<<<<< HEAD
 
 $('.ui.sticky')
   .sticky()
   ;
-=======
->>>>>>> e947b7a499e3a7fb17eacadd3970da23a680dde8
