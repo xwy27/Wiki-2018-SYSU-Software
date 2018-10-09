@@ -1,56 +1,61 @@
-
 let data = {
-    'project': [
+    'Project': [
         'Description',
         'Design',
         'Feature',
         'Techniques',
         'Validation',
         'Demo'],
-    'modeling': [
+    'Modeling': [
         'Overview',
-        'Searching  engine',
-        'Simulation for circuits',
-        'Directed evolution algorithm',
-        'reference'],
-    'humanPractice': [
+        'Searching  Engine',
+        'Simulation for Circuits',
+        'Directed Evolution Algorithm',
+        'Reference'],
+    'HumanPractice': [
         'Overview',
         'Silver',
         'Gold',
-        'Integrated human practice',
-        'Public engagement'],
-    'collaboration': [
+        'Integrated Human Practice',
+        'Public Engagement'],
+    'Collaboration': [
         'XMU-China',
-        'SCUT-ChinaA',
+        'SCUT-China',
         'WHU-China',
         'SYSU-China'],
-    'interlab': [
+    'Interlab': [
         'Overview',
-        'Experiment design',
-        'Material and methods',
+        'Experiment Design',
+        'Material and Methods',
         'Results'],
-    'medal': [
+    'Medal': [
         'Overview',
         'Bronze',
         'Silver',
         'Gold'],
-    'team': [
+    'Team': [
         'Overview',
-        'Team members',
-        'advisors',
-        'instructors',
+        'Team Members',
+        'Advisors',
+        'Instructors',
         'Notebook'],
-    'attributions': [
+    'Attributions': [
         'Overview',
-        'Group structure',
-        'Attribution in project',
+        'Group Structure',
+        'Attribution in Project',
         'Acknowledgement'],
 }
 
 // main menu navigator
 let index = 2;
 for (ele in data) {
-    let html = `<div class="default text">${ele}</div><div class="menu">`
+    let html;
+    if (ele == 'HumanPractice') {
+        html = `<div class="default text">Human Practice</div><div class="menu">`
+    }
+    else {
+        html = `<div class="default text">${ele}</div><div class="menu">`
+    }
     for (x in data[ele]) {
         html += `<div class="item" style="color: white !important;" data-value="${index}">${data[ele][x]}</div>`
         index += 1;
