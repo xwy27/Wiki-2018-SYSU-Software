@@ -3,6 +3,11 @@ body {
   height: 100%;
 }
 
+#logo {
+  width: 80px !important;
+  height: 40px !important;
+}
+
 .bottom {
   position: absolute;
   bottom: 0;
@@ -17,12 +22,9 @@ body {
 }
 
 .dropdown.link.item .menu {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.dropdown.link.item .menu .item{
-  background-color: white !important;
-}
 
 .test {
   background: url(../images/oft.png);
