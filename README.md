@@ -33,3 +33,13 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 
 **jquery.min.js** http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/jquery.min.js&action=raw&ctype=text/javascript
 > 显然吧
+
+
+## 子页面的书写格式
+最外层为一个带有page-container样式的div，其余自便
+
+``` html
+<div class="page-container xxxx">
+内容
+</div>
+```
