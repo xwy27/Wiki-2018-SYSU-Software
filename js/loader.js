@@ -2,7 +2,7 @@ var pages = {
     "Home": { "url": "1" },
     "Description": { "url": "../html/Projects/Description.html" },
     "Design": { "url": "../html/Projects/Design.html" },
-    "Feature": { "url": "" },
+    "Feature": { "url": "../html/Projects/Feature.html" },
     "Techniques": { "url": "" },
     "Validation": { "url": "" },
     "Demo": { "url": "" },
