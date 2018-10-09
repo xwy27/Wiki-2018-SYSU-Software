@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 #logo {
   width: 80px !important;
   height: 40px !important;
@@ -18,7 +22,7 @@ body {
 
 .myfkpage {
   margin: 0 !important;
-  height: 1000px !important;
+  /* height: 1000px !important; */
 }
 
 .dropdown.link.item .menu {

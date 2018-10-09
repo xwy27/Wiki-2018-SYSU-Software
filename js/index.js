@@ -5,6 +5,10 @@ $(document).ready(function () {
     mouseWheel: false
   });
   fkpage.goToNextSlide();
+  (function () {
+    let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    $('.myfkpage').css('height', pageHeight + 'px');
+  })();
 });
 
 $('.myfkpage').children('li').each(function (index, ele) {
