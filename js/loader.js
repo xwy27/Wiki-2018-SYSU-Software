@@ -41,6 +41,8 @@ var pages = {
 }
 
 var nowLoadingID = 0;
+var onNextPageShow = false;
+var isAllowNextPage = false;
 
 function loadPages() {
     for (let page in pages) {
@@ -52,7 +54,7 @@ function loadPages() {
         // main menu
         $('#' + page + '>.page-container')
             .visibility({
-                offset: -20,
+                offset: -10,
                 observeChanges: false,
                 once: false,
                 context: $('#' + page),
@@ -81,7 +83,21 @@ function loadPages() {
                     });
                 },
                 onBottomVisible: function() {
-                    console.log("reached bottom");
+                    if (onNextPageShow) return;
+                    onNextPageShow = true;
+                    setTimeout(() => {
+                        isAllowNextPage = true;
+                        $(".next-page").animate({
+                            'opacity' : '0.8'
+                        }, 500);
+                    }, 500);
+                },
+                onBottomVisibleReverse: function () {
+                    $(".next-page").animate({
+                        'opacity': '0'
+                    }, 200);
+                    onNextPageShow = false;
+                    isAllowNextPage = false;
                 }
             })
             ;
