@@ -4,7 +4,7 @@ Wiki for 2018 SYSU Software
 
 ## Wiki的编辑方式
 
-1. 创建js/css文件
+1. 创建js/css/html文件
 
 在登录了iGem账号的情况下，访问诸如如下Url(这里演示创建/statics/css/sematic.min.css)
 
@@ -16,6 +16,9 @@ http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/sem
 
 js的ctype是 [text/javascript]
 
+http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/html/a.html&action=raw&ctype=text/html
+
+[text/html]
 2. 创建页面
 
 http://2018.igem.org/Team:SYSU-Software/页面名
@@ -28,6 +31,7 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 **jquery.min.js** http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/jquery.min.js&action=raw&ctype=text/javascript
 > 显然吧
 
+**a.html** http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/html/a.html&action=raw&ctype=text/html
 
 ## 子页面的书写格式
 
