@@ -79,6 +79,9 @@ function loadPages() {
                             .transition('hide')
                             ;
                     });
+                },
+                onBottomVisible: function() {
+                    console.log("reached bottom");
                 }
             })
             ;

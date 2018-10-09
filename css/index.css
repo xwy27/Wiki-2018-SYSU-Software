@@ -1,6 +1,11 @@
 html,
 body {
   height: 100%;
+  
+}
+
+body {
+  overflow: hidden;
 }
 
 #logo {
@@ -18,7 +23,7 @@ body {
 
 .myfkpage {
   margin: 0 !important;
-  height: 1000px !important;
+  /* height: 1000px !important; */
 }
 
 .dropdown.link.item .menu {

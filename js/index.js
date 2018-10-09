@@ -5,6 +5,10 @@ $(document).ready(function () {
     mouseWheel: false
   });
   fkpage.goToNextSlide();
+  (function () {
+    let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    $('.myfkpage').css('height', pageHeight + 'px');
+  })();
 });
 
 $('.myfkpage').children('li').each(function (index, ele) {
@@ -18,3 +22,10 @@ $('.ui.dropdown.link.item').on('mouseenter', function () {
   $('.ui.dropdown.link.item').not($(this)).dropdown('hide');
   $(this).dropdown('show');
 });
+<<<<<<< HEAD
+
+$('.ui.sticky')
+  .sticky()
+  ;
+=======
+>>>>>>> e947b7a499e3a7fb17eacadd3970da23a680dde8
