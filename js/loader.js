@@ -1,7 +1,7 @@
 var pages = {
     "Home": { "url": "1" },
     "Description": { "url": "../html/Projects/Description.html" },
-    "Design": { "url": "" },
+    "Design": { "url": "../html/Projects/Design.html" },
     "Feature": { "url": "" },
     "Techniques": { "url": "" },
     "Validation": { "url": "" },

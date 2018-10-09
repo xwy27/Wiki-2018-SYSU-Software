@@ -43,3 +43,10 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 内容
 </div>
 ```
+
+## 本地测试的小trick
+因为chrome不允许ajax访问文件系统，可以运行
+``` python
+python3 -m http.server
+```
+临时建立一个后端

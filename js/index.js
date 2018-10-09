@@ -15,5 +15,6 @@ $('.dropdown').dropdown({
   action: 'select'
 });
 $('.ui.dropdown.link.item').on('mouseenter', function () {
+  $('.ui.dropdown.link.item').not($(this)).dropdown('hide');
   $(this).dropdown('show');
 });
