@@ -86,5 +86,7 @@ document.body.onmousewheel = function (event) {
         }, 0);
         onNextPageShow = false;
         isAllowNextPage = false;
+    } else {
+        isAllowNextPage = false;
     }
 };
