@@ -65,15 +65,20 @@ for (ele in data) {
     $('#' + ele).append(html);
 }
 
+function backToTop(page) {
+    $("#" + page).scrollTop(0);
+}
+
 $('.menu .item').on('click', function () {
     if ($(this).attr('data-value') != undefined) {
         $(".next-page").animate({
             'opacity': '0'
         }, 0);
-        onNextPageShow = false;
-        isAllowNextPage = false;
         fkpage.goToSlide($(this).attr('data-value'));
         initTopBar(pageList[$(this).attr('data-value') - 1]);
+        backToTop(pageList[$(this).attr('data-value') - 1]);
+        onNextPageShow = false;
+        isAllowNextPage = false;
     }
 });
 
@@ -81,6 +86,8 @@ document.body.onmousewheel = function (event) {
     if (event.wheelDelta < 0 && isAllowNextPage) {
         fkpage.goToSlide(nextPage);
         initTopBar(pageList[nextPage - 1]);
+
+        backToTop(pageList[nextPage - 1]);
         $(".next-page").animate({
             'opacity': '0'
         }, 0);

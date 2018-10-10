@@ -96,7 +96,14 @@ function initTopBar(page) {
                     }, 500);
                 }, 1000);
                 setTimeout(() => {
-                    isAllowNextPage = true;
+                    if (onNextPageShow) {
+                        isAllowNextPage = true;
+                    } else {
+                        $(".next-page").animate({
+                            'opacity': '0'
+                        }, 200);
+                        onNextPageShow = false;
+                    }
                 }, 1500);
             },
             onTopVisibleReverse: function () {
