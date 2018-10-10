@@ -23,11 +23,7 @@ body {
 
 .myfkpage {
   margin: 0 !important;
-  height: 1000px;
-}
-
-.following.bar {
-  padding-top: 0.7em;
+  /* height: 1000px !important; */
 }
 
 .dropdown.link.item .menu {

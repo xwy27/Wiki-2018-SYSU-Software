@@ -12,6 +12,7 @@ $(document).ready(function () {
   (function () {
     let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     $('.myfkpage').css('height', pageHeight + 'px');
+    console.log(pageHeight)
   })();
 });
 
