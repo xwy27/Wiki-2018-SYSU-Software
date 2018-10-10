@@ -46,6 +46,7 @@ let data = {
         'Acknowledgement'],
 }
 
+
 // main menu navigator
 let index = 2;
 for (ele in data) {
@@ -72,5 +73,6 @@ $('.item').on('click', function () {
         onNextPageShow = false;
         isAllowNextPage = false;
         fkpage.goToSlide($(this).attr('data-value'));
+        initTopBar(pageList[$(this).attr('data-value') - 1]);
     }
 });

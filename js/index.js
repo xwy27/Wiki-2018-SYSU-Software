@@ -9,6 +9,7 @@ $(document).ready(function () {
     mouseWheel: false
   });
   fkpage.goToNextSlide();
+  initTopBar("Home");
   (function () {
     let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     $('.myfkpage').css('height', pageHeight + 'px');
