@@ -112,3 +112,7 @@ ol, ul, .content {
 img {
   width: 85%;
 }
+
+.next-page-identify {
+    height: 50px;
+}

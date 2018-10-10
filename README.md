@@ -39,7 +39,8 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 
 ``` html
 <div class="page-container xxxx">
-内容
+    内容
+    <div class="next-page-identify" data-value="2"></div> <!-- 这个是跳页标记 -->
 </div>
 ```
 

@@ -76,3 +76,15 @@ $('.item').on('click', function () {
         initTopBar(pageList[$(this).attr('data-value') - 1]);
     }
 });
+
+document.body.onmousewheel = function (event) {
+    if (event.wheelDelta < 0 && isAllowNextPage) {
+        fkpage.goToSlide(nextPage);
+        initTopBar(pageList[nextPage - 1]);
+        $(".next-page").animate({
+            'opacity': '0'
+        }, 0);
+        onNextPageShow = false;
+        isAllowNextPage = false;
+    }
+};

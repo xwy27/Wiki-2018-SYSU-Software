@@ -45,6 +45,7 @@ var pageList = [];
 var nowLoadingID = 0;
 var onNextPageShow = false;
 var isAllowNextPage = false;
+var nextPage = 0
 
 function initTopBar(page) {
     // main menu
@@ -77,18 +78,28 @@ function initTopBar(page) {
                         .transition('hide')
                         ;
                 });
-            },
-            onBottomVisible: function () {
+            }
+        });
+    $('#' + page + '>.page-container>.next-page-identify')
+        .visibility({
+            offset: -5,
+            observeChanges: true,
+            once: false,
+            context: $('#' + page),
+            continuous: true,
+            onTopVisible: function () {
                 if (onNextPageShow) return;
                 onNextPageShow = true;
                 setTimeout(() => {
-                    isAllowNextPage = true;
                     $(".next-page").animate({
                         'opacity': '0.8'
                     }, 500);
-                }, 500);
+                }, 1000);
+                setTimeout(() => {
+                    isAllowNextPage = true;
+                }, 1500);
             },
-            onBottomVisibleReverse: function () {
+            onTopVisibleReverse: function () {
                 $(".next-page").animate({
                     'opacity': '0'
                 }, 200);
@@ -96,7 +107,10 @@ function initTopBar(page) {
                 isAllowNextPage = false;
             }
         });
+    nextPage = $('#' + page + '>.page-container>.next-page-identify').attr("data-value");
 }
+
+
 
 function loadPages() {
     for (let page in pages) {
