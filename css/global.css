@@ -1,6 +1,5 @@
 /* TODO:
 1. ul and ol
-2. .header4
 3. 副标题
 4. caption 表格标题  */
 @font-face{
@@ -45,19 +44,21 @@
     height: 50px;
     line-height: 50px;
     color: #FFF;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Trajan Pro';
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .header3 {
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
     color: #FFF;
     font-size: 30px;
-    font-family: 'Trajan Pro';
+    font-family: 'Geneva';
+    padding-left: 10px;
+    border-left: 10px solid white;
 }
 
 
@@ -72,12 +73,12 @@
 }
 
 
-.content {
+ol, ul, .content {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #FFF;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     font-family: 'Geneva';
     text-align: justify;
 }
