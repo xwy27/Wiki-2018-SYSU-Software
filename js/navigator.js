@@ -65,7 +65,7 @@ for (ele in data) {
     $('#' + ele).append(html);
 }
 
-$('.ui.dropdown.link.item .menu .item').on('click', function () {
+$('.menu .item').on('click', function () {
     if ($(this).attr('data-value') != undefined) {
         $(".next-page").animate({
             'opacity': '0'
