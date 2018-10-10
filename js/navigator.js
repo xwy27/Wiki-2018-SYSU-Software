@@ -66,6 +66,11 @@ for (ele in data) {
 
 $('.item').on('click', function () {
     if ($(this).attr('data-value') != undefined) {
+        $(".next-page").animate({
+            'opacity': '0'
+        }, 0);
+        onNextPageShow = false;
+        isAllowNextPage = false;
         fkpage.goToSlide($(this).attr('data-value'));
     }
 });

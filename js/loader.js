@@ -54,7 +54,7 @@ function loadPages() {
         // main menu
         $('#' + page + '>.page-container')
             .visibility({
-                offset: -10,
+                offset: -5,
                 observeChanges: false,
                 once: false,
                 context: $('#' + page),
@@ -105,3 +105,7 @@ function loadPages() {
 }
 
 loadPages()
+
+$('.ui.sticky')
+    .sticky()
+    ;

@@ -23,13 +23,20 @@ body {
 
 .myfkpage {
   margin: 0 !important;
-  height: 1000px !important;
+  height: 1000px;
+}
+
+.following.bar {
+  padding-top: 0.7em;
 }
 
 .dropdown.link.item .menu {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
+.ui.dropdown.link.item {
+  height: 50px !important;
+}
 
 .test {
   background: url(../images/oft.png);
@@ -87,6 +94,7 @@ img {
 }
 
 .next-page {
+  position: absolute !important;
   text-align: right;
   color: #FFFFFF;
   padding: 30px;

@@ -27,6 +27,3 @@ $('.ui.dropdown.link.item').on('mouseenter', function () {
   $(this).dropdown('show');
 });
 
-$('.ui.sticky')
-  .sticky()
-  ;
