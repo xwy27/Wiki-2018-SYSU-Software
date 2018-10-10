@@ -119,7 +119,7 @@ function loadPages() {
         $.get(pages[page].url, function (data) {
             $('#' + page).html(data);
             nowLoadingID += 1;
-            initTopBar(page);
+            //initTopBar(page);
         });
         
     }
