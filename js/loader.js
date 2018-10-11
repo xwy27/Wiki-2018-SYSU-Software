@@ -25,7 +25,7 @@ var pages = {
     "SYSU": { "url": "" },
     "I-Overview": { "url": "../html/Interlab/Overview.html" },
     "Experiment": { "url": "../html/Interlab/ExperimentDesign.html" },
-    "Material-Methods": { "url": "../html/Interlab/MeterialMethods.html" },
+    "Material-Methods": { "url": "../html/Interlab/MaterialMethods.html" },
     "Results": { "url": "../html/Interlab/Results.html" },
     "Medal-Overview": { "url": "../html/Medal/Overview.html" },
     "Medal-Bronze": { "url": "../html/Medal/Bronze.html" },
