@@ -5,7 +5,9 @@ let data = {
         'Feature',
         'Techniques',
         'Validation',
-        'Demo'],
+        'Demo',
+        'Improve',
+        'Demostrate'],
     'Modeling': [
         'Overview',
         'Searching  Engine',
