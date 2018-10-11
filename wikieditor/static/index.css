@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  
+}
+
+.pusher {
+  display: block;
+  min-height: 0px;
+  flex-direction: initial;
+}
+
+.pusher>.full.height {
+  background-color: #000;
+  display: block;
+  flex: none !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.full.height > .toc {
+  position: fixed;
+  z-index: 1;
+  background-color: #1b1c1d;
+  width: 250px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100%;
+}
+.full.height > .toc .ui.menu {
+  border-radius: 0;
+  border-width: 0 1px 0 0;
+  box-shadow: none;
+  margin: 0;
+  width: inherit;
+  overflow: hidden;
+  will-change: transform;
+  max-height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.article {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0px;
+  margin-left: 250px;
+  height: 980px;
+}
+
+.full.height > .toc .ui.menu::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.full.height > .toc .ui.menu::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+.full.height > .toc .ui.menu::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.full.height > .toc .ui.menu:hover::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.full.height > .toc .ui.menu:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+}

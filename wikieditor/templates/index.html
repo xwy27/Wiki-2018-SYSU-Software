@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>WikiEditor</title>
+
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/semantic.min.js"></script>
+    <link href="/static/semantic.min.css" rel="stylesheet" />
+    <link href="/static/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="pusher">
+        <div class="full height">
+            <div class="toc">
+                <div class="ui vertical inverted menu">
+                    <div class="item">
+                        <div class="header">CSS</div>
+                        <div class="menu">
+                            {% for css in files['CSS'] %}
+                            <a class="item" href="{{css.edit}}" target="editor" data-raw="{{css.raw}}">{{css.local}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header">JS</div>
+                        <div class="menu">
+                            {% for js in files['JS'] %}
+                            <a class="item" href="{{js.edit}}" target="editor" data-raw="{{js.raw}}">{{js.local}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header">Pages</div>
+                        <div class="menu">
+                            {% for page in files['Pages'] %}
+                            <a class="item" href="{{page.edit}}" target="editor" data-raw="{{page.raw}}">{{page.local}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="header">Index</div>
+                        <div class="menu">
+                            <a class="item" href="{{files['Index'].edit}}" target="editor" data-raw="none">{{files['Index'].local}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                    <div class="ui fluid labeled input">
+                        <div class="ui label">
+                            Raw Link
+                        </div>
+                        <input type="text" id="raw-link" placeholder="Waiting for data..." / >
+                    </div>
+                </div>
+                <iframe id="editor" name="editor" scrolling="no" frameborder="0" style="width:100%; height:100%; "></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('a').on('click', function () {
+            $('#raw-link').val($(this).attr('data-raw'));
+        })
+    </script>
+</body>
+
+</html>

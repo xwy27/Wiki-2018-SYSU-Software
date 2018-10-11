@@ -119,6 +119,8 @@ function initTopBar(page) {
 
 
 
+
+
 function loadPages() {
     for (let page in pages) {
         pageList.push(page);
