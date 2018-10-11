@@ -6,6 +6,7 @@ var pages = {
     "Techniques": { "url": "" },
     "Validation": { "url": "" },
     "Demo": { "url": "" },
+    "Contribution": {"url": ""},
     "Improve": {"url": ""},
     "Demostrate": {"url": ""},
     "Modeling-Overview": { "url": "" },
