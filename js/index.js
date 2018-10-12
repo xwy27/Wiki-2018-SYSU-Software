@@ -10,11 +10,14 @@ $(document).ready(function () {
   });
   fkpage.goToNextSlide();
   initTopBar("Home");
+  let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+  let pageWidth = document.documentElement.scrollWidth || document.body.scrollWidth;
   (function () {
-    let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     $('.myfkpage').css('height', pageHeight + 'px');
     console.log(pageHeight)
   })();
+  
+  $('#home-video')[0].play();
 });
 
 $('.myfkpage').children('li').each(function (index, ele) {
