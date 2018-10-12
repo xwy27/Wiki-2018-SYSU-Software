@@ -21,6 +21,19 @@ body {
   width: 100%;
 }
 
+video {
+  height: 900px;
+  width: 1600px;
+  margin-top: -300px;
+  margin-left: -450px;
+}
+
+/* video {
+  object-fit: fill;
+  margin-top: -300px;
+  margin-left: -550px;
+} */
+
 .myfkpage {
   margin: 0 !important;
   /* height: 1000px !important; */
