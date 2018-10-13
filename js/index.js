@@ -2,10 +2,10 @@ let fkpage;
 
 
 $(document).ready(function () {
-  let dstPage = 1;
-  urlSplit = window.location.href.split('#');
+  let dstPage = 0;
+  urlSplit = window.location.href.split('?');
   if (urlSplit.length > 1) {
-    dstPage = 1 + pageList.findIndex((value, index, arr) => {
+    dstPage = 0 + pageList.findIndex((value, index, arr) => {
       return value === urlSplit[1];
     });
   }
@@ -35,6 +35,7 @@ $(document).ready(function () {
 
   $('#home-video').css('width', pageWidth + 'px');
   $('#home-video')[0].play();
+
 });
 
 $('.myfkpage').children('li').each(function (index, ele) {

@@ -3,11 +3,11 @@ var pages = {
     "Description": { "url": "../html/Projects/Description.html" },
     "Design": { "url": "../html/Projects/Design.html" },
     "Feature": { "url": "../html/Projects/Feature.html" },
-    "Techniques": { "url": "" },
-    "Validation": { "url": "" },
+    "Techniques": { "url": "../html/Projects/Techniques.html" },
+    "Validation": { "url": "../html/Projects/Validation.html" },
     "Demo": { "url": "" },
     "Contribution": {"url": "../html/Projects/Contribution.html"},
-    "Improve": {"url": ""},
+    "Improve": {"url": "../html/Projects/Improve.html"},
     "Demostrate": {"url": ""},
     "Modeling-Overview": { "url": "" },
     "Searching-Engine": { "url": "" },
@@ -27,20 +27,21 @@ var pages = {
     "Experiment": { "url": "../html/Interlab/ExperimentDesign.html" },
     "Material-Methods": { "url": "../html/Interlab/MaterialMethods.html" },
     "Results": { "url": "../html/Interlab/Results.html" },
+    "Wet-Lab": { "url": "../html/Safety/WetLabSafety.html"},
+    "Dry-Lab": { "url": "../html/Safety/DryLabSafety.html"},
     "Medal-Overview": { "url": "../html/Medal/Overview.html" },
     "Medal-Bronze": { "url": "../html/Medal/Bronze.html" },
     "Medal-Sliver": { "url": "../html/Medal/Silver.html" },
     "Medal-Gold": { "url": "../html/Medal/Gold.html" },
-    "T-Overview": { "url": "" },
-    "Members": { "url": "" },
-    "Advisors": { "url": "" },
-    "Instructors": { "url": "" },
-    "Notebook": { "url": "" },
-    "Notebook": { "url": "" },
-    "A-Overview": { "url": "" },
-    "Group": { "url": "" },
-    "Attribution": { "url": "" },
-    "Acknowlegement": { "url": "" }
+    "T-Overview": { "url": "../html/Team/Overview.html" },
+    "Members": { "url": "../html/Team/TeamMember.html" },
+    "Advisors": { "url": "../html/Team/Advisor.html" },
+    "Instructors": { "url": "../html/Team/Instructor.html" },
+    "Notebook": { "url": "../html/Team/Notebook.html" },
+    "A-Overview": { "url": "../html/Attribution/Overview.html" },
+    "Group": { "url": "../html/Attribution/GroupStructure.html" },
+    "Attribution": { "url": "../html/Attribution/Attribution.html" },
+    "Acknowlegement": { "url": "../html/Attribution/Acknowledge.html" }
 }
 
 var pageList = [];
@@ -115,6 +116,20 @@ function loadPages() {
             $('#' + page).html(data);
             nowLoadingID += 1;
             //initTopBar(page);
+            console.log(nowLoadingID);
+            if (nowLoadingID === pageList.length) {
+                console.log('now mount');
+                $('a').on('click', function() {
+                    console.log('click');
+                    let target = $(this).attr('goto');
+                    console.log(target);
+                    let dstPage = pageList.findIndex((value, index, arr) => {
+                        return value === target;
+                    });
+                    console.log(dstPage);
+                    fkpage.goToSlide(dstPage);
+                });
+            }
         });
         
     }

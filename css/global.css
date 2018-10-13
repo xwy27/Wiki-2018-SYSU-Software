@@ -2,32 +2,31 @@
 1. ul and ol
 3. 副标题
 4. caption 表格标题  */
-@font-face{
+@font-face {
     font-family: 'Trajan Pro';
-    src : url('../fonts/TrajanPro3-Regular.otf');
+    src: url('../fonts/TrajanPro3-Regular.otf');
 }
 
-@font-face{
+@font-face {
     font-family: 'Geneva';
-    src : url('../fonts/Geneva.dfont');
+    src: url('../fonts/Geneva.dfont');
 }
 
-@font-face{
+@font-face {
     font-family: 'Chalkboard';
-    src : url('../fonts/Chalkboard.ttc');
+    src: url('../fonts/Chalkboard.ttc');
 }
 
 .page-container {
     padding-top: 300px;
     padding-left: 300px;
     padding-right: 300px;
-
 }
 
 .header1 {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-right: 20px; 
+    padding-right: 20px;
     height: 60px;
     line-height: 60px;
     color: #FFF;
@@ -46,7 +45,6 @@
     color: #FFF;
     font-size: 35px;
     font-family: 'Trajan Pro';
-    /* text-decoration: underline; */
 }
 
 .header3 {
@@ -70,10 +68,14 @@
     color: #FFF;
     font-size: 20px;
     font-family: 'Geneva';
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
-ol, ul, .content {
+ol,
+ul,
+.content {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #FFF;
@@ -91,18 +93,20 @@ ol, ul, .content {
 
 /* card */
 .card {
-    width: 200px !important;
-    margin-right: 20px !important;
     border: none !important;
     border-radius: 0 !important;
+    width: calc(33.33333% - 7rem) !important;
+    /*33% width*/
+    margin-right: 5.5rem !important;
 }
 
 .card .image {
     padding: 30px !important;
 }
 
-.card .content {
+.card .content .description {
     text-align: left;
+    padding: 15px !important;
 }
 
 .card .content .header {
@@ -110,9 +114,19 @@ ol, ul, .content {
 }
 
 img {
-  width: 85%;
+    width: 85%;
 }
 
 .next-page-identify {
     height: 50px;
+}
+
+.ack-logo {
+    width: 50%;
+    height: 50%;
+}
+
+.tech {
+    width: 20%;
+    margin-left: 500px;
 }
