@@ -110,11 +110,32 @@ http://2018.igem.org/wiki/images/c/c1/T--SYSU-Software--XMU.png
 
 ![](http://2018.igem.org/wiki/images/c/c1/T--SYSU-Software--XMU.png)
 
+**SCUT**
+
+http://2018.igem.org/wiki/images/3/3d/T--SYSU-Software--SCUT.png
+
+![](http://2018.igem.org/wiki/images/3/3d/T--SYSU-Software--SCUT.png)
+
 **WHU**
 
 http://2018.igem.org/wiki/images/d/d4/T--SYSU-Software--WHU.png
 
 ![](http://2018.igem.org/wiki/images/d/d4/T--SYSU-Software--WHU.png)
+
+**SYSU**
+
+http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--SYSU-China.png
+
+![](http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--SYSU-China.png)
+
+### Interlab
+
+**Device**
+
+http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--Device.png
+
+![](http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--Device.png)
+
 
 ### 学院图标
 
