@@ -82,7 +82,39 @@ http://2018.igem.org/wiki/images/e/e7/T--SYSU-Software--Biobrick.png
 
 ![](http://2018.igem.org/wiki/images/e/e7/T--SYSU-Software--Biobrick.png)
 
+### Human Practice
+
+**Consulting**
+
+http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--Consulting.png
+
+![](http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--Consulting.png)
+
+**Consulting Lu**
+
+http://2018.igem.org/wiki/images/c/cb/T--SYSU-Software--ConsultingLu.png
+
+![](http://2018.igem.org/wiki/images/c/cb/T--SYSU-Software--ConsultingLu.png)
+
+**Meet**
+
+http://2018.igem.org/wiki/images/a/a8/T--SYSU-Software--Meet.png
+
+![](http://2018.igem.org/wiki/images/a/a8/T--SYSU-Software--Meet.png)
+
+**PET**
+
+http://2018.igem.org/wiki/images/f/ff/T--SYSU-Software--PET.png
+
+![](http://2018.igem.org/wiki/images/f/ff/T--SYSU-Software--PET.png)
+
 ### Public Engagment
+
+**Wechat**
+
+http://2018.igem.org/wiki/images/d/df/T--SYSU-Software--wechat.png
+
+![](http://2018.igem.org/wiki/images/d/df/T--SYSU-Software--wechat.png)
 
 **High School**
 
