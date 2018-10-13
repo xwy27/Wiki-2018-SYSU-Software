@@ -2,7 +2,7 @@ let fkpage;
 
 
 $(document).ready(function () {
-  let dstPage = 1;
+  let dstPage = 0;
   urlSplit = window.location.href.split('#');
   if (urlSplit.length > 1) {
     dstPage = 1 + pageList.findIndex((value, index, arr) => {
