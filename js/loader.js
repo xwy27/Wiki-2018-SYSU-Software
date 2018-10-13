@@ -128,13 +128,19 @@ function initTopBar(page) {
 function loadPages() {
     for (let page in pages) {
         pageList.push(page);
-        if (pages[page].url === "") continue;
+    }
+    for (let page in pages) {
+        if (pages[page].url === "") {
+            nowLoadingID += 1;
+            continue;
+        }
         $.get(pages[page].url, function (data) {
             $('#' + page).html(data);
             nowLoadingID += 1;
             //initTopBar(page);
             console.log(nowLoadingID);
-            if (nowLoadingID === pageList.length) {
+            console.log(pageList.length);
+            if (nowLoadingID + 1 === pageList.length) {
                 console.log('now mount');
                 $('a').on('click', function() {
                     console.log('click');
@@ -144,7 +150,7 @@ function loadPages() {
                         return value === target;
                     });
                     console.log(dstPage);
-                    fkpage.goToSlide(dstPage);
+                    fkpage.goToSlide(dstPage + 1);
                 });
             }
         });
