@@ -55,7 +55,7 @@ http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png
 
 ![](http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png)
 
-### Techniques
+#### Techniques
   **djangopython.png**
 
   http://2018.igem.org/wiki/images/0/02/T--SYSU-Software--djangopython.png
@@ -67,6 +67,20 @@ http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png
   http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png
 
   ![](http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png)
+
+#### Contribution
+
+**AdavanSearch**
+
+http://2018.igem.org/wiki/images/4/43/T--SYSU-Software--AdvanceSearch.png
+
+![](http://2018.igem.org/wiki/images/4/43/T--SYSU-Software--AdvanceSearch.png)
+
+**Biobrick**
+
+http://2018.igem.org/wiki/images/e/e7/T--SYSU-Software--Biobrick.png
+
+![](http://2018.igem.org/wiki/images/e/e7/T--SYSU-Software--Biobrick.png)
 
 ### Public Engagment
 
