@@ -10,7 +10,7 @@ var pages = {
     "Improve": {"url": "../html/Projects/Improve.html"},
     "Demostrate": {"url": ""},
     "Modeling-Overview": { "url": "" },
-    "Searching-Engine": { "url": "" },
+    "Recommendation": { "url": "../html/Modeling/Recommendation.html" },
     "Simulation-Circuits": { "url": "" },
     "Evolution-Algorithm": { "url": "" },
     "Reference": { "url": "" },
