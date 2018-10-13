@@ -21,7 +21,6 @@
     padding-top: 300px;
     padding-left: 300px;
     padding-right: 300px;
-
 }
 
 .header1 {
@@ -46,7 +45,6 @@
     color: #FFF;
     font-size: 35px;
     font-family: 'Trajan Pro';
-    /* text-decoration: underline; */
 }
 
 .header3 {
@@ -91,18 +89,19 @@ ol, ul, .content {
 
 /* card */
 .card {
-    width: 200px !important;
-    margin-right: 20px !important;
     border: none !important;
     border-radius: 0 !important;
+    width: calc(33.33333% - 7rem) !important; /*33% width*/
+    margin-right: 5.5rem !important;
 }
 
 .card .image {
     padding: 30px !important;
 }
 
-.card .content {
+.card .content .description{
     text-align: left;
+    padding: 15px !important;
 }
 
 .card .content .header {

@@ -23,41 +23,6 @@ http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/html/a.
 
 http://2018.igem.org/Team:SYSU-Software/页面名
 
-3. 已创建的文件
-
-    - CSS
-
-    **semantic.min.css**
-
-    http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/semantic.min.css&action=raw&ctype=text/css
-
-    - JS
-
-    **jquery.min.js**
-
-    http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/jquery.min.js&action=raw&ctype=text/javascript
-
-    - HTML
-
-
-    **a.html**
-
-    http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/html/a.html&action=raw&ctype=text/html
-
-    - Images
-
-    **logo.png**
-
-    http://2018.igem.org/wiki/images/6/62/T--SYSU-Software--logo.png
-
-    **djangopython.png**
-
-    http://2018.igem.org/wiki/images/0/02/T--SYSU-Software--djangopython.png
-
-    **sqlite.png**
-
-    http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png
-
 ## 子页面的书写格式
 
 最外层为一个带有page-container样式的div，其余自便
