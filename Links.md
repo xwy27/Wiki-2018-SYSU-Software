@@ -192,6 +192,20 @@ http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--Result4.png
 
 ![](http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--Result4.png)
 
+### Safety
+
+http://2018.igem.org/wiki/images/e/e4/T--SYSU-Software--Warning.png
+
+![](http://2018.igem.org/wiki/images/e/e4/T--SYSU-Software--Warning.png)
+
+http://2018.igem.org/wiki/images/2/21/T--SYSU-Software--safety.png
+
+![](http://2018.igem.org/wiki/images/2/21/T--SYSU-Software--safety.png)
+
+http://2018.igem.org/wiki/images/5/5b/T--SYSU-Software--wetlab.png
+
+![](http://2018.igem.org/wiki/images/5/5b/T--SYSU-Software--wetlab.png)
+
 ### 学院图标
 
 **CommunicationAndDesign**
