@@ -31,6 +31,10 @@ let data = {
         'Experiment Design',
         'Material and Methods',
         'Results'],
+    "Safety": [
+        "Wet Lab Safety",
+        "Dry Lab Safety"
+    ],
     'Medal': [
         'Overview',
         'Bronze',

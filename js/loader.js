@@ -27,6 +27,8 @@ var pages = {
     "Experiment": { "url": "../html/Interlab/ExperimentDesign.html" },
     "Material-Methods": { "url": "../html/Interlab/MaterialMethods.html" },
     "Results": { "url": "../html/Interlab/Results.html" },
+    "Wet-Lab": { "url": ""},
+    "Dry-Lab": { "url": ""},
     "Medal-Overview": { "url": "../html/Medal/Overview.html" },
     "Medal-Bronze": { "url": "../html/Medal/Bronze.html" },
     "Medal-Sliver": { "url": "../html/Medal/Silver.html" },
