@@ -2,8 +2,6 @@ let fkpage;
 
 
 $(document).ready(function () {
-  
-
   fkpage = $('.myfkpage').FKPageTransitions({
     mode: 35,
     mouseWheel: false
