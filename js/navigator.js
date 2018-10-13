@@ -74,9 +74,7 @@ function backToTop(page) {
 
 $('.menu .item').on('click', function () {
     if ($(this).attr('data-value') != undefined) {
-        $(".next-page").animate({
-            'opacity': '0'
-        }, 0);
+        $(".next-page").hide();
         fkpage.goToSlide($(this).attr('data-value'));
         initTopBar(pageList[$(this).attr('data-value') - 1]);
         backToTop(pageList[$(this).attr('data-value') - 1]);
@@ -91,9 +89,7 @@ document.body.onmousewheel = function (event) {
         initTopBar(pageList[nextPage - 1]);
 
         backToTop(pageList[nextPage - 1]);
-        $(".next-page").animate({
-            'opacity': '0'
-        }, 0);
+        $(".next-page").hide();
         onNextPageShow = false;
         isAllowNextPage = false;
     } else {

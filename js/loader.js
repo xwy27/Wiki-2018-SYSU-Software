@@ -94,25 +94,19 @@ function initTopBar(page) {
                 if (onNextPageShow) return;
                 onNextPageShow = true;
                 setTimeout(() => {
-                    $(".next-page").animate({
-                        'opacity': '0.8'
-                    }, 500);
+                    $(".next-page").show();
                 }, 1000);
                 setTimeout(() => {
                     if (onNextPageShow) {
                         isAllowNextPage = true;
                     } else {
-                        $(".next-page").animate({
-                            'opacity': '0'
-                        }, 200);
+                        $(".next-page").hide();
                         onNextPageShow = false;
                     }
                 }, 1500);
             },
             onTopVisibleReverse: function () {
-                $(".next-page").animate({
-                    'opacity': '0'
-                }, 200);
+                $(".next-page").hide();
                 onNextPageShow = false;
                 isAllowNextPage = false;
             }
