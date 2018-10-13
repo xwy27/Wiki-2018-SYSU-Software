@@ -136,6 +136,29 @@ http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--Device.png
 
 ![](http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--Device.png)
 
+**Result0**
+
+http://2018.igem.org/wiki/images/6/69/T--SYSU-Software--Result0.png
+
+![](http://2018.igem.org/wiki/images/6/69/T--SYSU-Software--Result0.png)
+
+**Result1**
+
+http://2018.igem.org/wiki/images/9/95/T--SYSU-Software--Result2.png
+
+![](http://2018.igem.org/wiki/images/9/95/T--SYSU-Software--Result2.png)
+
+**Result2**
+
+http://2018.igem.org/wiki/images/7/7a/T--SYSU-Software--Result3.png
+
+![](http://2018.igem.org/wiki/images/7/7a/T--SYSU-Software--Result3.png)
+
+**Result3**
+
+http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--Result4.png
+
+![](http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--Result4.png)
 
 ### 学院图标
 

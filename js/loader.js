@@ -33,16 +33,15 @@ var pages = {
     "Medal-Bronze": { "url": "../html/Medal/Bronze.html" },
     "Medal-Sliver": { "url": "../html/Medal/Silver.html" },
     "Medal-Gold": { "url": "../html/Medal/Gold.html" },
-    "T-Overview": { "url": "" },
-    "Members": { "url": "" },
-    "Advisors": { "url": "" },
-    "Instructors": { "url": "" },
-    "Notebook": { "url": "" },
-    "Notebook": { "url": "" },
-    "A-Overview": { "url": "" },
-    "Group": { "url": "" },
-    "Attribution": { "url": "" },
-    "Acknowlegement": { "url": "" }
+    "T-Overview": { "url": "../html/Team/Overview.html" },
+    "Members": { "url": "../html/Team/TeamMember.html" },
+    "Advisors": { "url": "../html/Team/Advisor.html" },
+    "Instructors": { "url": "../html/Team/Instructor.html" },
+    "Notebook": { "url": "../html/Team/Notebook.html" },
+    "A-Overview": { "url": "../html/Attribution/Overview.html" },
+    "Group": { "url": "../html/Attribution/GroupStructure.html" },
+    "Attribution": { "url": "../html/Attribution/Attribution.html" },
+    "Acknowlegement": { "url": "../html/Attribution/Acknowledge.html" }
 }
 
 var pageList = [];
