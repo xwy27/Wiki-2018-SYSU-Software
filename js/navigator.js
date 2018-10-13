@@ -84,15 +84,16 @@ $('.menu .item').on('click', function () {
 });
 
 document.body.onmousewheel = function (event) {
-    if (event.wheelDelta < 0 && isAllowNextPage) {
+    if (1) return;
+    if (event.wheelDelta < -200 && event.wheelDelta >= -400 && isAllowNextPage) {
         fkpage.goToSlide(nextPage);
         initTopBar(pageList[nextPage - 1]);
-
         backToTop(pageList[nextPage - 1]);
         $(".next-page").hide();
-        onNextPageShow = false;
         isAllowNextPage = false;
-    } else {
+    } 
+    if (event.wheelDelta >= 0){
+        $(".next-page").hide();
         isAllowNextPage = false;
     }
 };

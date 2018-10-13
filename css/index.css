@@ -107,5 +107,5 @@ img {
   text-align: right;
   color: #FFFFFF;
   padding: 30px;
-  opacity: 0;
+  display: none;
 }
