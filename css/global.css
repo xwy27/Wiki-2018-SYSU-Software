@@ -91,10 +91,10 @@ ol, ul, .content {
 
 /* card */
 .card {
-    width: 200px !important;
-    margin-right: 20px !important;
     border: none !important;
     border-radius: 0 !important;
+    width: calc(33.33333% - 7rem) !important; /*33% width*/
+    margin-right: 5.5rem !important;
 }
 
 .card .image {
