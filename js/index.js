@@ -28,6 +28,7 @@ $(document).ready(function () {
 
   $('#home-video').css('width', pageWidth + 'px');
   $('#home-video')[0].play();
+
 });
 
 $('.myfkpage').children('li').each(function (index, ele) {
