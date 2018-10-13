@@ -12,9 +12,10 @@ $(document).ready(function () {
   let pageWidth = document.documentElement.scrollWidth || document.body.scrollWidth;
   (function () {
     $('.myfkpage').css('height', pageHeight + 'px');
-    console.log(pageHeight)
+    console.log(pageHeight);
   })();
   
+  $('#home-video').css('width', pageWidth + 'px');
   $('#home-video')[0].play();
 });
 
