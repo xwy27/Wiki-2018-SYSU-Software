@@ -82,22 +82,5 @@ $('.menu .item').on('click', function () {
         fkpage.goToSlide($(this).attr('data-value'));
         initTopBar(pageList[$(this).attr('data-value') - 1]);
         backToTop(pageList[$(this).attr('data-value') - 1]);
-        onNextPageShow = false;
-        isAllowNextPage = false;
     }
 });
-
-document.body.onmousewheel = function (event) {
-    if (1) return;
-    if (event.wheelDelta < -200 && event.wheelDelta >= -400 && isAllowNextPage) {
-        fkpage.goToSlide(nextPage);
-        initTopBar(pageList[nextPage - 1]);
-        backToTop(pageList[nextPage - 1]);
-        $(".next-page").hide();
-        isAllowNextPage = false;
-    } 
-    if (event.wheelDelta >= 0){
-        $(".next-page").hide();
-        isAllowNextPage = false;
-    }
-};

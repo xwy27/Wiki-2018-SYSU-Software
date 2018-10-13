@@ -93,12 +93,8 @@ function initTopBar(page) {
             context: $('#' + page),
             continuous: true,
             onTopVisible: function () {
-                $('#next-page').show();
-                isAllowNextPage = true;
             },
             onTopVisibleReverse: function () {
-                $('#next-page').hide();
-                isAllowNextPage = true;
             }
         });
     nextPage = $('#' + page + '>.page-container>.next-page-identify').attr("data-value");

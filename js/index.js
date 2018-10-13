@@ -14,17 +14,9 @@ $(document).ready(function () {
   fkpage = $('.myfkpage').FKPageTransitions({
     startSlide: dstPage,
     mode: 35,
-    mouseWheel: false,
-    onSlideBefore: function () {
-      scrollLock = true;
-    },
-    onSlideAfter: function () {
-      scrollLock = false;
-      isAllowNextPage = false;
-    }
+    mouseWheel: false
   });
   fkpage.goToNextSlide();
-  initTopBar(pageList[dstPage - 1]);
 
   let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
   let pageWidth = document.documentElement.scrollWidth || document.body.scrollWidth;
