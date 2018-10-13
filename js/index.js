@@ -3,7 +3,7 @@ let fkpage;
 
 $(document).ready(function () {
   let dstPage = 0;
-  urlSplit = window.location.href.split('#');
+  urlSplit = window.location.href.split('?');
   if (urlSplit.length > 1) {
     dstPage = 0 + pageList.findIndex((value, index, arr) => {
       return value === urlSplit[1];
