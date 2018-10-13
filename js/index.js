@@ -14,7 +14,14 @@ $(document).ready(function () {
   fkpage = $('.myfkpage').FKPageTransitions({
     startSlide: dstPage,
     mode: 35,
-    mouseWheel: false
+    mouseWheel: false,
+    onSlideBefore: function () {
+      scrollLock = true;
+    },
+    onSlideAfter: function () {
+      scrollLock = false;
+      isAllowNextPage = false;
+    }
   });
   fkpage.goToNextSlide();
   initTopBar(pageList[dstPage - 1]);

@@ -49,6 +49,7 @@ var pageList = [];
 var nowLoadingID = 0;
 var onNextPageShow = false;
 var isAllowNextPage = false;
+var scrollLock = false;
 var nextPage = 0
 
 function initTopBar(page) {
@@ -92,30 +93,12 @@ function initTopBar(page) {
             context: $('#' + page),
             continuous: true,
             onTopVisible: function () {
-                if (onNextPageShow) return;
-                onNextPageShow = true;
-                setTimeout(() => {
-                    $(".next-page").animate({
-                        'opacity': '0.8'
-                    }, 500);
-                }, 1000);
-                setTimeout(() => {
-                    if (onNextPageShow) {
-                        isAllowNextPage = true;
-                    } else {
-                        $(".next-page").animate({
-                            'opacity': '0'
-                        }, 200);
-                        onNextPageShow = false;
-                    }
-                }, 1500);
+                $('#next-page').show();
+                isAllowNextPage = true;
             },
             onTopVisibleReverse: function () {
-                $(".next-page").animate({
-                    'opacity': '0'
-                }, 200);
-                onNextPageShow = false;
-                isAllowNextPage = false;
+                $('#next-page').hide();
+                isAllowNextPage = true;
             }
         });
     nextPage = $('#' + page + '>.page-container>.next-page-identify').attr("data-value");
