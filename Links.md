@@ -81,6 +81,10 @@ http://2018.igem.org/wiki/images/f/f3/T--SYSU-Software--Des6.png
 
 #### Design
 
+**overview **
+http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png
+![](http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png)
+
 **SBOL**
 
 http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png
@@ -145,6 +149,10 @@ http://2018.igem.org/wiki/images/a/a8/T--SYSU-Software--Meet.png
 http://2018.igem.org/wiki/images/f/ff/T--SYSU-Software--PET.png
 
 ![](http://2018.igem.org/wiki/images/f/ff/T--SYSU-Software--PET.png)
+
+**Gold**
+http://2018.igem.org/wiki/images/9/99/T--SYSU-Software--protocol.png
+![](http://2018.igem.org/wiki/images/9/99/T--SYSU-Software--protocol.png)
 
 ### Public Engagment
 
@@ -244,6 +252,9 @@ http://2018.igem.org/wiki/images/5/5b/T--SYSU-Software--wetlab.png
 
 ![](http://2018.igem.org/wiki/images/5/5b/T--SYSU-Software--wetlab.png)
 
+**dry**
+http://2018.igem.org/wiki/images/0/0c/T--SYSU-Software--save_comment.png
+![](http://2018.igem.org/wiki/images/0/0c/T--SYSU-Software--save_comment.png)
 ### 学院图标
 
 **CommunicationAndDesign**
