@@ -18,21 +18,21 @@ $(document).ready(function () {
   });
   fkpage.goToNextSlide();
 
-  let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-  let pageWidth = document.documentElement.scrollWidth || document.body.scrollWidth;
+  let pageHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  let pageWidth = document.documentElement.clientWidth || document.body.clientWidth;
   (function () {
     $('.myfkpage').css('height', pageHeight + 'px');
     // console.log(pageHeight);
   })();
 
-  $('#home-video').css('width', pageWidth + 'px');
+  // $('#home-video').css('width', pageWidth + 'px');
   // $('#home-video').css('height', pageHeight + 'px');
   $('#home-video')[0].play();
 
 });
 
 let index_map = {
-  1: 1,
+  1: 0,
   2: 1,
   3: 1,
   4: 1,

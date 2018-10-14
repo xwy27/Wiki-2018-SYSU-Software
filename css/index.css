@@ -27,8 +27,8 @@ body {
 }
 
 video {
-  /* height: 900px;
-  width: 1600px; */
+  height: 1080px;
+  width: 1920px;
   margin-top: -300px;
   margin-left: -300px;
 }
@@ -50,7 +50,7 @@ video {
   background: url(../images/background/background0.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  overflow:hidden;
 }
 
 .test1 {
