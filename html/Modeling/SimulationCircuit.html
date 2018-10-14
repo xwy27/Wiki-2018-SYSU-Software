@@ -1,0 +1,74 @@
+<div class="page-container">
+    <div class="header1">
+        Modeling
+    </div>
+    <div class="header2">
+        Simulation For Circuit
+    </div>
+    <div class="header3">
+        Introduction
+    </div>
+    <div class="content">
+        While cooperating, it is important to know more about the genetic circuit designed, and many users want to
+        predict the expression rate with the help of our software. To meet this need, we construct and ODE system to
+        simulate the dynamic behaviors of the genetic system mathematically. We adopt the Hill functions as the
+        blueprints of our formula, and construct a general model. After complete their circuit in designer, our
+        software can create an ODE system automatically.
+
+    </div>
+    <div class="header3">
+        model
+    </div>
+    <div class="content">
+        we use mathematically formula to present general interaction between chemical materials and circuits, like
+        promotion and inhibition.
+        If a circuit express α without other inhibition and promotion from other material, we set the basic
+        Concentration-Time ODEs form of a certain protein α as below:
+    </div>
+
+    <div class="content">
+        <!-- TODO: 谁改 工作量大 -->
+        we use mathematically formula to present general interaction between chemical materials and circuits, like
+        promotion and inhibition.
+        If a circuit express $\alpha$ without other inhibition and promotion from other material, we set the basic
+        Concentration-Time ODEs form of a certain protein $\alpha$ as below:
+
+
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}]-d[\alpha]$$
+
+        Kα represents the production or translation rate of αgene .
+        d represents the degradation rate of αprotein。
+        [αgene], [$\alpha$] mean the concentration of $\alpha_{gene}$ and $\alpha_{protein}$.
+
+        If a circuit express $\alpha$ with promotion from $\beta$，we set the Concentration-Time ODEs form as blow:
+
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}][\beta]-d[\alpha]$$
+
+        Kα represents the production or translation rate of $\alpha_{gene}$.
+        d represents the degradation rate of αprotein。
+        [$\alpha_{gene}$], [$\alpha$] [$\beta$] mean the concentration of $\alpha_{gene}$ ，$\alpha_{protein}$ and $\alpha_{protein}$
+
+        If a circuit express $\alpha$ with inhibition from $\gamma$， we set the concentration-Time ODEs form as blow:
+
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}][\frac{1}{1+[\gamma]^{n\gamma}}]-d[\alpha]$$
+
+        Kα represents the production or translation rate of αgene .
+        Nγ represents the γ repression coefficient.
+        d represents the degradation rate of αprotein。
+        [αgene], [α] ,[γ] mean the concentration of αgene ，αprotein and γprotein。
+
+        If a chemical is influenced by more than one substance, the multi-one relationship is demonstrated as the
+        product of terms of each factor. For example, if a circuit expression α with inhibition from β and γ， we set
+        the Concentration-Time ODEs form as blow:
+
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}][\frac{1}{1+[\gamma]^{n\gamma}}][\frac{1}{1+[\beta]^{n\beta}}]-d[\alpha]$$
+
+        Kα represents the production or translation rate of αgene .
+        Nγ represents the γ repression coefficient.
+        Nβ represents the β repression coefficient.
+        d represents the degradation rate of αprotein。
+        [αgene], [α] ,[β],[γ] mean the concentration of αgene ，αprotein ，β protein，γprotein
+
+
+    </div>
+</div>

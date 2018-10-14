@@ -281,3 +281,20 @@ http://2018.igem.org/wiki/images/e/ed/T--SYSU-Software--Physical.png
 http://2018.igem.org/wiki/images/6/66/T--SYSU-Software--SYSU.png
 
 ![](http://2018.igem.org/wiki/images/6/66/T--SYSU-Software--SYSU.png)
+
+### Modeling
+**Recommendation**
+http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--modeling1.mp4
+![](http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--modeling1.mp4)
+
+http://2018.igem.org/wiki/images/5/5d/T--SYSU-Software--model2.png
+![](http://2018.igem.org/wiki/images/5/5d/T--SYSU-Software--model2.png)
+
+http://2018.igem.org/wiki/images/e/ee/T--SYSU-Software--model3.png
+![](http://2018.igem.org/wiki/images/e/ee/T--SYSU-Software--model3.png)
+
+http://2018.igem.org/wiki/images/e/e6/T--SYSU-Software--model4L.png
+![](http://2018.igem.org/wiki/images/e/e6/T--SYSU-Software--model4L.png)
+
+http://2018.igem.org/wiki/images/2/2c/T--SYSU-Software--model4R.png
+![](http://2018.igem.org/wiki/images/2/2c/T--SYSU-Software--model4R.png)

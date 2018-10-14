@@ -3,136 +3,153 @@
         Modeling
     </div>
     <div class="header2">
-        Recommendation System
-    </div>
-    <div class="header3">
-        Deep Neural Network Architecture
-    </div>
-    <div class="header4">
-        Neural Network Basics
+        Recommendation
     </div>
     <div class="content">
-        Details will be ignored here. For the people who are interested , we offered a link to wikipedia in the above
-        section.
-    </div>
-    <div class="header4">
-        Data preprocessing
-    </div>
-    <div class="content">
-        Every year, hundreds of teams participate in the iGEM competition, and a large number of synthetic biology
-        literatures are published. We have collected them in our database, including projects from previous years' iGEM
-        teams and well-known journals. Users can search for interesting projects by keywords and get inspiration for
-        designing or optimizing their own designs.
-    </div>
-    <ol>
-        <li>
-            We extract thousands of keywords by putting the wiki page or description file of each project into the
-            Microsoft’s Azure keyword extraction tool, and use all these keywords and projects to form a huge loosening
-            normalization matrix. Formally, it is a n * m matrix A, where n is the number of key words and m is the
-            number of projects. The element at column i, raw j is the frequency of occurrence of the ith keyword in the
-            jth project.
-        </li>
-        <li>
-            All keywords extracted from 1 are expressed as a 300 dimensional word vector through our Word2Vec model
-        </li>
-        <li>
-            The project corresponding to the maximum value of each column in matrix A is extracted as the label of the
-            keyword, also the training sample for our following supervised learning.
-        </li>
-    </ol>
-    <div class="content">
-        We mainly trained 2 DNN:
-    </div>
-    <ol>
-        <li>
-            Through the Encoder-Decoder Model, we have trained the complete features of all projects we collected, and
-            express 1021 features of each project in a 64-dimensional vector, so that our final recommendation tree can
-            be based on a more dense database.
-        </li>
-        <li>
-            We have trained the keywords and their corresponding projects.
-        </li>
-        <li>
-            Both DNNs have the same input dimension as their eigenvectors, along with 3 hidden layers of (512, 256, 64)
-            and (256, 128, 64) neurons, and also the final output layer.
 
-        </li>
-    </ol>
-    <div class="header4">
-        Training
+        The users of our software are all innovative researchers on Synthetic Biology, who are interested in many
+        different biological fields. The purpose of our system is to recommend most related projects to the users based
+        on the research interest the users offer to our search system.
     </div>
-    <ol>
-        <li>
-            Initial the weights($w_{kj}$) and biases($b$) thereby describe the trainable parameters of each layer.
-        </li>
-        <li>
-            Forward propagation algorithm: Our input dimension is equal to the team features and word vector
-            respectively, all of which are transferred to 3 hidden layer [(512, 256, 64) &(256, 128, 64)] for training.
-            Each neuron is the weighted sum of the upper level’s input:
-            $A_{ij} = \sum_{k=1}^n w_{kj}x_k + b$
-            The calculation results of the upper layer are the inputs of the next layer, while the calculation of the
-            output layer is the weighted sum of the values of each neuron of the upper layer. The calculation of weight
-            ($w_{kj}$) is a matrix multiplication, which is used as “matmul” in TensorFlow.
-        </li>
-        <li>
-            Each layer of the neural network has an activation function to provide some nonlinear effect. In our
-            practice of building the search& recommendation system, the sigmoid function can achieve our desired effect
-            after several attempts.
-        </li>
-        <li>
-            Cost Function: The difference between the predicted result and the real value:
-            $$J(\theta)=\frac1{2m}\sum_{i=1}^{m}(y^i-h_\theta(x^i))^2$$
-        </li>
-        <li>
-            Gradient Descent: Use back propagation to obtain the derivative of the cost function corresponding to each
-            parameter (each element of the imported matrix).
-            $$\frac{\partial J(\theta)}{\partial\theta_j}=-\frac1m\sum_{i=0}^m(y^i-h_\theta(x^i))x^i_j $$
-            The optimization objective is to minimize our cost function. Our model was trained using the AdamGrad
-            Optimizer with a batch-size of 256 and an initial learning rate of 0.01, in order to minimize our cost
-            function. Upon loss convergence the training was stopped.
-        </li>
-    </ol>
+    <div class="content">
+
+        When it comes to recommendation system, which most constructed by matrix factorization among collaborative
+        filtering, it will face some thorny problems among huge amounts of data. Empirical evidence shows that using
+        deeper layers of neural networks offers better recommendation performance. In our search & recommendation
+        system, we have trained 2 deep neural network, based on TensorFlow, to construct recommendation model.
+    </div>
+
+    <div class="content">
+
+        The overall strategy of our system is Collaborative Filtering , i.e. we first search the similar key words in
+        our database of the unknown word offered by users and then recommend the related projects through the DNN we
+        have trained. To quantify the semantic similarities between words accurately ,we use the word2Vec model, and
+        also to recommend the similar projects efficiently, we use the Ball Tree Algorithm to implement the K Nearest
+        Neighbors strategy.
+    </div>
     <div class="header3">
-        Collaborative Filtering
-    </div>
-    <div class="content">
-        This is the final step to construct our Recommendation System , overall we use collaborative filtering strategy
-        to make prediction.
-    </div>
-    <div class="content">
-        Here is the algorithm:
+        Models used in the system
     </div>
     <div class="header4">
-        Train word vector model
+        Encoder-Decoder Model
     </div>
     <div class="content">
-        We fed our word vector model with Google News corpus. After the training process is done, we have a model that
-        can convert words into numerical vectors, i.e. $f:\Gamma\rightarrow R^2$， where $\Gamma$ denoted the corpus
-        space
+        <!-- TODO:检查一下<>有没有起作用 -->
+        The Encoder-Decoder Frames can be understood so intuitively: processing a general processing model that
+        generates one sentence (or chapter) into another. For &lt; X, Y &gt;, our goal is to generate the target
+        sentence Y
+        with the Encoder-Decoder framework given the input sentence X. X and Y can be either the same language or 2
+        different languages. We use a neural machine translation so that the 1021 features of each reference
+        project is better expressed.
+    </div>
+
+    <div class="content">
+
+        Unlike the traditional statistical machine translation, the neural machine translation aims at building a
+        single neural network that can be jointly tuned to maximize the translation performance. The model consists of
+        an encoder that encodes a source vector into a fixed-length vector from which a decoder generates a
+        translation.
+    </div>
+
+    <img src="
+http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--modeling1.mp4
+" />
+    <div class="content">
+        The flow of 1021 features we process for each project is shown in the figure. In our search & recommendation
+        system, we train the neural network to make the output better represents the inputs’ features.
     </div>
     <div class="header4">
-        Transform users input
+        Word2Vec Algorithm
+
     </div>
     <div class="content">
-        We get users input word k, we then convert it into normalized word vector v, i.e.$v=\frac{f(k)}{|f(k)|}$
-        We input the user's keyword into our pre-imported word2Vec interface, and then input the generated word vector
-        into the active function trained by the neural network to get a 64-dimensional vector V which represents the
-        keyword.
+        Word2vec is an algorithm that produces word embedding , i.e. it converts a corpus of text into a high
+        dimensional real vector space(in our case , the dimension is 300) and each word in the corpus is assigned to a
+        vector in the vector space. If two words are similar semantically, then they will be close under cosine
+        distance measure.
+    </div>
+    <img src="
+    http://2018.igem.org/wiki/images/5/5d/T--SYSU-Software--model2.png
+" />
+    <div class="content">
+
+        As an interface to word2vec, we go with a Python package called gensim, which appears to be a popular
+        NLP(Natural Language Processing) package, and has some nice documentation and tutorials, including for
+        word2vec.
+    </div>
+    <div class="content">
+
+        Our Search System includes word vectors for a vocabulary of 3 million words and phrases that we have trained on
+        roughly 100 billion words from a Google News dataset. The vector length is 300 features.
+    </div>
+    <div class="content">
+
+        The reason why we use Word2vec is that it can distinguish the semantic meanings of words accurately by Deep
+        Learning technique, which outperforms the traditional semantic analysis methods greatly.When a user enters any
+        direction he wants to query in our search interface, Word2vec can help the search system to have an accurate
+        understanding of what he wants to say. Besides, it include some commonly paired words and misspellings of
+        words.
+    </div>
+
+    <div class="header4">
+        Deep Neural Network
+    </div>
+    <div class="content">
+
+        The Neural Network Model takes inspiration in the biological nervous system to predict its results. It is the
+        appropriate strategy to model complex processes and it is able to learn from experience. Neural Networks
+        generally require a big amount of data to be fully trained.
+    </div>
+    <div class="content">
+        In recent years, deep neural networks have yielded immense success. However, the exploration of deep neural
+        networks on recommender systems has received relatively less scrutiny. When it comes to model the key factor in
+        collaborative filtering, they still resorted to matrix factorization and applied an inner product on the latent
+        features of searchings and items. In our collaborative recommendation system, the matrix constructed by inner
+        product would be quite sparse, since a large number of projects in different styles exist. The traditional page
+        rank algorithm won’t perform well in the recommendation. Empirical evidence shows that using deeper layers of
+        neural networks offers better recommendation performance.
+
+    </div>
+    <img src="http://2018.igem.org/wiki/images/e/ee/T--SYSU-Software--model3.png" />
+    <div class="content">
+        In our search & recommendation system, we use supervised learning: Firstly, the samples and labels are defined,
+        and then the weight and deviation variables of each layer are set initially. Then, we build a neural network
+        model based on TensorFlow, an excellent framework for machine learning. During training, we use
+        back-propagation algorithm to minimize the cost function and adjust the model’s parameters. The specific
+        algorithm will be explained in the following part. For more details of neural network, see: <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">
+            wiki page of
+            Artificial Neural Network
+        </a>
     </div>
     <div class="header4">
-        Search K most similar projects (Build the Ball Tree)
+        Ball tree
+
     </div>
     <div class="content">
-        Through neural networks, we train the complete features of the 64-dimensional projects and construct the Ball
-        Tree by all these 64 dimensional projects.Details will be ignored here. For the people who are interested , we
-        offered a link to wikipedia in the above section.
+        Since KD Tree Algorithm can hardly perform well in high dimensional data, the Ball Tree algorithm is rather
+        efficient when searching for the most similar items, expediting nearest neighbor search queries, in which the
+        objective is to find the k points in the tree that are closest to a given test point by some distance metric,
+        thus the users can get recommendation instantly after they enter their interested keyword to our system.
+
     </div>
-    <div class="header4">
-        Make Recommendation
+    <div>
+        <img class="img-same-line" src="http://2018.igem.org/wiki/images/e/e6/T--SYSU-Software--model4L.png" float="left" />
+        <img class="img-same-line" src="http://2018.igem.org/wiki/images/2/2c/T--SYSU-Software--model4R.png" float="right" />
     </div>
     <div class="content">
-        Through the Ball Tree we constructed, we calculated the Euclidean Metric between the vector V and the projects
-        in our databases. Then, the system will recommend 10 projects with the smallest Euclidean Metric.
+        Ball tree is a K dimensional hypersphere to cover observation points and put them in trees. Graph (a) shows a
+        2-D plane with 16 observation instances. Graph (b) is its corresponding ball tree, where the number in the node
+        represents the number of observations contained.Circles at different levels are drawn in different styles. Each
+        node in a tree corresponds to a circle, and the number of nodes represents the number of observation points in
+        the region. When using a ball tree, the leaf node containing the target is first found from top to bottom, from
+        which the nearest observation point is found. This distance is the upper bound of the nearest neighbor
+        distance. Check whether the brotherly node contains a smaller observation point than this upper bound.
     </div>
-    TODO: jump
+    <div class="content">
+        In our Recommendation System , we use the Ball Tree implementation in scikit-learn , a simple and efficient
+        open source machine learning module in Python. For more details of Ball Tree algorithm, see: <a href="https://en.wikipedia.org/wiki/Ball_tree">
+            wiki page of Ball
+            Tree
+
+        </a> </div>
 </div>

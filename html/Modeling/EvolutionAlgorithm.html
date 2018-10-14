@@ -1,0 +1,166 @@
+<div class="page-container">
+    <div class="header1">
+        Modeling
+    </div>
+    <div class="header2">
+        Evolution Algorithm
+    </div>
+    <div class="header3">
+        Deep Neural Network Architecture
+    </div>
+    <div class="header4">
+        Neural Network Basics
+    </div>
+    <div class="content">
+        Details will be ignored here. For the people who are interested , we offered a link to wikipedia in the above
+        section.
+    </div>
+    <div class="header4">
+        Data preprocessing
+    </div>
+    <div class="content">
+        Every year, hundreds of teams participate in the iGEM competition, and a large number of synthetic biology
+        literatures are published. We have collected them in our database, including projects from previous years' iGEM
+        teams and well-known journals. Users can search for interesting projects by keywords and get inspiration for
+        designing or optimizing their own designs.
+    </div>
+
+    <ol>
+        <li>
+            <div class="content">
+                We extract thousands of keywords by putting the wiki page or description file of each project into the
+                Microsoft’s Azure keyword extraction tool, and use all these keywords and projects to form a huge
+                loosening
+                normalization matrix. Formally, it is a n * m matrix A, where n is the number of key words and m is the
+                number of projects. The element at column i, raw j is the frequency of occurrence of the ith keyword in
+                the jth project.
+            </div>
+        </li>
+        <li>
+            <div class="content">
+                All keywords extracted from 1 are expressed as a 300 dimensional word vector through our Word2Vec
+                model.
+            </div>
+        </li>
+        <li>
+            <div class="content">
+                The project corresponding to the maximum value of each column in matrix A is extracted as the label of
+                the keyword, also the training sample for our following supervised learning.
+            </div>
+        </li>
+    </ol>
+    <div class="content">
+        We mainly trained 2 DNN:
+    </div>
+    <ol>
+        <li>
+            Through the Encoder-Decoder Model, we have trained the complete features of all projects we collected, and
+            express 1021 features of each project in a 64-dimensional vector, so that our final recommendation tree can
+            be based on a more dense database.
+        </li>
+        <li>
+            <div class="content">
+
+                We have trained the keywords and their corresponding projects.
+            </div>
+            <div class="content">
+
+                Both DNNs have the same input dimension as their eigenvectors, along with 3 hidden layers of (512, 256,
+                64) and (256, 128, 64) neurons, and also the final output layer.
+            </div>
+
+        </li>
+    </ol>
+    <div class="header4">
+        Training
+    </div>
+
+    <ol>
+        <li>
+
+            Initial the weights($w_{kj}$) and biases($b$) thereby describe the trainable parameters of each layer.
+        </li>
+        <li>
+
+            Forward propagation algorithm: Our input dimension is equal to the team features and word vector
+            respectively, all of which are transferred to 3 hidden layer [(512, 256, 64) &(256, 128, 64)] for training.
+            Each neuron is the weighted sum of the upper level’s input:
+            $A_{ij} = \sum_{k=1}^n w_{kj}x_k + b$
+            The calculation results of the upper layer are the inputs of the next layer, while the calculation of the
+            output layer is the weighted sum of the values of each neuron of the upper layer. The calculation of weight
+            ($w_{kj}$) is a matrix multiplication, which is used as “matmul” in TensorFlow.
+        </li>
+        <li>
+            Each layer of the neural network has an activation function to provide some nonlinear effect. In our
+            practice of building the search& recommendation system, the sigmoid function can achieve our desired effect
+            after several attempts.
+        </li>
+        <li>
+            Cost Function: The difference between the predicted result and the real value:
+            $$J(\theta)=\frac1{2m}\sum_{i=1}^{m}(y^i-h_\theta(x^i))^2$$
+
+        </li>
+        <li>
+            <div class="content">
+
+                Gradient Descent: Use back propagation to obtain the derivative of the cost function corresponding to
+                each
+                parameter (each element of the imported matrix).
+            </div>
+            <div class="content">
+                $$\frac{\partial J(\theta)}{\partial\theta_j}=-\frac1m\sum_{i=0}^m(y^i-h_\theta(x^i))x^i_j $$
+                The optimization objective is to minimize our cost function. Our model was trained using the AdamGrad
+                Optimizer with a batch-size of 256 and an initial learning rate of 0.01, in order to minimize our cost
+                function. Upon loss convergence the training was stopped.
+            </div>
+
+        </li>
+    </ol>
+
+    <div class="header3">
+        Collaborative Filtering
+
+    </div>
+    <div class="content">
+        This is the final step to construct our Recommendation System , overall we use collaborative filtering strategy
+        to make prediction.
+        Here is the algorithm:
+    </div>
+    <div class="header4">
+        Train word vector model
+
+    </div>
+    <div class="content">
+        We fed our word vector model with Google News corpus. After the training process is done, we have a model that
+        can convert words into numerical vectors, i.e. $f:\Gamma\rightarrow R^2$， where $\Gamma$ denoted the corpus
+        space
+    </div>
+    <div class="header4">
+        Transform users input
+    </div>
+    <div class="content">
+        We get users input word k, we then convert it into normalized word vector v, i.e.$v=\frac{f(k)}{|f(k)|}$
+        We input the user's keyword into our pre-imported word2Vec interface, and then input the generated word vector
+        into the active function trained by the neural network to get a 64-dimensional vector V which represents the
+        keyword.
+    </div>
+    <div class="header4">
+        Search K most similar projects (Build the Ball Tree)
+    </div>
+    <div class="content">
+        Through neural networks, we train the complete features of the 64-dimensional projects and construct the Ball
+        Tree by all these 64 dimensional projects.Details will be ignored here. For the people who are interested , we
+        offered a link to wikipedia in the above section.
+    </div>
+    <div class="header4">
+        Make Recommendation
+    </div>
+    <div class="content">
+
+        Through the Ball Tree we constructed, we calculated the Euclidean Metric between the vector V and the projects
+        in our databases. Then, the system will recommend 10 projects with the smallest Euclidean Metric.
+    </div>
+
+
+
+</div>
