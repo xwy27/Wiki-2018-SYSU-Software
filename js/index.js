@@ -16,10 +16,11 @@ $(document).ready(function () {
     mode: 35,
     mouseWheel: false
   });
+  initTopBar(pageList[dstPage]);
   fkpage.goToNextSlide();
 
-  let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-  let pageWidth = document.documentElement.scrollWidth || document.body.scrollWidth;
+  let pageHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  let pageWidth = document.documentElement.clientWidth || document.body.clientWidth;
   (function () {
     $('.myfkpage').css('height', pageHeight + 'px');
     // console.log(pageHeight);
@@ -32,7 +33,7 @@ $(document).ready(function () {
 });
 
 let index_map = {
-  1: 1,
+  1: 0,
   2: 1,
   3: 1,
   4: 1,
