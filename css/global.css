@@ -29,10 +29,10 @@
     padding-right: 20px;
     height: 60px;
     line-height: 60px;
-    color: #FFF;
+    color: #1A2640;
     text-align: right;
     font-size: 40px;
-    border-right: 20px solid #FFF;
+    border-right: 20px solid #1A2640;
     font-weight: 700;
     font-family: 'Trajan Pro';
 }
@@ -42,7 +42,7 @@
     margin-bottom: 20px;
     height: 50px;
     line-height: 50px;
-    color: #FFF;
+    color: #1A2640;
     font-size: 35px;
     font-family: 'Trajan Pro';
 }
@@ -52,11 +52,11 @@
     margin-bottom: 20px;
     height: 30px;
     line-height: 30px;
-    color: #FFF;
+    color: #1A2640;
     font-size: 30px;
     font-family: 'Geneva';
     padding-left: 10px;
-    border-left: 10px solid white;
+    border-left: 10px solid #1A2640;
 }
 
 
@@ -65,7 +65,7 @@
     margin-bottom: 9px;
     height: 20px;
     line-height: 20px;
-    color: #FFF;
+    color: #1A2640;
     font-size: 20px;
     font-family: 'Geneva';
     font-weight: bold;
@@ -78,7 +78,7 @@ ul,
 .content {
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #FFF;
+    color: #5C616F;
     font-size: 18px;
     line-height: 30px;
     font-family: 'Geneva';
@@ -129,4 +129,16 @@ img {
 .tech {
     width: 20%;
     margin-left: 500px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.caption {
+    font-weight: bold;
+}
+
+.results {
+    width: 50%;
 }

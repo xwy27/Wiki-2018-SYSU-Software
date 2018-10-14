@@ -23,7 +23,7 @@ let data = {
         'Public Engagement'],
     'Collaboration': [
         'XMU-China',
-        'SCUT-China',
+        'SCUT-ChinaA',
         'WHU-China',
         'SYSU-China'],
     'Interlab': [
