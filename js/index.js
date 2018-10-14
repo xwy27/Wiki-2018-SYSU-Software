@@ -16,6 +16,7 @@ $(document).ready(function () {
     mode: 35,
     mouseWheel: false
   });
+  initTopBar(pageList[dstPage]);
   fkpage.goToNextSlide();
 
   let pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight;

@@ -54,7 +54,13 @@ var nextPage = 0
 
 function initTopBar(page) {
     // main menu
+    if (page === 'Home') {
+        $('.text').removeClass('default').addClass('light');
+    } else {
+        $('.text').removeClass('light').addClass('default');
+    }
     $('#' + page + '>.page-container')
+
         .visibility({
             offset: -5,
             observeChanges: true,

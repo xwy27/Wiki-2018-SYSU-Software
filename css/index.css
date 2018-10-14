@@ -13,9 +13,12 @@ body {
   height: 40px !important;
 }
 
-#home,
 .default.text {
   color: #000000 !important;
+}
+
+.light.text {
+  color: #FFFFFF !important;
 }
 
 .bottom {
