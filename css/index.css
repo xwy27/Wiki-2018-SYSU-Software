@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  
+
 }
 
 body {
@@ -46,8 +46,64 @@ video {
   height: 50px !important;
 }
 
-.test {
-  background: url(../images/background.jpg);
+.test0 {
+  background: url(../images/background/background0.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test1 {
+  background: url(../images/background/background1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test2 {
+  background: url(../images/background/background2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test3 {
+  background: url(../images/background/background3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test4 {
+  background: url(../images/background/background4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test5 {
+  background: url(../images/background/background5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test6 {
+  background: url(../images/background/background6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test7 {
+  background: url(../images/background/background7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll !important;
+}
+
+.test8 {
+  background: url(../images/background/background8.jpg);
   background-size: cover;
   background-attachment: fixed;
   overflow-y: scroll !important;
@@ -117,6 +173,6 @@ img {
 }
 
 .ui.modal>.image.content>.description {
-  color : rgba(0,0,0,.68) !important;
+  color: rgba(0, 0, 0, .68) !important;
   font-size: 20px;
 }

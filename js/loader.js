@@ -117,18 +117,18 @@ function loadPages() {
             $('#' + page).html(data);
             nowLoadingID += 1;
             //initTopBar(page);
-            console.log(nowLoadingID);
-            console.log(pageList.length);
+            // console.log(nowLoadingID);
+            // console.log(pageList.length);
             if (nowLoadingID + 1 === pageList.length) {
-                console.log('now mount');
+                // console.log('now mount');
                 $('a').on('click', function() {
-                    console.log('click');
+                    // console.log('click');
                     let target = $(this).attr('goto');
-                    console.log(target);
+                    // console.log(target);
                     let dstPage = pageList.findIndex((value, index, arr) => {
                         return value === target;
                     });
-                    console.log(dstPage);
+                    // console.log(dstPage);
                     fkpage.goToSlide(dstPage + 1);
                 });
             }
