@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
+  <title>Index</title>
+
+  <script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/jquery.min.js&action=raw&ctype=text/javascript"></script>
+  <script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/semantic.min.js&action=raw&ctype=text/javascript"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+  </script>
+  <script src="http://2018.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+  <!-- FKPageTransitions Javascript file -->
+  <script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/fkpagetransitions.min.js&action=raw&ctype=text/javascript"></script>
+  <!-- FKPageTransitions CSS file -->
+  <link href="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/fkpagetransitions.min.css&action=raw&ctype=text/css" rel="stylesheet" />
+
+  <link href="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/semantic.min.css&action=raw&ctype=text/css" rel="stylesheet" />
+  <link href="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/global.css&action=raw&ctype=text/css" rel="stylesheet" />
+  <link href="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/css/index.css&action=raw&ctype=text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="pusher">
+    <div class="full height">
+      <div class="following bar">
+        <div class="ui container">
+          <div class="ui large secondary menu">
+            <div class="item">
+              <img id="logo" src="http://2018.igem.org/wiki/images/6/62/T--SYSU-Software--logo.pngg" />
+            </div>
+            <a class="item default text" id="home" data-value="1">Home</a>
+            <div class="ui dropdown link item" id="Project"></div>
+            <div class="ui dropdown link item" id="Modeling"></div>
+            <div class="ui dropdown link item" id="HumanPractice"></div>
+            <div class="ui dropdown link item" id="Collaboration"></div>
+            <div class="ui dropdown link item" id="Interlab"></div>
+            <div class="ui dropdown link item" id="Medal"></div>
+            <div class="ui dropdown link item" id="Team"></div>
+            <div class="ui dropdown link item" id="Safety"></div>
+            <div class="ui dropdown link item" id="Attributions"></div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="myfkpage">
+        <li id="virtual"></li>
+        <li id="Home">
+          <div class="page-container">
+            <video id="home-video" src="./home.mp4" preload="true" autoplay muted></video>
+          </div>
+        </li>
+        <!-- Project -->
+        <li id="Description"></li>
+        <li id="Design"></li>
+        <li id="Feature"></li>
+        <li id="Techniques"></li>
+        <li id="Validation"></li>
+        <li id="Demo"></li>
+        <li id="Contribution"></li>
+        <li id="Improve"></li>
+        <li id="Demostrate"></li>
+        <!-- Modeling -->
+        <li id="Modeling-Overview"></li>
+        <li id="Recommendation"></li>
+        <li id="Simulation-Circuits"></li>
+        <li id="Evolution-Algorithm"></li>
+        <li id="Reference"></li>
+        <!-- Human Practice -->
+        <li id="HP-Overview"></li>
+        <li id="HP-Siliver"></li>
+        <li id="HP-Gold"></li>
+        <li id="Human-Practice"></li>
+        <li id="Public-Engagement"></li>
+        <!-- Collaboration -->
+        <li id="XMU"></li>
+        <li id="SCUT"></li>
+        <li id="WHU"></li>
+        <li id="SYSU"></li>
+        <!-- Interlab -->
+        <li id="I-Overview"></li>
+        <li id="Experiment"></li>
+        <li id="Material-Methods"></li>
+        <li id="Results"></li>
+        <!-- Safety -->
+        <li id="Wet-Lab"></li>
+        <li id="Dry-Lab"></li>
+        <!-- Medal -->
+        <li id="Medal-Overview"></li>
+        <li id="Medal-Bronze"></li>
+        <li id="Medal-Sliver"></li>
+        <li id="Medal-Gold"></li>
+        <!-- Team -->
+        <li id="T-Overview"></li>
+        <li id="Members"></li>
+        <li id="Advisors"></li>
+        <li id="Instructors"></li>
+        <li id="Notebook"></li>
+        <!-- Attributions -->
+        <li id="A-Overview"></li>
+        <li id="Group"></li>
+        <li id="Attribution"></li>
+        <li id="Acknowlegement"></li>
+
+      </ul>
+      <div class="ui bottom sticky next-page">↓ Scroll to next page! ↓</div>
+    </div>
+
+  </div>
+</body>
+
+<script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/loader.js&action=raw&ctype=text/javascript"></script>
+<script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/navigator.js&action=raw&ctype=text/javascript"></script>
+<script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/index.js&action=raw&ctype=text/javascript"></script>
+<script src="http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/js/iGemOverride.js&action=raw&ctype=text/javascript"></script>
+
+</html>
