@@ -72,7 +72,7 @@ function initTopBar(page) {
                     $('.following.bar')
                         .addClass('light fixed')
                         .find('.menu')
-                        .removeClass('inverted')
+                        // .removeClass('inverted')
                         ;
                     $('.following .additional.item')
                         .transition('scale in', 750)
@@ -84,7 +84,7 @@ function initTopBar(page) {
                     $('.following.bar')
                         .removeClass('light fixed')
                         .find('.menu')
-                        .addClass('inverted')
+                        // .addClass('inverted')
                         .find('.additional.item')
                         .transition('hide')
                         ;
