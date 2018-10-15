@@ -1,6 +1,9 @@
 # Wiki-2018-SYSU-Software
 
 Wiki for 2018 SYSU Software
+## 确定不改的内容
+- Collaboration
+- 
 
 ## Wiki的编辑方式
 

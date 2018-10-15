@@ -57,6 +57,7 @@ let data = {
 // main menu navigator
 let index = 2;
 for (ele in data) {
+    block_list = ['Demo'];
     let html;
     if (ele == 'HumanPractice') {
         html = `<div class="default text">Human Practice</div><div class="menu">`
@@ -65,7 +66,12 @@ for (ele in data) {
         html = `<div class="default text">${ele}</div><div class="menu">`
     }
     for (x in data[ele]) {
-        html += `<div class="item" style="color: white !important;" data-value="${index}">${data[ele][x]}</div>`
+        if (block_list.indexOf(data[ele][x]) !== -1) {
+            console.log('hit!!')
+            html += `<div class="item" style="display: none;" data-value="${index}">${data[ele][x]}</div>`
+        } else {
+            html += `<div class="item" style="color: white !important;" data-value="${index}">${data[ele][x]}</div>`
+        }
         index += 1;
     }
     html += `</div>`
