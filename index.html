@@ -20,6 +20,11 @@
 </head>
 
 <body>
+  <div class="ui page dimmer">
+    <div class="content">
+      Hello
+    </div>
+  </div>
   <div class="pusher">
     <div class="full height">
       <div class="following bar">
@@ -46,7 +51,7 @@
         <li id="virtual"></li>
         <li id="Home">
           <div class="page-container">
-            <video id="home-video" src="./home.mp4" preload="true" autoplay muted></video>
+            <video id="home-video" src="./home.mp4" preload="true" autoplay muted style="object-fit: cover"></video>
           </div>
         </li>
         <!-- Project -->
@@ -102,7 +107,11 @@
         <li id="Acknowlegement"></li>
 
       </ul>
-      <div class="ui bottom sticky next-page">↓ Scroll to next page! ↓</div>
+      <div class="ui bottom sticky next-page">
+        <div class="sticky-navigator lastpage">上一页</div>
+        <div class="sticky-navigator top">回到顶部</div>
+        <div class="sticky-navigator nextpage">下一页</div>
+      </div>
     </div>
 
   </div>

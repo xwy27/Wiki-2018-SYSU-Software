@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Geneva';
-    src: url('../fonts/Geneva.dfont');
+    src: url('../fonts/Poppins-Medium.ttf');
 }
 
 @font-face {
@@ -78,8 +78,8 @@ ul,
     margin-top: 20px;
     margin-bottom: 20px;
     color: #5C616F;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 35px;
     font-family: 'Geneva';
     text-align: justify;
 }
@@ -144,4 +144,22 @@ img {
 
 .img-same-line {
     width: 40%;
+}
+
+.page.dimmer {
+    background-color: #000 !important;
+}
+
+.sticky-navigator {
+    margin: 10px 100px auto auto;
+    background-color: #1A2640;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.sticky-navigator:hover {
+    opacity: 0.9;
 }
