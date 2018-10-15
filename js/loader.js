@@ -13,7 +13,7 @@ var pages = {
     "Recommendation": { "url": "../html/Modeling/Recommendation.html" },
     "Simulation-Circuits": { "url": "../html/Modeling/SimulationCircuit.html" },
     "Evolution-Algorithm": { "url": "../html/Modeling/EvolutionAlgorithm.html" },
-    "Reference": { "url": "" },
+    "Reference": { "url": "../html/Modeling/Reference.html" },
     "HP-Overview": { "url": "../html/Human_Practice/Overview.html" },
     "HP-Siliver": { "url": "../html/Human_Practice/Silver.html" },
     "HP-Gold": { "url": "../html/Human_Practice/Gold.html" },
