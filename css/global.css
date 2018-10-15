@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Geneva';
-    src: url('../fonts/Geneva.dfont');
+    src: url('../fonts/geneva__.ttf');
 }
 
 @font-face {
@@ -140,4 +140,8 @@ img {
 
 .img-same-line {
     width: 40%;
+}
+
+.page.dimmer {
+    background-color: #000 !important;
 }

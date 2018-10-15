@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   // $('#home-video').css('width', pageWidth + 'px');
   // $('#home-video').css('height', pageHeight + 'px');
-  $('#home-video')[0].play();
+  // $('#home-video')[0].play();
 
 });
 
@@ -80,7 +80,12 @@ let index_map = {
 
 $('.myfkpage').children('li').each(function (index, ele) {
   let temp = index_map[index];
-  $(this).addClass('test' + temp);
+  if (temp === 0) {
+    $(this).addClass('noscroll');
+  } else {
+    $(this).addClass('scroll');
+  }
+  $(this).children('.page-container').addClass('test' + temp);
 });
 
 $('.dropdown').dropdown({
