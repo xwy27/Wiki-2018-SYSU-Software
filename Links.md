@@ -294,6 +294,8 @@ http://2018.igem.org/wiki/images/6/66/T--SYSU-Software--SYSU.png
 ![](http://2018.igem.org/wiki/images/6/66/T--SYSU-Software--SYSU.png)
 
 ### Modeling
+![](http://2018.igem.org/wiki/images/b/b6/T--SYSU-Software--mdEa.png)
+http://2018.igem.org/wiki/images/b/b6/T--SYSU-Software--mdEa.png
 **Recommendation**
 http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--modeling1.mp4
 ![](http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--modeling1.mp4)

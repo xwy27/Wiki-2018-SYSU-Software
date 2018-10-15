@@ -3,7 +3,7 @@
         Modeling
     </div>
     <div class="header2">
-        Simulation For Circuit
+        Simulation for Circuit
     </div>
     <div class="header3">
         Introduction
@@ -20,55 +20,54 @@
         model
     </div>
     <div class="content">
-        we use mathematically formula to present general interaction between chemical materials and circuits, like
-        promotion and inhibition.
-        If a circuit express α without other inhibition and promotion from other material, we set the basic
-        Concentration-Time ODEs form of a certain protein α as below:
-    </div>
-
-    <div class="content">
-        <!-- TODO: 谁改 工作量大 -->
-        we use mathematically formula to present general interaction between chemical materials and circuits, like
+        we use mathematical formula to present general interaction between chemical materials and circuits, like
         promotion and inhibition.
         If a circuit express $\alpha$ without other inhibition and promotion from other material, we set the basic
         Concentration-Time ODEs form of a certain protein $\alpha$ as below:
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{\textrm{gene}}]-d[\alpha]$$
+        $K_{\alpha}$ represents the production or translation rate of $\alpha _{\textrm{gene}}$ .
+        $d$ represents the degradation rate of $\alpha _{\textrm{protein}}$.
+        $[\alpha _{\textrm{gene}}]$, $[\alpha]$ mean the concentration of $\alpha _{\textrm{gene}}$ and $\alpha _{\textrm{protein}}$.
 
-
-        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}]-d[\alpha]$$
-
-        Kα represents the production or translation rate of αgene .
-        d represents the degradation rate of αprotein。
-        [αgene], [$\alpha$] mean the concentration of $\alpha_{gene}$ and $\alpha_{protein}$.
-
-        If a circuit express $\alpha$ with promotion from $\beta$，we set the Concentration-Time ODEs form as blow:
-
-        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}][\beta]-d[\alpha]$$
-
-        Kα represents the production or translation rate of $\alpha_{gene}$.
-        d represents the degradation rate of αprotein。
-        [$\alpha_{gene}$], [$\alpha$] [$\beta$] mean the concentration of $\alpha_{gene}$ ，$\alpha_{protein}$ and $\alpha_{protein}$
+    </div>
+    <div class="content">
+        If a circuit express $\alpha$ with promotion from $\beta$ , we set the Concentration-Time ODEs form as below:
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{\textrm{gene}}][\beta]-d[\alpha]$$
+        $k_\alpha$ represents the production or translation rate of $\alpha _{\textrm{gene}}$. $d$ represents the degradation
+        rate of $\alpha _{\textrm{protein}}$. $[\alpha _{\textrm{gene}}]$, $[\alpha]$, $[\beta]$ mean the concentration of $\alpha
+        _{\textrm{gene}}$ ，$\alpha _{\textrm{protein}}$ and $\beta_{\textrm{protein}}$
+    </div>
+    <div class="content">
 
         If a circuit express $\alpha$ with inhibition from $\gamma$， we set the concentration-Time ODEs form as blow:
 
-        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}][\frac{1}{1+[\gamma]^{n\gamma}}]-d[\alpha]$$
-
-        Kα represents the production or translation rate of αgene .
-        Nγ represents the γ repression coefficient.
-        d represents the degradation rate of αprotein。
-        [αgene], [α] ,[γ] mean the concentration of αgene ，αprotein and γprotein。
-
-        If a chemical is influenced by more than one substance, the multi-one relationship is demonstrated as the
-        product of terms of each factor. For example, if a circuit expression α with inhibition from β and γ， we set
-        the Concentration-Time ODEs form as blow:
-
-        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{gene}][\frac{1}{1+[\gamma]^{n\gamma}}][\frac{1}{1+[\beta]^{n\beta}}]-d[\alpha]$$
-
-        Kα represents the production or translation rate of αgene .
-        Nγ represents the γ repression coefficient.
-        Nβ represents the β repression coefficient.
-        d represents the degradation rate of αprotein。
-        [αgene], [α] ,[β],[γ] mean the concentration of αgene ，αprotein ，β protein，γprotein
-
+    </div>
+    <div class="content">
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{\textrm{gene}}][\frac{1}{1+[\gamma]^{n\gamma}}]-d[\alpha]$$
+    </div>
+    <div class="content">
+        $K_{\alpha}$ represents the production or translation rate of $\alpha _{\textrm{gene}}$ .
+        $N_{\gamma}$ represents the $\gamma$ repression coefficient.
+        $d$ represents the degradation rate of $\alpha _{\textrm{protein}}$。
+        $[\alpha _{\textrm{gene}}]$, $[\alpha]$ ,$[\gamma]$ mean the concentration of $\alpha _{\textrm{gene}}$ ，$\alpha _{\textrm{protein}}$ and
+        $\gamma _{\textrm{protein}}$.
 
     </div>
+    <div class="content">
+        If a chemical is influenced by more than one substance, the multi-one relationship is demonstrated as the
+        product of terms of each factor. For example, if a circuit expression $\alpha$ with inhibition from $\beta$ and
+        $\gamma$， we set the Concentration-Time ODEs form as blow:
+    </div>
+    <div class="content">
+        $$\frac{d[\alpha]}{d_t}=k_\alpha[\alpha_{\textrm{gene}}][\frac{1}{1+[\gamma]^{n\gamma}}][\frac{1}{1+[\beta]^{n\beta}}]-d[\alpha]$$
+    </div>
+    <div class="content">
+        $K_{\alpha}$ represents the production or translation rate of $\alpha _{\textrm{gene}}$ .
+        $N_{\gamma}$ represents the $\gamma$ repression coefficient.
+        $N_{\beta}$ represents the $\beta$ repression coefficient.
+        $d$ represents the degradation rate of $\alpha _{\textrm{protein}}$.
+        $[\alpha _{\textrm{gene}}]$,$[\alpha]$ ,$[\beta]$ ,$[\gamma]$mean the concentration of $\alpha _{\textrm{gene}}$ ，$\alpha
+        _{\textrm{protein}}$ ，$\beta _{\textrm{protein}}$，$\gamma _{\textrm{protein}}$
+    </div>
+    <div class="next-page-identify" data-value="14"></div> <!-- 这个是跳页标记 -->
 </div>

@@ -186,11 +186,11 @@ function loadPages() {
 
                 $('.myfkpage').children('li').each(function (index, ele) {
                     let temp = index_map[index];
-                    if (temp === 0) {
-                        $(this).addClass('noscroll');
-                    } else {
-                        $(this).addClass('scroll');
-                    }
+                    // if (temp === 0) {
+                    //     $(this).addClass('noscroll');
+                    // } else {
+                    //     $(this).addClass('scroll');
+                    // }
                     $(this).children('.page-container').addClass('test' + temp);
                 });
                 $('.page.dimmer').dimmer('hide');

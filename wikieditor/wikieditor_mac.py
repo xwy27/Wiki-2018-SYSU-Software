@@ -2,7 +2,7 @@ import os,sys
 from flask import *
 
 app = Flask(__name__)
-
+path = '../'
 def getAllFiles():
     files = {
         "CSS" : [],
@@ -18,31 +18,31 @@ def getAllFiles():
         for file in filenames:
                 fullpath=os.path.join(dirpath,file)
                 if ".git" not in fullpath and "wikieditor" not in fullpath:
-                    if "\css\\" in fullpath :
+                    if "/css/" in fullpath :
                         tmpEdit = fullpath.replace(path, "http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/") + "&action=edit"
-                        tmpEdit = tmpEdit.replace("\\", "/")
+                        tmpEdit = tmpEdit.replace("/", "/")
                         tmpRaw = fullpath.replace(path, "http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/") + "&action=raw&ctype=text/css"
-                        tmpRaw = tmpRaw.replace("\\", "/")
+                        tmpRaw = tmpRaw.replace("/", "/")
                         files["CSS"].append({
                             "local" : fullpath,
                             "edit" : tmpEdit,
                             "raw" : tmpRaw
                         })
-                    if "\\js\\" in fullpath :
+                    if "/js/" in fullpath :
                         tmpEdit = fullpath.replace(path, "http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/") + "&action=edit"
-                        tmpEdit = tmpEdit.replace("\\", "/")
+                        tmpEdit = tmpEdit.replace("/", "/")
                         tmpRaw = fullpath.replace(path, "http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/") + "&action=raw&ctype=text/javascript"
-                        tmpRaw = tmpRaw.replace("\\", "/")
+                        tmpRaw = tmpRaw.replace("/", "/")
                         files["JS"].append({
                             "local" : fullpath,
                             "edit" : tmpEdit,
                             "raw" : tmpRaw
                         })
-                    if "\\html\\" in fullpath :
+                    if "/html/" in fullpath :
                         tmpEdit = fullpath.replace(path, "http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/") + "&action=edit"
-                        tmpEdit = tmpEdit.replace("\\", "/")
+                        tmpEdit = tmpEdit.replace("/", "/")
                         tmpRaw = fullpath.replace(path, "http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/") + "&action=raw&ctype=text/html"
-                        tmpRaw = tmpRaw.replace("\\", "/")
+                        tmpRaw = tmpRaw.replace("/", "/")
                         files["Pages"].append({
                             "local" : fullpath,
                             "edit" : tmpEdit,
