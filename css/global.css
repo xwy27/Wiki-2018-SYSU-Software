@@ -141,3 +141,7 @@ img {
 .img-same-line {
     width: 40%;
 }
+
+.page.dimmer {
+    background-color: #000 !important;
+}

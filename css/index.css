@@ -49,67 +49,85 @@ video {
   height: 50px !important;
 }
 
+li.noscroll {
+  overflow-y: hidden !important;
+}
+
+li.scroll {
+  overflow-y: scroll !important;
+  background-color: rgb(238,238,237);
+}
+
 .test0 {
   background: url(../images/background/background0.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow:hidden;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test1 {
   background: url(../images/background/background1.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test2 {
   background: url(../images/background/background2.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test3 {
   background: url(../images/background/background3.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test4 {
   background: url(../images/background/background4.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test5 {
   background: url(../images/background/background5.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test6 {
   background: url(../images/background/background6.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test7 {
   background: url(../images/background/background7.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .test8 {
   background: url(../images/background/background8.jpg);
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll !important;
+  background-repeat: no-repeat;
+  background-color: rgb(238,238,237) !important;
 }
 
 .pusher {
