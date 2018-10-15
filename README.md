@@ -43,3 +43,14 @@ http://2018.igem.org/Team:SYSU-Software/页面名
 python3 -m http.server
 ```
 临时建立一个后端
+
+
+
+## 可以搬运的文字内容
+- Project(Description, Design)
+- Model(Overview, Recommendation System)
+- Collaboration(XMU-China, SCUT-China, WHU-China, SYSU-China)
+- Medal(Overview, Bronze, Silver, Gold)
+
+## 已经搬运的文字内容
+- 
