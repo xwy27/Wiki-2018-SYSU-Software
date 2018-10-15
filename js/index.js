@@ -19,15 +19,17 @@ $(document).ready(function () {
   initTopBar(pageList[dstPage]);
   fkpage.goToNextSlide();
 
-  let pageHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  let pageHeight = $(window).height();
   let pageWidth = document.documentElement.clientWidth || document.body.clientWidth;
   (function () {
     $('.myfkpage').css('height', pageHeight + 'px');
     // console.log(pageHeight);
   })();
 
-  // $('#home-video').css('width', pageWidth + 'px');
-  // $('#home-video').css('height', pageHeight + 'px');
+  console.log(pageHeight);
+  console.log(pageWidth);
+  $('#home-video').css('width', pageWidth + 'px');
+  $('#home-video').css('height', pageHeight + 'px');
   // $('#home-video')[0].play();
 
 });
