@@ -50,8 +50,10 @@ python3 -m http.server
 - Model(Overview, Recommendation System)
 - Collaboration(~~XMU-China, SCUT-China, WHU-China, SYSU-China~~)
 - Medal(~~Overview, Bronze, Silver, Gold~~)
-- Team(Overview, Bronze, Silver, Gold)
+- Team (Overview, Team members, advisors, instructors, Notebooks)
 - Attributions(Overview, Group structure, Attribution in project, Acknowledgement)
+- Safety(wet-lab safety, dry-lab safety)
+
 
 
 ## 已经搬运的文字内容
