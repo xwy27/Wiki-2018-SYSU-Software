@@ -145,3 +145,17 @@ img {
 .page.dimmer {
     background-color: #000 !important;
 }
+
+.sticky-navigator {
+    margin: 10px 100px auto auto;
+    background-color: #1A2640;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.sticky-navigator:hover {
+    opacity: 0.9;
+}
