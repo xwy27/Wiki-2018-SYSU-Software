@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Geneva';
-    src: url('../fonts/Poppins-Medium.ttf');
+    src: url('https://fonts.google.com/specimen/Montserrat');
 }
 
 @font-face {
@@ -69,6 +69,7 @@
 .header5 {
     margin: 20px, 0;
     font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -147,7 +148,14 @@ img {
 }
 
 .caption {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
     font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .results {
@@ -196,4 +204,8 @@ img {
 .sticky-navigator>.navigator-notice {
     padding-left: 10px;
     white-space: nowrap;
+}
+
+.bold {
+    font-weight: bold;
 }
