@@ -57,7 +57,7 @@ let data = {
 // main menu navigator
 let index = 2;
 for (ele in data) {
-    block_list = ['Demo'];
+    block_list = ['Demo', 'Integrated Human Practice'];
     let html;
     if (ele == 'HumanPractice') {
         html = `<div class="default text">Human Practice</div><div class="menu">`
