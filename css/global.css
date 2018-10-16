@@ -143,6 +143,10 @@ img {
 }
 
 .caption {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -185,4 +189,8 @@ img {
 .sticky-navigator>.navigator-notice {
     padding-left: 10px;
     white-space: nowrap;
+}
+
+.bold {
+    font-weight: bold;
 }
