@@ -46,7 +46,7 @@ python3 -m http.server
 
 ## 可以搬运的文字内容
 
-- Project(~~Description, Design, Contribution~~)
+- Project(~~Description, Design, Contribution~~, feature, imporve)
 - Model(Overview, Recommendation System)
 - Collaboration(~~XMU-China, SCUT-China, WHU-China, SYSU-China~~)
 - Medal(~~Overview, Bronze, Silver, Gold~~)
