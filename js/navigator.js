@@ -7,11 +7,11 @@ let data = {
         'Validation',
         'Demo',
         "Contribution",
-        'Improve',
+        'Improvement',
         'Demostrate'],
     'Modeling': [
         'Overview',
-        'Recommendation System',
+        'Search & Recommendation System',
         'Simulation for Circuits',
         'Directed Evolution Algorithm',
         'Reference'],
@@ -67,7 +67,7 @@ for (ele in data) {
     }
     for (x in data[ele]) {
         if (block_list.indexOf(data[ele][x]) !== -1) {
-            console.log('hit!!')
+            // console.log('hit!!')
             html += `<div class="item" style="display: none;" data-value="${index}">${data[ele][x]}</div>`
         } else {
             html += `<div class="item" style="color: white !important;" data-value="${index}">${data[ele][x]}</div>`
