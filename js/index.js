@@ -16,6 +16,11 @@ $(document).ready(function () {
     mode: 35,
     mouseWheel: false
   });
+  if (dstPage == 0) {
+    $(".side-bar").hide();
+  } else {
+    $(".side-bar").show();
+  }
   initTopBar(pageList[dstPage]);
   fkpage.goToNextSlide();
 

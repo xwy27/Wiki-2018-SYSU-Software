@@ -84,7 +84,13 @@ function backToTop(page) {
 
 $('.menu .item').on('click', function () {
     if ($(this).attr('data-value') != undefined) {
-        $(".next-page").hide();
+        if ($(this).attr('data-value') == 1) {
+            $(".side-bar").hide();
+        } else {
+            $(".side-bar").show();
+        }
+            
+        
         fkpage.goToSlide($(this).attr('data-value'));
         initTopBar(pageList[$(this).attr('data-value') - 1]);
         backToTop(pageList[$(this).attr('data-value') - 1]);
