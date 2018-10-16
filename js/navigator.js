@@ -11,7 +11,7 @@ let data = {
         'Demostrate'],
     'Modeling': [
         'Overview',
-        'Recommendation System',
+        'Search & Recommendation System',
         'Simulation for Circuits',
         'Directed Evolution Algorithm',
         'Reference'],
