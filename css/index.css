@@ -29,16 +29,14 @@ body {
   width: 100%;
 }
 
-video {
-  height: 1080px;
-  width: 1920px;
-  margin-top: -300px;
-  margin-left: -300px;
-}
-
 .myfkpage {
   margin: 0 !important;
   /* height: 1000px !important; */
+}
+
+video {
+  margin-top: -300px;
+  margin-left: -300px;
 }
 
 .dropdown.link.item .menu {
