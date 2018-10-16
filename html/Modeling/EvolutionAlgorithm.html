@@ -67,14 +67,21 @@
     </div>
     <div class="content">
 
-        $k_{ij} = k_{ij} + (\textrm{upperbound} – k_{ij}) f(k_i)$ if $r > 0.5$
+        $$k_{ij} = k_{ij} + (\textrm{upperbound} – k_{ij}) f(k_i)$$
+
+        if $r > 0.5$
     </div>
     <div class="content">
-        $k_{ij} = k_{ij} - (k_{ij} – \textrm{lowerbound}) f(k_i)$ if $r \leq 0.5$
+        $$k_{ij} = k_{ij} - (k_{ij} – \textrm{lowerbound}) f(k_i)$$   
+        
+    </div>
+    <div class="content">
+        
+        if $r \leq 0.5$
     </div>
 
     <div class="content">
-        $f(k_i) = r^{’} * (1 – \frac{F(k_i)}{F_{best}})^2$
+        $$f(k_i) = r^{’} * (1 – \frac{F(k_i)}{F_{best}})^2$$
     </div>
     <div class="content">
          $F$ is the fitness function,
