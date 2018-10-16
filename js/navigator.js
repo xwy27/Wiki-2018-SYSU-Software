@@ -82,17 +82,32 @@ function backToTop(page) {
     $("#" + page).scrollTop(0);
 }
 
-$('.menu .item').on('click', function () {
-    if ($(this).attr('data-value') != undefined) {
-        if ($(this).attr('data-value') == 1) {
+
+function jumpToPage(pageId) {
+    if (pageId != undefined) {
+        if (pageId == 1) {
             $(".side-bar").hide();
         } else {
             $(".side-bar").show();
         }
-            
-        
-        fkpage.goToSlide($(this).attr('data-value'));
-        initTopBar(pageList[$(this).attr('data-value') - 1]);
-        backToTop(pageList[$(this).attr('data-value') - 1]);
+        fkpage.goToSlide(pageId);
+        initTopBar(pageList[pageId - 1]);
+        backToTop(pageList[pageId - 1]);
     }
+}
+
+$('.menu .item').on('click', function () {
+    jumpToPage($(this).attr('data-value'));
+});
+
+$('.nextpage').on('click', function () {
+    jumpToPage($(this).attr('data-value'));
+});
+
+$('.top').on('click', function () {
+    backToTop($(this).attr('data-value'));
+});
+
+$('.lastpage').on('click', function () {
+    jumpToPage($(this).attr('data-value'));
 });
