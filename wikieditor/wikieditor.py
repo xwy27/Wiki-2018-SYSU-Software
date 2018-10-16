@@ -2,7 +2,7 @@ import os,sys
 from flask import *
 
 app = Flask(__name__)
-
+path = '..\\'
 def getAllFiles():
     files = {
         "CSS" : [],
