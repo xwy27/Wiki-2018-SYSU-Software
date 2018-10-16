@@ -26,6 +26,7 @@ $(document).ready(function () {
     // console.log(pageHeight);
   })();
 
+
   // console.log(pageHeight);
   // console.log(pageWidth);
   $('#home-video').css('width', pageWidth + 'px');
