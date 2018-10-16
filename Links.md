@@ -142,6 +142,12 @@ http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png
 
 http://2018.igem.org/wiki/images/b/b5/T--SYSU-Software--macos_config.png
 ![](http://2018.igem.org/wiki/images/b/b5/T--SYSU-Software--macos_config.png)
+**win**
+http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--win_config.png
+![](http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--win_config.png)
+
+http://2018.igem.org/wiki/images/0/06/T--SYSU-Software--win_run.png
+![](http://2018.igem.org/wiki/images/0/06/T--SYSU-Software--win_run.png)
 
 **SBOL**
 
