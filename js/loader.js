@@ -54,6 +54,10 @@ var nextPage = 0
 
 function initTopBar(page) {
     // main menu
+    $(".sticky-navigator").addClass('showtext');
+    setTimeout(() => {
+        $(".sticky-navigator").removeClass('showtext');
+    }, 2000);
     if (page === 'Home') {
         $('.text').removeClass('default').addClass('light');
     } else {
@@ -103,18 +107,6 @@ function initTopBar(page) {
                         .transition('hide')
                         ;
                 });
-            }
-        });
-    $('#' + page + '>.page-container>.next-page-identify')
-        .visibility({
-            offset: -5,
-            observeChanges: true,
-            once: false,
-            context: $('#' + page),
-            continuous: true,
-            onTopVisible: function () {
-            },
-            onTopVisibleReverse: function () {
             }
         });
     nextPage = $('#' + page + '>.page-container>.next-page-identify').attr("data-value");

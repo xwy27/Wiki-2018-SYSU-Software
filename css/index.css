@@ -174,9 +174,9 @@ li.scroll {
   font-family: 'Chalkboard' !important;
 }
 
-.next-page {
+.side-bar {
   position: absolute !important;
-  text-align: left;
+  text-align: right;
   color: #FFFFFF;
   right: 140px;
   bottom: 40px;
