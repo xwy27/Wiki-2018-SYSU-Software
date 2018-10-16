@@ -114,10 +114,34 @@ http://2018.igem.org/wiki/images/f/f3/T--SYSU-Software--Des6.png
 ![](http://2018.igem.org/wiki/images/f/f3/T--SYSU-Software--Des6.png)
 
 #### Design
+**analysis**
+http://2018.igem.org/wiki/images/c/c0/T--SYSU-Software--analysis.png
+![](http://2018.igem.org/wiki/images/c/c0/T--SYSU-Software--analysis.png)
 
-**overview **
+**comment on save circuit**
+http://2018.igem.org/wiki/images/7/76/T--SYSU-Software--comment-on-save-circuit.png
+![](http://2018.igem.org/wiki/images/7/76/T--SYSU-Software--comment-on-save-circuit.png)
+**simulation**
+http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--simulation0.png
+![](http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--simulation0.png)
+
+http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png
+![](http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png)
+
+**overview**
 http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png
 ![](http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png)
+
+**Recommend**
+http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--recommend.png
+![](http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--recommend.png)
+
+**macos**
+http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png
+![](http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png)
+
+http://2018.igem.org/wiki/images/b/b5/T--SYSU-Software--macos_config.png
+![](http://2018.igem.org/wiki/images/b/b5/T--SYSU-Software--macos_config.png)
 
 **SBOL**
 
@@ -126,7 +150,10 @@ http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png
 ![](http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png)
 
 **Search**
-
+<!-- WARNING! 下面这个连接是搜索内部的照片！！ -->
+http://2018.igem.org/wiki/images/1/16/T--SYSU-Software--search.png 
+![](http://2018.igem.org/wiki/images/1/16/T--SYSU-Software--search.png)
+ 
 http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png
 
 ![](http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png)
