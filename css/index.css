@@ -29,16 +29,14 @@ body {
   width: 100%;
 }
 
-video {
-  height: 1080px;
-  width: 1920px;
-  margin-top: -300px;
-  margin-left: -300px;
-}
-
 .myfkpage {
   margin: 0 !important;
   /* height: 1000px !important; */
+}
+
+video {
+  margin-top: -300px;
+  margin-left: -300px;
 }
 
 .dropdown.link.item .menu {
@@ -59,7 +57,7 @@ li.scroll {
 }
 
 .test0 {
-  background: url(../images/background/background0.jpg);
+  background: url(http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--backgournd0.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -67,7 +65,7 @@ li.scroll {
 }
 
 .test1 {
-  background: url(../images/background/background1.jpg);
+  background: url(http://2018.igem.org/wiki/images/3/34/T--SYSU-Software--backgournd1.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -75,7 +73,7 @@ li.scroll {
 }
 
 .test2 {
-  background: url(../images/background/background2.jpg);
+  background: url(http://2018.igem.org/wiki/images/6/64/T--SYSU-Software--backgournd2.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -83,7 +81,7 @@ li.scroll {
 }
 
 .test3 {
-  background: url(../images/background/background3.jpg);
+  background: url(http://2018.igem.org/wiki/images/a/a3/T--SYSU-Software--backgournd3.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -91,7 +89,7 @@ li.scroll {
 }
 
 .test4 {
-  background: url(../images/background/background4.jpg);
+  background: url(http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--backgournd4.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -99,7 +97,7 @@ li.scroll {
 }
 
 .test5 {
-  background: url(../images/background/background5.jpg);
+  background: url(http://2018.igem.org/wiki/images/7/7b/T--SYSU-Software--backgournd5.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -107,7 +105,7 @@ li.scroll {
 }
 
 .test6 {
-  background: url(../images/background/background6.jpg);
+  background: url(http://2018.igem.org/wiki/images/9/98/T--SYSU-Software--backgournd6.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -115,7 +113,7 @@ li.scroll {
 }
 
 .test7 {
-  background: url(../images/background/background7.jpg);
+  background: url(http://2018.igem.org/wiki/images/9/93/T--SYSU-Software--backgournd7.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -123,7 +121,7 @@ li.scroll {
 }
 
 .test8 {
-  background: url(../images/background/background8.jpg);
+  background: url(http://2018.igem.org/wiki/images/d/d7/T--SYSU-Software--backgournd8.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

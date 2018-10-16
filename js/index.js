@@ -31,11 +31,12 @@ $(document).ready(function () {
     // console.log(pageHeight);
   })();
 
+
   // console.log(pageHeight);
   // console.log(pageWidth);
   $('#home-video').css('width', pageWidth + 'px');
   $('#home-video').css('height', pageHeight + 'px');
-  // $('#home-video')[0].play();
+  $('#home-video')[0].play();
 
 });
 
