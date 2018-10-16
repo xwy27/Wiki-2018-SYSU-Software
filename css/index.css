@@ -34,6 +34,11 @@ body {
   /* height: 1000px !important; */
 }
 
+video {
+  margin-top: -300px;
+  margin-left: -300px;
+}
+
 .dropdown.link.item .menu {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
