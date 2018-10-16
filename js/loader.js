@@ -202,7 +202,3 @@ function loadPages() {
 }
 
 loadPages();
-
-$('.ui.sticky')
-    .sticky()
-    ;
