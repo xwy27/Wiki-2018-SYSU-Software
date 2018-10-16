@@ -148,7 +148,12 @@ http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--win_config.png
 
 http://2018.igem.org/wiki/images/0/06/T--SYSU-Software--win_run.png
 ![](http://2018.igem.org/wiki/images/0/06/T--SYSU-Software--win_run.png)
+**linux**
+http://2018.igem.org/wiki/images/4/4e/T--SYSU-Software--arch_config.png
+![](http://2018.igem.org/wiki/images/4/4e/T--SYSU-Software--arch_config.png)
 
+http://2018.igem.org/wiki/images/a/ad/T--SYSU-Software--arch_run.png
+![](http://2018.igem.org/wiki/images/a/ad/T--SYSU-Software--arch_run.png)
 **SBOL**
 
 http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png
@@ -161,7 +166,6 @@ http://2018.igem.org/wiki/images/1/16/T--SYSU-Software--search.png
 ![](http://2018.igem.org/wiki/images/1/16/T--SYSU-Software--search.png)
  
 http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png
-
 ![](http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png)
 
 #### Techniques
