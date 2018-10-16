@@ -54,6 +54,7 @@ python3 -m http.server
 - Attributions(~~Overview, Group structure, Attribution in project, Acknowledgement~~)
 - Safety(wet-lab safety, dry-lab safety)
 - Human Practice(All)
+- Contribution(All)
 
 ## 已经搬运的文字内容
 - Project(Description, Design)
