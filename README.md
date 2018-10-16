@@ -46,19 +46,22 @@ python3 -m http.server
 
 ## 可以搬运的文字内容
 
+**Attenion: Collaboration 部分XJTU-China取代原本的SYSU-China!!!**
+
 - Project(~~Description, Design, Contribution~~, feature, imporve)
 - Model(Overview, Recommendation System)
-- Collaboration(~~XMU-China, SCUT-China, WHU-China, SYSU-China~~)
+- Collaboration(~~XMU-China, SCUT-China, WHU-China~~, XJTU-China)
 - Medal(~~Overview, Bronze, Silver, Gold~~)
 - Team (~~Overview~~, Team members, advisors, instructors, ~~Notebooks~~)
 - Attributions(~~Overview, Group structure, Attribution in project, Acknowledgement~~)
 - Safety(~~wet-lab safety, dry-lab safety~~)
 - Human Practice(~~All~~)
 
+
 ## 已经搬运的文字内容
 
 - Project(Description, Design, Contribution)
-- Collaboration(XMU-China, SCUT-China, WHU-China, SYSU-China)
+- Collaboration(~~XMU-China, SCUT-China, WHU-China, ~~）
 - Medal(Overview, Bronze, Silver, Gold)
 - Team (Overview,Notebooks)
 - Attributions(Overview, Group structure, Attribution in project, Acknowledgement)
