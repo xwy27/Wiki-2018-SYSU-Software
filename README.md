@@ -46,17 +46,18 @@ python3 -m http.server
 
 ## 可以搬运的文字内容
 
-- Project(Description, Design)
+- Project(~~Description, Design~~)
 - Model(Overview, Recommendation System)
-- Collaboration(XMU-China, SCUT-China, WHU-China, SYSU-China)
-- Medal(Overview, Bronze, Silver, Gold)
-- Team (Overview, Team members, advisors, instructors, Notebooks)
-- Attributions(Overview, Group structure, Attribution in project, Acknowledgement)
+- Collaboration(~~XMU-China, SCUT-China, WHU-China, SYSU-China~~)
+- Medal(~~Overview, Bronze, Silver, Gold~~)
+- Team (~~Overview~~, Team members, advisors, instructors, ~~Notebooks~~)
+- Attributions(~~Overview, Group structure, Attribution in project, Acknowledgement~~)
 - Safety(wet-lab safety, dry-lab safety)
+- Human Practice(All)
 
 ## 已经搬运的文字内容
 - Project(Description, Design)
 - Collaboration(XMU-China, SCUT-China, WHU-China, SYSU-China)
 - Medal(Overview, Bronze, Silver, Gold)
 - Team (Overview,Notebooks)
-- Attributions(Overview, Group structure, Attribution in project, Acknowledgement)
+- Attributions(Overview, Group structure, Attribution in project, Acknowledgement)s
