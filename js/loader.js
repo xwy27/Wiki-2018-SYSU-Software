@@ -59,6 +59,20 @@ function initTopBar(page) {
     } else {
         $('.text').removeClass('light').addClass('default');
     }
+    if ($("#"+page+">.page-container>.next-page-identify").length > 0) {
+        $(".nextpage").show();
+        $(".nextpage").attr("data-value", $("#" + page + ">.page-container>.next-page-identify").attr("data-value"));
+    } else {
+        $(".nextpage").hide();
+    }
+    if ($("#" + page + ">.page-container>.last-page-identify").length > 0) {
+        $(".lastpage").show();
+        $(".lastpage").attr("data-value", $("#" + page + ">.page-container>.last-page-identify").attr("data-value"));
+    } else {
+        $(".lastpage").hide();
+    }
+    $(".top").attr("data-value", page);
+
     $('#' + page + '>.page-container')
 
         .visibility({
