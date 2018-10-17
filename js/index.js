@@ -23,9 +23,10 @@ $(document).ready(function () {
   } else {
     $(".side-bar").show();
   }
-  initTopBar(pageList[dstPage]);
   fkpage.goToNextSlide();
-
+  console.log(pageList[dstPage]);
+  initTopBar(pageList[dstPage]);
+  backToTop(pageList[dstPage]);
   let pageHeight = $(window).height();
   let pageWidth = document.documentElement.clientWidth || document.body.clientWidth;
   (function () {
