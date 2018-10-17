@@ -117,7 +117,9 @@ function initTopBar(page) {
 
 
 function loadPages() {
-    $('.page.dimmer').dimmer('show');
+    $('#page-process').progress({
+        percent: 50
+    });
     for (let page in pages) {
         pageList.push(page);
     }
@@ -132,6 +134,9 @@ function loadPages() {
             //initTopBar(page);
             // console.log(nowLoadingID);
             // console.log(pageList.length);
+            $('#page-process').progress({
+                percent: parseInt((nowLoadingID + 1) / pageList.length * 50) + 50
+            });
             if (nowLoadingID + 1 === pageList.length) {
                 // console.log('now mount');
                 $('a').on('click', function() {
@@ -208,3 +213,9 @@ function loadPages() {
 }
 
 // loadPages();
+$('#loading').load(function () {
+    $('.page.dimmer').dimmer('show');
+    $('#page-process').progress({
+        percent: 10
+    });
+});
