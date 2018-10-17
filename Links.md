@@ -183,6 +183,10 @@ http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--recommend.png
 
 **数模更新的照片**（虽然是。mov，但它是照片，用<img>引入）
 http://2018.igem.org/wiki/images/1/1b/T--SYSU-Software--mathplus.mov
+![](http://2018.igem.org/wiki/images/1/1b/T--SYSU-Software--mathplus.mov)
+
+http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--mathplus2.png
+![](http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--mathplus2.png)
 **macos**
 http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png
 ![](http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png)
