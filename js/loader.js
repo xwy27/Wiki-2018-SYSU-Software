@@ -228,6 +228,6 @@ $('.page.dimmer').dimmer('show');
 $('#loading').load(function () {
     $('page-process').show();
     $('#page-process').progress({
-        percent: 10
+        percent: 50
     });
 });
