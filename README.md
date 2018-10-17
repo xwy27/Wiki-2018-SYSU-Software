@@ -47,6 +47,7 @@ python3 -m http.server
 ## 可以搬运的文字内容
 
 **Attenion: Collaboration 部分XJTU-China取代原本的SYSU-China!!!**
+**Background有新版本! 但还没有在共享文档中更新! **
 
 - Project(~~Description, Design, Contribution~~, feature, imporve)
 - Model(Overview, Recommendation System)

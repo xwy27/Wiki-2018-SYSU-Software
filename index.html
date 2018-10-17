@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
   <title>Index</title>
-  <link rel="favicon" href="images/favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="http://2018.igem.org/wiki/images/6/6d/T--SYSU-Software--favicon.png">
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/iGemOverride.js"></script>
   <script src="js/semantic.min.js"></script>
 
   <!-- FKPageTransitions Javascript file -->
@@ -21,9 +22,14 @@
 </head>
 
 <body>
-  <div class="ui page dimmer">
+  <div class="ui page inverted dimmer">
     <div class="content">
-      Hello
+      <img id="loading" src="http://2018.igem.org/wiki/images/1/18/T--SYSU-Software--loading.gif" />
+      <div class="ui progress" id="page-process">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="pusher">
@@ -52,7 +58,7 @@
         <li id="virtual"></li>
         <li class="noscroll" id="Home">
           <div class="page-container">
-            <video id="home-video" style="object-fit: cover" src="./home.mp4" preload="true" autoplay muted></video>
+            <video id="home-video" style="object-fit: cover" src="./home.mp4" preload="true" muted></video>
           </div>
         </li>
         <!-- Project -->
@@ -109,9 +115,9 @@
 
       </ul>
       <div class="side-bar">
-        <div class="sticky-navigator lastpage"><img src="/images/lastpage.png"><span class="navigator-notice">Last Page</span></div>
-        <div class="sticky-navigator top"><img src="/images/top.png"><span class="navigator-notice">Go top</span></div>
-        <div class="sticky-navigator nextpage"><img src="/images/nextpage.png"><span class="navigator-notice">Next Page</span></div>
+        <div class="sticky-navigator lastpage"><img src="http://2018.igem.org/wiki/images/4/4c/T--SYSU-Software--lastpage.png"><span class="navigator-notice">Last Page</span></div>
+        <div class="sticky-navigator top"><img src="http://2018.igem.org/wiki/images/0/0d/T--SYSU-Software--top.png"><span class="navigator-notice">Go top</span></div>
+        <div class="sticky-navigator nextpage"><img src="http://2018.igem.org/wiki/images/5/56/T--SYSU-Software--naextpage.png"><span class="navigator-notice">Next Page</span></div>
       </div>
     </div>
 
@@ -121,7 +127,6 @@
 <script src="js/loader.js"></script>
 <script src="js/navigator.js"></script>
 <script src="js/index.js"></script>
-<script src="js/iGemOverride.js"></script>
 
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
