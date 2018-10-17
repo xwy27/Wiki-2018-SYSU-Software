@@ -111,3 +111,6 @@ $('.top').on('click', function () {
 $('.lastpage').on('click', function () {
     jumpToPage($(this).attr('data-value'));
 });
+$('#home-video').on('click', function() {
+    jumpToPage('2');
+});
