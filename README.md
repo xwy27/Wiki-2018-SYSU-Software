@@ -72,6 +72,8 @@ python3 -m http.server
 
 
 ## 已审查
-- Project(Description, Design, Feature, Technique, Contribution, Improvement)
+- Project(Description, Design, Feature, Technique, Contribution, Improvement)   Validation not checked.
 - Model(Overview, Recommendation System, Simulation for Circuit, EA, Ref)
 - HP(Overview, silver, gold, public engagement)
+- Collaboration(XMU, SCUT, WHU, XJTU)
+- Interlab(all)
