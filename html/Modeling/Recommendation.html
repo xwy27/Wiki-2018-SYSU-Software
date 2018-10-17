@@ -64,7 +64,7 @@
     <img src="http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--modeling1.mp4" />
     <div class="content">
         The flow of 1021 features we process for each project is shown in the figure. In our search & recommendation
-        system, we train the neural network to make the output better represents the inputs’ features.
+        system, we train the neural network to make the output better represents the inputs' features.
     </div>
     <div class="header4">
         Word2Vec Algorithm
@@ -112,7 +112,7 @@
         collaborative filtering, they still resorted to matrix factorization and applied an inner product on the latent
         features of searchings and items. In our collaborative recommendation system, the matrix constructed by inner
         product would be quite sparse, since a large number of projects in different styles exist. The traditional page
-        rank algorithm won’t perform well in the recommendation. Empirical evidence shows that using deeper layers of
+        rank algorithm won't perform well in the recommendation. Empirical evidence shows that using deeper layers of
         neural networks offers better recommendation performance.
 
     </div>
@@ -121,7 +121,7 @@
         In our search & recommendation system, we use supervised learning: Firstly, the samples and labels are defined,
         and then the weight and deviation variables of each layer are set initially. Then, we build a neural network
         model based on TensorFlow, an excellent framework for machine learning. During training, we use
-        back-propagation algorithm to minimize the cost function and adjust the model’s parameters. The specific
+        back-propagation algorithm to minimize the cost function and adjust the model's parameters. The specific
         algorithm will be explained in the following part. For more details of neural network, see: <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">
             wiki page of
             Artificial Neural Network
@@ -187,7 +187,7 @@
         <li>
 
             We extract thousands of keywords by putting the wiki page or description file of each project into the
-            Microsoft’s Azure keyword extraction tool, and use all these keywords and projects to form a huge loosening
+            Microsoft's Azure keyword extraction tool, and use all these keywords and projects to form a huge loosening
             normalization matrix. Formally, it is a n * m matrix A, where n is the number of key words and m is the
             number of projects. The element at column i, raw j is the frequency of occurrence of the ith keyword in the
             jth project.
@@ -205,6 +205,7 @@
     <div class="content">
         We mainly trained 2 DNN:
     </div>
+    <img src="http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--mathplus2.png" />
     <ol>
         <li>
             Through the Encoder-Decoder Model, we have trained the complete features of all projects we collected, and
@@ -234,11 +235,11 @@
 
             Forward propagation algorithm: Our input dimension is equal to the team features and word vector
             respectively, all of which are transferred to 3 hidden layer [(512, 256, 64) &(256, 128, 64)] for training.
-            Each neuron is the weighted sum of the upper level’s input:
+            Each neuron is the weighted sum of the upper level's input:
             $A_{ij} = \sum_{k=1}^n w_{kj}x_k + b$
             The calculation results of the upper layer are the inputs of the next layer, while the calculation of the
             output layer is the weighted sum of the values of each neuron of the upper layer. The calculation of weight
-            ($w_{kj}$) is a matrix multiplication, which is used as “matmul” in TensorFlow.
+            ($w_{kj}$) is a matrix multiplication, which is used as "matmul" in TensorFlow.
         </li>
         <li>
 
@@ -262,6 +263,13 @@
         </li>
     </ol>
 
+    <div class="content">
+        Our training process can be vividly shown in the following figure through Tensorboard, a powerful visualization
+        tool, and we can also see that our model can eventually get a good result that the cost function converges
+        after thousands of training epochs.
+    </div>
+    <img src="http://2018.igem.org/wiki/images/1/1b/T--SYSU-Software--mathplus.mov" />
+
     <div class="header4">
         Collaborative Filtering
     </div>
@@ -275,7 +283,7 @@
     </div>
     <div class="content">
         We fed our word vector model with Google News corpus. After the training process is done, we have a model that
-        can convert words into numerical vectors, i.e. $f:\Gamma\rightarrow R^2$， where $\Gamma$ denoted the corpus
+        can convert words into numerical vectors, i.e. $f:\Gamma\rightarrow R^2$, where $\Gamma$ denoted the corpus
         space
     </div>
     <div class="header5">
@@ -302,6 +310,7 @@
         Through the Ball Tree we constructed, we calculated the Euclidean Metric between the vector V and the projects
         in our databases. Then, the system will recommend 10 projects with the smallest Euclidean Metric.
     </div>
+    <img src="http://2018.igem.org/wiki/images/3/32/T--SYSU-Software--redgirl.png" />
     <div class="next-page-identify" data-value="13"></div> <!-- 这个是跳页标记 -->
 
 </div>

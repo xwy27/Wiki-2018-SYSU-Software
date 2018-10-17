@@ -54,6 +54,15 @@ var nextPage = 0
 
 function initTopBar(page) {
     // main menu
+    requestAnimationFrame(function () {
+        $('.following.bar')
+            .removeClass('light fixed')
+            .find('.menu')
+            // .addClass('inverted')
+            .find('.additional.item')
+            .transition('hide')
+            ;
+    });
     $(".sticky-navigator").addClass('showtext');
     setTimeout(() => {
         $(".sticky-navigator").removeClass('showtext');
@@ -117,7 +126,9 @@ function initTopBar(page) {
 
 
 function loadPages() {
-    $('.page.dimmer').dimmer('show');
+    $('#page-process').progress({
+        percent: 50
+    });
     for (let page in pages) {
         pageList.push(page);
     }
@@ -132,6 +143,9 @@ function loadPages() {
             //initTopBar(page);
             // console.log(nowLoadingID);
             // console.log(pageList.length);
+            $('#page-process').progress({
+                percent: parseInt((nowLoadingID + 1) / pageList.length * 50) + 50
+            });
             if (nowLoadingID + 1 === pageList.length) {
                 // console.log('now mount');
                 $('a').on('click', function() {
@@ -142,7 +156,7 @@ function loadPages() {
                         return value === target;
                     });
                     // console.log(dstPage);
-                    fkpage.goToSlide(dstPage + 1);
+                    jumpToPage(dstPage + 1);
                 });
                 let index_map = {
                     1: 0,
@@ -199,12 +213,43 @@ function loadPages() {
                     // }
                     $(this).children('.page-container').addClass('test' + temp);
                 });
-                $('.page.dimmer').dimmer('hide');
-                // $('#home-video')[0].play();
+                let dstPage = 0;
+                urlSplit = window.location.href.split('?');
+                if (urlSplit.length > 1) {
+                    dstPage = 0 + pageList.findIndex((value, index, arr) => {
+                        return value === urlSplit[1];
+                    });
+                }
+                if (dstPage == 0) {
+                    $(".side-bar").hide();
+                } else {
+                    $(".side-bar").show();
+                }
+                fkpage.goToNextSlide();
+                console.log(pageList[dstPage]);
+                initTopBar(pageList[dstPage]);
+                backToTop(pageList[dstPage]);
+                setTimeout(() => {
+                    $('.page.dimmer').dimmer('hide');
+                    $('#home-video')[0].play();
+                }, 1000);
+                
             }
         });
         
     }
 }
 
-loadPages();
+// loadPages();
+$('page-process').hide();
+$('.page.dimmer').dimmer('show');
+
+$('#loading').load(function () {
+    $('page-process').show();
+    if($('#page-process').attr('data-precent') < 50) {
+        $('#page-process').progress({
+            percent: 50
+        });
+    }
+    
+});

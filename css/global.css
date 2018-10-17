@@ -118,6 +118,27 @@ img {
     margin: 0 auto;
 }
 
+img.icon {
+    display: inline;
+    width: 30px;
+}
+
+ul.check {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.check>li::before{
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url('http://2018.igem.org/wiki/images/f/fd/T--SYSU-Software--check.png');
+    background-size: 25px;
+    margin-right: 5px;
+    margin-top: 20px
+}
+
 .next-page-identify {
     height: 0px;
 }
@@ -165,7 +186,7 @@ img {
 }
 
 .page.dimmer {
-    background-color: #000 !important;
+    background-color: #FFF !important;
 }
 
 .sticky-navigator {
@@ -210,4 +231,50 @@ img {
 
 ol, ul {
     margin-left: 25px;
+}
+
+.instructor,
+.advisor,
+.member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.member>img {
+    max-height: 500px;
+    max-width: 65%;
+    margin: 20px;
+}
+
+.self-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.m-title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.instructor>img {
+    width: 30%;
+    height: 30%;
+    margin: 20px;
+}
+
+.advisor>img {
+    width: 30%;
+    margin: 20px;
+}
+
+.background-data>img {
+    width: 50%;
+}
+
+.wet-valid {
+    width: 50%;
 }
