@@ -23,6 +23,7 @@
   - [advisor](#advisor)
   - [advisor](#advisor)
   - [首页视频](#首页视频)
+  - [演示视频](#演示视频)
   - [字体](#字体)
 
 <!-- /TOC -->
@@ -634,6 +635,10 @@ http://2018.igem.org/wiki/images/2/2b/T--SYSU-Software--fx.png
 
 ## 首页视频
 http://2018.igem.org/wiki/images/f/f7/T--SYSU-Software--startnow.mov
+
+## 演示视频
+
+http://2018.igem.org/File:T--SYSU-Software--Demo.mp4
 
 ## 字体
 

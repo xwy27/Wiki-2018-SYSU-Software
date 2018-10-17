@@ -298,3 +298,9 @@ ol, ul {
 .wet-valid {
     width: 50%;
 }
+
+.demo-video {
+    margin: 0;
+    width: 640px;
+    height: 360px;
+}
