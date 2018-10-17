@@ -270,3 +270,7 @@ ol, ul {
     width: 30%;
     margin: 20px;
 }
+
+.background-data>img {
+    width: 50%;
+}
