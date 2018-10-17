@@ -1,18 +1,47 @@
 <div class="page-container">
     <div class="last-page-identify" data-value="23"></div> <!-- 这个是跳页标记 -->
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <script src="http://2018.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
     <div class="header1">
         Collaboration
     </div>
     <div class="header2">
-        SYSU
+        XJTU-China
+
     </div>
     <div class="content">
-        We collaborated with SYSU-China for holding the Annual Biology Festival on our campus and exchanged our ideas
-        on synthetic biology. Besides, they also gave us many practical suggestions and guidance on interlab studies
-        and validation experiments.
-        <br />
-        For more details check <a href="http://2018.igem.org/Team:SYSU-CHINA">SYSU-China</a>.
+        We built the model in CO-RAD for XJTU-China, based on their circuit design deviceA:
     </div>
-    <img src="http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--SYSU-China.png" />
+    <img src="http://2018.igem.org/wiki/images/d/d3/T--SYSU-Software--wet-9.png" />
+
+    <div class="content">
+        With our visual designer and the embedded mathematical ODE systems model, we constructed XJTU-China’s circuit
+        and dynamically analyzed the amounts of materials in it. We pay attention to the expression of EGFP, since its
+        amount can be evaluated in unit of optical density. Related formulas and parameters are shown below:
+
+        $$\frac{d[PsiR]}{dt} = \frac{k_{PsiR}[gene]_{PsiR}}{1+[Psicose]^n1}-d_{PsiR}[PsiR]$$
+        $$\frac{d[EGFP]}{dt} = \frac{k_{EGFP}[gene]_{EGFP}}{1+[PsiR]^n2}-d_{PsiR}[EGFP]$$
+
+    </div>
+    <img src="http://2018.igem.org/wiki/images/5/5b/T--SYSU-Software--validation_table.png" />
+
+    <div class="content">
+
+        Experiment & model result:
+
+    </div>
+
+    <img src="http://2018.igem.org/wiki/images/7/7c/T--SYSU-Software--wet-12.png" />
+
+    <div class="content">
+        For more detail check <a href="javascript:void(0)" goto="Validation"> Validation </a> and
+        <a href="http://2018.igem.org/Team:XJTU-China/Model"> XJTU-China </a>
+    </div>
     <div class="caption">Figure 4: Collaboration with SYSU-China in the Biology Festival</div>
 </div>
