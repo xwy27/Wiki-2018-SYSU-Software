@@ -44,7 +44,7 @@ let data = {
         'Overview',
         'Team Members',
         'Advisors',
-        'Instructors',
+        'Instructors & Individuals',
         'Notebook'],
     'Attributions': [
         'Overview',
