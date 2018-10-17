@@ -156,7 +156,9 @@ function loadPages() {
                         return value === target;
                     });
                     // console.log(dstPage);
-                    jumpToPage(dstPage + 1);
+                    if (target) {
+                        jumpToPage(dstPage + 1);
+                    }
                 });
                 let index_map = {
                     1: 0,
