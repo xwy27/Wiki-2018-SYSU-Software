@@ -54,6 +54,15 @@ var nextPage = 0
 
 function initTopBar(page) {
     // main menu
+    requestAnimationFrame(function () {
+        $('.following.bar')
+            .removeClass('light fixed')
+            .find('.menu')
+            // .addClass('inverted')
+            .find('.additional.item')
+            .transition('hide')
+            ;
+    });
     $(".sticky-navigator").addClass('showtext');
     setTimeout(() => {
         $(".sticky-navigator").removeClass('showtext');
