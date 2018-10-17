@@ -200,11 +200,11 @@ function loadPages() {
                     $(this).children('.page-container').addClass('test' + temp);
                 });
                 $('.page.dimmer').dimmer('hide');
-                // $('#home-video')[0].play();
+                $('#home-video')[0].play();
             }
         });
         
     }
 }
 
-loadPages();
+// loadPages();

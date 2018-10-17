@@ -8,6 +8,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/iGemOverride.js"></script>
   <script src="js/semantic.min.js"></script>
 
   <!-- FKPageTransitions Javascript file -->
@@ -21,9 +22,9 @@
 </head>
 
 <body>
-  <div class="ui page dimmer">
+  <div class="ui page inverted dimmer">
     <div class="content">
-      Hello
+      <img id="loading" src="/images/loading.gif" />
     </div>
   </div>
   <div class="pusher">
@@ -52,7 +53,7 @@
         <li id="virtual"></li>
         <li class="noscroll" id="Home">
           <div class="page-container">
-            <video id="home-video" style="object-fit: cover" src="./home.mp4" preload="true" autoplay muted></video>
+            <video id="home-video" style="object-fit: cover" src="./home.mp4" preload="true" muted></video>
           </div>
         </li>
         <!-- Project -->
@@ -121,7 +122,6 @@
 <script src="js/loader.js"></script>
 <script src="js/navigator.js"></script>
 <script src="js/index.js"></script>
-<script src="js/iGemOverride.js"></script>
 
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({

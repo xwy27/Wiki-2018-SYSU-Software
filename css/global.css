@@ -186,7 +186,7 @@ ul.check>li::before{
 }
 
 .page.dimmer {
-    background-color: #000 !important;
+    background-color: #FFF !important;
 }
 
 .sticky-navigator {
