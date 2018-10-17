@@ -49,7 +49,7 @@ python3 -m http.server
 **Attenion: Collaboration 部分XJTU-China取代原本的SYSU-China!!!**
 **Background有新版本! 但还没有在共享文档中更新! **
 
-- Project(~~Description, Design, Contribution~~, feature, imporve)
+- Project(~~Description, Design, Contribution, feature~~, imporve)
 - Model(Overview, Recommendation System)
 - Collaboration(~~XMU-China, SCUT-China, WHU-China~~, XJTU-China)
 - Medal(~~Overview, Bronze, Silver, Gold~~)
@@ -69,3 +69,7 @@ python3 -m http.server
 - Attributions(Overview, Group structure, Attribution in project, Acknowledgement)
 - Safety(wet-lab safety, dry-lab safety)
 - Human Practice(All)
+
+
+## 已审查
+- Project(Description, Design, Feature, Technique, Contribution, Improvement)
