@@ -213,8 +213,11 @@ function loadPages() {
 }
 
 // loadPages();
+$('page-process').hide();
+$('.page.dimmer').dimmer('show');
+
 $('#loading').load(function () {
-    $('.page.dimmer').dimmer('show');
+    $('page-process').show();
     $('#page-process').progress({
         percent: 10
     });
