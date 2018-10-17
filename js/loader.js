@@ -213,6 +213,22 @@ function loadPages() {
                     // }
                     $(this).children('.page-container').addClass('test' + temp);
                 });
+                let dstPage = 0;
+                urlSplit = window.location.href.split('?');
+                if (urlSplit.length > 1) {
+                    dstPage = 0 + pageList.findIndex((value, index, arr) => {
+                        return value === urlSplit[1];
+                    });
+                }
+                if (dstPage == 0) {
+                    $(".side-bar").hide();
+                } else {
+                    $(".side-bar").show();
+                }
+                fkpage.goToNextSlide();
+                console.log(pageList[dstPage]);
+                initTopBar(pageList[dstPage]);
+                backToTop(pageList[dstPage]);
                 setTimeout(() => {
                     $('.page.dimmer').dimmer('hide');
                     $('#home-video')[0].play();
