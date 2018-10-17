@@ -2,6 +2,7 @@ let fkpage;
 
 
 $(document).ready(function () {
+  loadPages();
   let dstPage = 0;
   urlSplit = window.location.href.split('?');
   if (urlSplit.length > 1) {
@@ -12,6 +13,7 @@ $(document).ready(function () {
   // console.log(dstPage);
 
   fkpage = $('.myfkpage').FKPageTransitions({
+    preventDefaultSwipeY: true,
     startSlide: dstPage,
     mode: 35,
     mouseWheel: false
@@ -36,7 +38,7 @@ $(document).ready(function () {
   // console.log(pageWidth);
   $('#home-video').css('width', pageWidth + 'px');
   $('#home-video').css('height', pageHeight + 'px');
-  $('#home-video')[0].play();
+  // $('#home-video')[0].play();
 
 });
 
