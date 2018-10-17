@@ -73,4 +73,5 @@ python3 -m http.server
 
 ## 已审查
 - Project(Description, Design, Feature, Technique, Contribution, Improvement)
-- Model(Overview, Recommendation System, Simulation for Circuit, )
+- Model(Overview, Recommendation System, Simulation for Circuit, EA, Ref)
+- HP(Overview, silver, gold, public engagement)
