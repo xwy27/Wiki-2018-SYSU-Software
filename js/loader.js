@@ -54,11 +54,29 @@ var nextPage = 0
 
 function initTopBar(page) {
     // main menu
+    $(".sticky-navigator").addClass('showtext');
+    setTimeout(() => {
+        $(".sticky-navigator").removeClass('showtext');
+    }, 2000);
     if (page === 'Home') {
         $('.text').removeClass('default').addClass('light');
     } else {
         $('.text').removeClass('light').addClass('default');
     }
+    if ($("#"+page+">.page-container>.next-page-identify").length > 0) {
+        $(".nextpage").show();
+        $(".nextpage").attr("data-value", $("#" + page + ">.page-container>.next-page-identify").attr("data-value"));
+    } else {
+        $(".nextpage").hide();
+    }
+    if ($("#" + page + ">.page-container>.last-page-identify").length > 0) {
+        $(".lastpage").show();
+        $(".lastpage").attr("data-value", $("#" + page + ">.page-container>.last-page-identify").attr("data-value"));
+    } else {
+        $(".lastpage").hide();
+    }
+    $(".top").attr("data-value", page);
+
     $('#' + page + '>.page-container')
 
         .visibility({
@@ -89,18 +107,6 @@ function initTopBar(page) {
                         .transition('hide')
                         ;
                 });
-            }
-        });
-    $('#' + page + '>.page-container>.next-page-identify')
-        .visibility({
-            offset: -5,
-            observeChanges: true,
-            once: false,
-            context: $('#' + page),
-            continuous: true,
-            onTopVisible: function () {
-            },
-            onTopVisibleReverse: function () {
             }
         });
     nextPage = $('#' + page + '>.page-container>.next-page-identify').attr("data-value");
@@ -202,7 +208,3 @@ function loadPages() {
 }
 
 loadPages();
-
-$('.ui.sticky')
-    .sticky()
-    ;

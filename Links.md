@@ -38,8 +38,42 @@ http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/html/a.
 http://2018.igem.org/wiki/images/6/62/T--SYSU-Software--logo.png
 
 ![](http://2018.igem.org/wiki/images/6/62/T--SYSU-Software--logo.png)
+**background**
+http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--backgournd0.png 
+![](http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--backgournd0.png)
 
+http://2018.igem.org/wiki/images/3/34/T--SYSU-Software--backgournd1.png
+![](http://2018.igem.org/wiki/images/3/34/T--SYSU-Software--backgournd1.png)
+
+http://2018.igem.org/wiki/images/6/64/T--SYSU-Software--backgournd2.png
+![](http://2018.igem.org/wiki/images/6/64/T--SYSU-Software--backgournd2.png)
+
+http://2018.igem.org/wiki/images/a/a3/T--SYSU-Software--backgournd3.png
+![](http://2018.igem.org/wiki/images/a/a3/T--SYSU-Software--backgournd3.png)
+
+http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--backgournd4.png
+![](http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--backgournd4.png)
+
+http://2018.igem.org/wiki/images/7/7b/T--SYSU-Software--backgournd5.png
+![](http://2018.igem.org/wiki/images/7/7b/T--SYSU-Software--backgournd5.png)
+
+http://2018.igem.org/wiki/images/9/98/T--SYSU-Software--backgournd6.png
+![](http://2018.igem.org/wiki/images/9/98/T--SYSU-Software--backgournd6.png)
+
+http://2018.igem.org/wiki/images/9/93/T--SYSU-Software--backgournd7.png
+![](http://2018.igem.org/wiki/images/9/93/T--SYSU-Software--backgournd7.png)
+
+http://2018.igem.org/wiki/images/d/d7/T--SYSU-Software--backgournd8.png
+![](http://2018.igem.org/wiki/images/d/d7/T--SYSU-Software--backgournd8.png)
 ### Project
+
+**share-drag**
+http://2018.igem.org/wiki/images/0/0a/T--SYSU-Software--share-drag.gif
+![](http://2018.igem.org/wiki/images/0/0a/T--SYSU-Software--share-drag.gif)
+
+http://2018.igem.org/wiki/images/e/ee/T--SYSU-Software--share-draw.gif
+![](http://2018.igem.org/wiki/images/e/ee/T--SYSU-Software--share-draw.gif)
+
 
 #### Overview
 
@@ -80,11 +114,48 @@ http://2018.igem.org/wiki/images/f/f3/T--SYSU-Software--Des6.png
 ![](http://2018.igem.org/wiki/images/f/f3/T--SYSU-Software--Des6.png)
 
 #### Design
+**analysis**
+http://2018.igem.org/wiki/images/c/c0/T--SYSU-Software--analysis.png
+![](http://2018.igem.org/wiki/images/c/c0/T--SYSU-Software--analysis.png)
 
-**overview **
+**comment on save circuit**
+http://2018.igem.org/wiki/images/7/76/T--SYSU-Software--comment-on-save-circuit.png
+![](http://2018.igem.org/wiki/images/7/76/T--SYSU-Software--comment-on-save-circuit.png)
+**simulation**
+http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--simulation0.png
+![](http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--simulation0.png)
+
+http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png
+![](http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png)
+
+**overview**
 http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png
 ![](http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png)
 
+http://2018.igem.org/wiki/images/8/8f/T--SYSU-Software--d_overview2.png
+![](http://2018.igem.org/wiki/images/8/8f/T--SYSU-Software--d_overview2.png)
+**Recommend**
+http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--recommend.png
+![](http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--recommend.png)
+
+**macos**
+http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png
+![](http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png)
+
+http://2018.igem.org/wiki/images/b/b5/T--SYSU-Software--macos_config.png
+![](http://2018.igem.org/wiki/images/b/b5/T--SYSU-Software--macos_config.png)
+**win**
+http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--win_config.png
+![](http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--win_config.png)
+
+http://2018.igem.org/wiki/images/0/06/T--SYSU-Software--win_run.png
+![](http://2018.igem.org/wiki/images/0/06/T--SYSU-Software--win_run.png)
+**linux**
+http://2018.igem.org/wiki/images/4/4e/T--SYSU-Software--arch_config.png
+![](http://2018.igem.org/wiki/images/4/4e/T--SYSU-Software--arch_config.png)
+
+http://2018.igem.org/wiki/images/a/ad/T--SYSU-Software--arch_run.png
+![](http://2018.igem.org/wiki/images/a/ad/T--SYSU-Software--arch_run.png)
 **SBOL**
 
 http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png
@@ -92,23 +163,32 @@ http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png
 ![](http://2018.igem.org/wiki/images/e/eb/T--SYSU-Software--SBOL.png)
 
 **Search**
-
+<!-- WARNING! 下面这个连接是搜索内部的照片！！ -->
+http://2018.igem.org/wiki/images/1/16/T--SYSU-Software--search.png 
+![](http://2018.igem.org/wiki/images/1/16/T--SYSU-Software--search.png)
+ 
 http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png
-
 ![](http://2018.igem.org/wiki/images/5/5c/T--SYSU-Software--Search.png)
 
 #### Techniques
-  **djangopython.png**
 
-  http://2018.igem.org/wiki/images/0/02/T--SYSU-Software--djangopython.png
+**djangopython.png**
 
-  ![](http://2018.igem.org/wiki/images/0/02/T--SYSU-Software--djangopython.png)
+http://2018.igem.org/wiki/images/0/02/T--SYSU-Software--djangopython.png
 
-  **sqlite.png**
+![](http://2018.igem.org/wiki/images/0/02/T--SYSU-Software--djangopython.png)
 
-  http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png
+**sqlite.png**
 
-  ![](http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png)
+http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png
+
+![](http://2018.igem.org/wiki/images/4/49/T--SYSU-Software--sqlite.png)
+
+**Tensflow**
+
+http://2018.igem.org/File:T--SYSU-Software--tf.png
+
+![](http://2018.igem.org/wiki/images/0/08/T--SYSU-Software--tf.png)
 
 #### Contribution
 
@@ -131,6 +211,12 @@ http://2018.igem.org/wiki/images/e/e7/T--SYSU-Software--Biobrick.png
 http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--Consulting.png
 
 ![](http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--Consulting.png)
+
+**Pre**
+
+http://2018.igem.org/wiki/images/b/b7/T--SYSU-Software--Pre-Survey.png
+
+![](http://2018.igem.org/wiki/images/b/b7/T--SYSU-Software--Pre-Survey.png)
 
 **Consulting Lu**
 

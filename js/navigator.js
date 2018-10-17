@@ -7,11 +7,11 @@ let data = {
         'Validation',
         'Demo',
         "Contribution",
-        'Improve',
+        'Improvement',
         'Demostrate'],
     'Modeling': [
         'Overview',
-        'Recommendation System',
+        'Search & Recommendation System',
         'Simulation for Circuits',
         'Directed Evolution Algorithm',
         'Reference'],
@@ -57,7 +57,7 @@ let data = {
 // main menu navigator
 let index = 2;
 for (ele in data) {
-    block_list = ['Demo'];
+    block_list = ['Demo', 'Integrated Human Practice'];
     let html;
     if (ele == 'HumanPractice') {
         html = `<div class="default text">Human Practice</div><div class="menu">`
@@ -67,7 +67,7 @@ for (ele in data) {
     }
     for (x in data[ele]) {
         if (block_list.indexOf(data[ele][x]) !== -1) {
-            console.log('hit!!')
+            // console.log('hit!!')
             html += `<div class="item" style="display: none;" data-value="${index}">${data[ele][x]}</div>`
         } else {
             html += `<div class="item" style="color: white !important;" data-value="${index}">${data[ele][x]}</div>`
@@ -82,11 +82,32 @@ function backToTop(page) {
     $("#" + page).scrollTop(0);
 }
 
-$('.menu .item').on('click', function () {
-    if ($(this).attr('data-value') != undefined) {
-        $(".next-page").hide();
-        fkpage.goToSlide($(this).attr('data-value'));
-        initTopBar(pageList[$(this).attr('data-value') - 1]);
-        backToTop(pageList[$(this).attr('data-value') - 1]);
+
+function jumpToPage(pageId) {
+    if (pageId != undefined) {
+        if (pageId == 1) {
+            $(".side-bar").hide();
+        } else {
+            $(".side-bar").show();
+        }
+        fkpage.goToSlide(pageId);
+        initTopBar(pageList[pageId - 1]);
+        backToTop(pageList[pageId - 1]);
     }
+}
+
+$('.menu .item').on('click', function () {
+    jumpToPage($(this).attr('data-value'));
+});
+
+$('.nextpage').on('click', function () {
+    jumpToPage($(this).attr('data-value'));
+});
+
+$('.top').on('click', function () {
+    backToTop($(this).attr('data-value'));
+});
+
+$('.lastpage').on('click', function () {
+    jumpToPage($(this).attr('data-value'));
 });

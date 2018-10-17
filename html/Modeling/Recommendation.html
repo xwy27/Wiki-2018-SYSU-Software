@@ -1,4 +1,5 @@
 <div class="page-container">
+    <div class="last-page-identify" data-value="11"></div>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
         tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -10,7 +11,7 @@
         Modeling
     </div>
     <div class="header2">
-        Recommendation
+        Search & Recommendation System
     </div>
     <div class="header3">
         Introduction
@@ -137,9 +138,9 @@
         thus the users can get recommendation instantly after they enter their interested keyword to our system.
 
     </div>
-    <div>
-        <img class="img-same-line" src="http://2018.igem.org/wiki/images/e/e6/T--SYSU-Software--model4L.png" float="left" />
-        <img class="img-same-line" src="http://2018.igem.org/wiki/images/2/2c/T--SYSU-Software--model4R.png" float="right" />
+    <div class="oneLine">
+        <img class="img-same-line" src="http://2018.igem.org/wiki/images/e/e6/T--SYSU-Software--model4L.png" />
+        <img class="img-same-line" src="http://2018.igem.org/wiki/images/2/2c/T--SYSU-Software--model4R.png" />
     </div>
     <div class="content">
         Ball tree is a K dimensional hypersphere to cover observation points and put them in trees. Graph (a) shows a
@@ -237,7 +238,7 @@
             $A_{ij} = \sum_{k=1}^n w_{kj}x_k + b$
             The calculation results of the upper layer are the inputs of the next layer, while the calculation of the
             output layer is the weighted sum of the values of each neuron of the upper layer. The calculation of weight
-            ($w_{kj}$) is a matrix multiplication, which is used as “matmul” in TensorFlow.
+            ($w_{kj}$) is a matrix multiplication, which is used as "matmul" in TensorFlow.
         </li>
         <li>
 
@@ -274,7 +275,7 @@
     </div>
     <div class="content">
         We fed our word vector model with Google News corpus. After the training process is done, we have a model that
-        can convert words into numerical vectors, i.e. $f:\Gamma\rightarrow R^2$， where $\Gamma$ denoted the corpus
+        can convert words into numerical vectors, i.e. $f:\Gamma\rightarrow R^2$, where $\Gamma$ denoted the corpus
         space
     </div>
     <div class="header5">
