@@ -42,11 +42,24 @@ http://2018.igem.org/wiki/index.php?title=Template:SYSU-Software/statics/html/a.
 
 ## Images
 
+**favicon**
+
+http://2018.igem.org/wiki/images/6/6d/T--SYSU-Software--favicon.png
+
+![](http://2018.igem.org/wiki/images/6/6d/T--SYSU-Software--favicon.png)
+
 **logo.png**
 
 http://2018.igem.org/wiki/images/6/62/T--SYSU-Software--logo.png
 
 ![](http://2018.igem.org/wiki/images/6/62/T--SYSU-Software--logo.png)
+
+**loading**
+
+http://2018.igem.org/wiki/images/1/18/T--SYSU-Software--loading.gif
+
+![](http://2018.igem.org/wiki/images/1/18/T--SYSU-Software--loading.gif)
+
 **background**
 http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--backgournd0.png 
 ![](http://2018.igem.org/wiki/images/7/7f/T--SYSU-Software--backgournd0.png)
