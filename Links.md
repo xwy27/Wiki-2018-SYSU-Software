@@ -1,4 +1,4 @@
-# 已有文件链接
+ 已有文件链接
 
 <!-- TOC -->
 
@@ -23,6 +23,7 @@
   - [advisor](#advisor)
   - [advisor](#advisor)
   - [首页视频](#首页视频)
+  - [演示视频](#演示视频)
   - [字体](#字体)
 
 <!-- /TOC -->
@@ -641,6 +642,11 @@ http://2018.igem.org/wiki/images/2/2b/T--SYSU-Software--fx.png
 ## 首页视频
 http://2018.igem.org/wiki/images/f/f7/T--SYSU-Software--startnow.mov
 
-## 字体
+## 演示视频
 
+http://2018.igem.org/File:T--SYSU-Software--Demo.mp4
+
+## 字体
 http://2018.igem.org/wiki/images/8/87/T--SYSU-Software--Montserrat-Regular.ttf
+
+## 介绍短视频
