@@ -460,6 +460,12 @@ http://2018.igem.org/wiki/images/e/ed/T--SYSU-Software--Physical.png
 
 ![](http://2018.igem.org/wiki/images/e/ed/T--SYSU-Software--Physical.png)
 
+**EarthScience**
+
+http://2018.igem.org/wiki/images/d/d2/T--SYSU-Software--EarthScientist.png
+
+![](http://2018.igem.org/wiki/images/d/d2/T--SYSU-Software--EarthScientist.png)
+
 **SYSU**
 
 http://2018.igem.org/wiki/images/6/66/T--SYSU-Software--SYSU.png
