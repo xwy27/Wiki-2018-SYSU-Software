@@ -232,3 +232,40 @@ ul.check>li::before{
 ol, ul {
     margin-left: 25px;
 }
+
+.instructor,
+.advisor,
+.member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.member>img {
+    max-height: 500px;
+    max-width: 70%;
+}
+
+.self-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.m-title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.instructor>img {
+    width: 30%;
+    height: 30%;
+    margin: 20px;
+}
+
+.advisor>img {
+    width: 30%;
+    margin: 20px;
+}
