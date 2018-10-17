@@ -118,6 +118,27 @@ img {
     margin: 0 auto;
 }
 
+img.icon {
+    display: inline;
+    width: 30px;
+}
+
+ul.check {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.check>li::before{
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url('http://2018.igem.org/wiki/images/f/fd/T--SYSU-Software--check.png');
+    background-size: 25px;
+    margin-right: 5px;
+    margin-top: 20px
+}
+
 .next-page-identify {
     height: 0px;
 }
