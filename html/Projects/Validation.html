@@ -2,6 +2,13 @@
 <div class="page-container">
     <div class="last-page-identify" data-value="5"></div>
 
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <script src="http://2018.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
     <div class="header1" id="header-project"> Project </div>
 
     <div class="header2"> Validation </div>
@@ -113,34 +120,125 @@
     </div>
 
     <div class="header2"> Wet-lab Validation</div>
+    <div class="content">
+        We verified the robustness of CO-RAD through wet lab. With our software, we solved the difficulty encountered
+        in routine molecular biology experiments. Specially, we use CO-RAD to help design the an experiments. Details
+        are listed belo
+    </div>
+    <ol>
+        <li>
+            We designed our protocol and circuit in CO-RAD. Our design is supposed to express GFP when IPTG exist.
+            <div class="oneLine">
+                <img class="wet-valid" src="http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--wet-valid-1.png" style="margin: 20px;">
+                <img class="wet-valid" src="http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--wet-valid-2.png" style="margin: 20px;">
+            </div>
+            <div class="oneLine">
 
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--wet-valid-1.png">
-    <div class="caption">Figure 1: This is our circuit design in CO-RAD
+                <div class="caption" style="margin: 20px;">Figure 1: Circuit design in CO-RAD. </div>
+                <div class="caption" style="margin: 20px;">Figure 2: Protocol in CO-RAD.</div>
+            </div>
+        </li>
+
+        <li>
+            Problems occurred when we assemblied our circuit. We tried to extend 170bp from our template by 5 times of
+            PCR. The sequence includes GFP, terminator, RBS . We can see that we did not find our target band (900bp)
+            in our result.
+
+            <img class="wet-valid" src="http://2018.igem.org/wiki/images/1/10/T--SYSU-Software--wet-3.png">
+            <div class="caption">Figure 3: Our gel electrophoresis result. There is plenty of mismatching product and
+                no target bands in our result.
+        </li>
+        <li>
+            We need help, so we shared our design to other users on CO-RAD, and our adviser, Professor Shendong,
+            suggested to add spacer DNA in our circuit. Following his suggestion, we added spacer DNA in our circuit
+            and revised our protocol.
+
+            <div class="oneLine">
+
+                <img class="wet-valid" src="http://2018.igem.org/wiki/images/a/a9/T--SYSU-Software--wet-4.png" style="margin:20px;">
+                <img class="wet-valid" src="http://2018.igem.org/wiki/images/d/db/T--SYSU-Software--wet-5.png" style="margin:20px;">
+            </div>
+            <div class="caption">Figure 4: Circuit and protocol design from our adviser.
+            </div>
+        </li>
+
+        <li>
+            We optimized our protocol after discussion.
+            <img class="wet-valid" src="http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--wet-6.png">
+            <div class="caption">Figure 5: Historical status of our design. </div>
+        </li>
+
+        <li>
+            We found that high template concentration and high annealing temperature are the keys of success in our
+            experiment. More matching sequence in primer is also essential.
+            <img class="wet-valid" src="http://2018.igem.org/wiki/images/c/c3/T--SYSU-Software--wet-7.png">
+            <div class="caption">Figure 6: Our target bands and plenty of mismatching product.</div>
+        </li>
+
+        <li>
+            Again, we received another suggestion from Professor Shendong. With his help, we redesigned our protocol
+            and extended our sequence successfully. DNA sequencing result accorded with our prospect. Unfortunately,
+            due to the lack of time, we didn't construct our vector and transform it into E.coli to express GFP.
+
+            <img class="wet-valid" src="http://2018.igem.org/wiki/images/a/a5/T--SYSU-Software--wet-8.png">
+            <div class="caption">Figure 7: Our final result. Our target bands were clearer than before.</div>
+        </li>
+    </ol>
+
+    <div class="content">
+        Due to the lack of time, we chose to cooperate with XJTU-China, using their experimental data to validate our
+        simulation module and evolutionary algorithm in CO-RAD.
+        <img class="wet-valid" src="http://2018.igem.org/wiki/images/d/d3/T--SYSU-Software--wet-9.png">
     </div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/3/3e/T--SYSU-Software--wet-valid-2.png">
-    <div class="caption">Figure 2: This is our protocol design in CO-RAD</div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/1/10/T--SYSU-Software--wet-3.png">
-    <div class="caption">Figure 3: This is our gel electrophoresis result. There is plenty of mismatching product and
-        no target bands in our result
+
+    <div class="content">
+        In this genetic circuit above, PsiR is a predicted LacI family transcription factor with high affinity for
+        D-Psicose. This implies that PsiR is potentially capable of binding a consensus sequence in the promoter region
+        and preventing transcription of the regulated promoters in the absence of D-Psicose. With addition of
+        D-psicose, EGFP can be successfully produced.
     </div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/a/a9/T--SYSU-Software--wet-4.png">
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/d/db/T--SYSU-Software--wet-5.png">
-    <div class="caption">Figure 4: Circuit and protocol design from our adviser</div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--wet-6.png">
-    <div class="caption">Figure 5: This is our version control. The differences between each version are clear</div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/c/c3/T--SYSU-Software--wet-7.png">
-    <div class="caption">Figure 6: We can see there are our target bands and plenty of mismatching product</div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/a/a5/T--SYSU-Software--wet-8.png">
-    <div class="caption">Figure 7: This is our final result. We can see our target bands are clearer than before</div>
-    <img class="wet-valid" src="http://2018.igem.org/wiki/images/d/d3/T--SYSU-Software--wet-9.png">
-    <div class="caption"></div>
+
+    <div class="content">
+        With our visual designer and the embedded mathematical ODE systems model, we constructed XJTU-China’s circuit
+        and dynamically analyzed the amounts of materials in it. We pay attention to the expression of EGFP, since its
+        amount can be evaluated in unit of optical density. Related formulas and parameters are shown below:
+        $$\frac{d[PsiR]}{dt} = \frac{k_{PsiR}[gene]_{PsiR}}{1+[Psicose]^n1}-d_{PsiR}[PsiR]$$
+        $$\frac{d[EGFP]}{dt} = \frac{k_{EGFP}[gene]_{EGFP}}{1+[PsiR]^n2}-d_{PsiR}[EGFP]$$
+    </div>
+
     <img class="wet-valid" src="http://2018.igem.org/wiki/images/b/bf/T--SYSU-Software--wet-10.png">
-    <div class="caption"></div>
+    <div class="caption">
+        Figure 8. parameter in ODE system
+    </div>
+
+    <div class="content">
+        simulation result:
+    </div>
+
     <img class="wet-valid" src="http://2018.igem.org/wiki/images/d/d7/T--SYSU-Software--wet-11.png">
-    <div class="caption"></div>
+    <div class="caption"> Figure 9: the simulation result of our software
+        Experiment & model result.
+    </div>
     <img class="wet-valid" src="http://2018.igem.org/wiki/images/7/7c/T--SYSU-Software--wet-12.png">
-    <div class="caption"></div>
+    <div class="caption"> ​​
+        Figure 10. experiment and model result
+    </div>
+    <div class="content">
+        Compared with experimental data of XJTU-China, our software simulation showed good
+        performance, which proved that our simulation works.
+    </div>
+
+    <div class="content">
+        In terms of evolutionary algorithm, we input the related parameters including target production amounts,
+        initial material amount, degradation rate and repression rate, and use the optimization module to optimize
+        kinetic parameter. We find optimization result is similar with experimental result, as well as optimized K with
+        experimental K. Here are the results:
+    </div>
     <img class="wet-valid" src="http://2018.igem.org/wiki/images/d/d1/T--SYSU-Software--wet-13.png">
-    <div class="caption"></div>
+    <div class="caption"> Figure 11. optimized K and corresponding simulation result
+    </div>
+    <div class="content">
+        Results prove the robustness of our ODE systems models and evolutionary algorithm.
+    </div>
     <div class="next-page-identify" data-value="8"></div> <!-- 这个是跳页标记 -->
 </div>

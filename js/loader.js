@@ -8,7 +8,7 @@ var pages = {
     "Demo": { "url": "" },
     "Contribution": {"url": "../html/Projects/Contribution.html"},
     "Improve": {"url": "../html/Projects/Improve.html"},
-    "Demostrate": {"url": ""},
+    "Demostrate": {"url": "../html/Projects/Demostration.html"},
     "Modeling-Overview": { "url": "../html/Modeling/ModelingOverview.html" },
     "Recommendation": { "url": "../html/Modeling/Recommendation.html" },
     "Simulation-Circuits": { "url": "../html/Modeling/SimulationCircuit.html" },

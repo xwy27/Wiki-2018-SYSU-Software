@@ -25,7 +25,7 @@ let data = {
         'XMU-China',
         'SCUT-ChinaA',
         'WHU-China',
-        'SYSU-China'],
+        'XJTU-China'],
     'Interlab': [
         'Overview',
         'Experiment Design',
@@ -44,7 +44,7 @@ let data = {
         'Overview',
         'Team Members',
         'Advisors',
-        'Instructors',
+        'Instructors & Individuals',
         'Notebook'],
     'Attributions': [
         'Overview',
