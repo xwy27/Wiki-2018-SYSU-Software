@@ -213,8 +213,11 @@ function loadPages() {
                     // }
                     $(this).children('.page-container').addClass('test' + temp);
                 });
-                $('.page.dimmer').dimmer('hide');
-                $('#home-video')[0].play();
+                setTimeout(() => {
+                    $('.page.dimmer').dimmer('hide');
+                    $('#home-video')[0].play();
+                }, 1000);
+                
             }
         });
         
