@@ -501,12 +501,14 @@ http://2018.igem.org/wiki/images/c/cf/T--SYSU-Software--chenyifei.png
 ![](http://2018.igem.org/wiki/images/c/cf/T--SYSU-Software--chenyifei.png)
 胡逸飞
 http://2018.igem.org/wiki/images/1/19/T--SYSU-Software--huyifei.png
+![](http://2018.igem.org/wiki/images/1/19/T--SYSU-Software--huyifei.png)
 康子琪
 http://2018.igem.org/wiki/images/5/59/T--SYSU-Software--kangziqi.png
 ![](http://2018.igem.org/wiki/images/5/59/T--SYSU-Software--kangziqi.png)
 赖孟志
 http://2018.igem.org/wiki/images/c/cd/T--SYSU-Software--laimengzhi.png
 ![](http://2018.igem.org/wiki/images/c/cd/T--SYSU-Software--laimengzhi.png)
+
 
 林沁华
 http://2018.igem.org/wiki/images/f/f2/T--SYSU-Software--linqinhua.png
@@ -518,6 +520,10 @@ http://2018.igem.org/wiki/images/f/f7/T--SYSU-Software--luzhiya.png
 吕子楠
 http://2018.igem.org/wiki/images/b/b7/T--SYSU-Software--lvzinan.png
 ![](http://2018.igem.org/wiki/images/b/b7/T--SYSU-Software--lvzinan.png)
+
+陈柏真
+http://2018.igem.org/wiki/images/e/e4/T--SYSU-Software--chenbaizhen.png
+![](http://2018.igem.org/wiki/images/e/e4/T--SYSU-Software--chenbaizhen.png)
 
 李嫣然
 http://2018.igem.org/wiki/images/4/48/T--SYSU-Software--liyanran.png
