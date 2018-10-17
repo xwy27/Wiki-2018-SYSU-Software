@@ -18,15 +18,6 @@ $(document).ready(function () {
     mode: 35,
     mouseWheel: false
   });
-  if (dstPage == 0) {
-    $(".side-bar").hide();
-  } else {
-    $(".side-bar").show();
-  }
-  fkpage.goToNextSlide();
-  console.log(pageList[dstPage]);
-  initTopBar(pageList[dstPage]);
-  backToTop(pageList[dstPage]);
   let pageHeight = $(window).height();
   let pageWidth = document.documentElement.clientWidth || document.body.clientWidth;
   (function () {
