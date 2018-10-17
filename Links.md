@@ -360,6 +360,11 @@ http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--Result4.png
 
 ![](http://2018.igem.org/wiki/images/1/14/T--SYSU-Software--Result4.png)
 
+**Result5**
+
+http://2018.igem.org/wiki/images/c/cf/T--SYSU-Software--result5.png
+![](http://2018.igem.org/wiki/images/c/cf/T--SYSU-Software--result5.png)
+
 ### Safety
 
 http://2018.igem.org/wiki/images/e/e4/T--SYSU-Software--Warning.png
