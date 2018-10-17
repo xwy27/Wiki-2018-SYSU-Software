@@ -229,11 +229,11 @@ function loadPages() {
                 }
                 fkpage.goToNextSlide();
                 console.log(pageList[dstPage]);
-                initTopBar(pageList[dstPage]);
-                backToTop(pageList[dstPage]);
                 setTimeout(() => {
                     $('.page.dimmer').dimmer('hide');
                     $('#home-video')[0].play();
+                    initTopBar(pageList[dstPage]);
+                    backToTop(pageList[dstPage]);
                 }, 1000);
                 
             }
