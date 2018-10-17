@@ -156,7 +156,7 @@ function loadPages() {
                         return value === target;
                     });
                     // console.log(dstPage);
-                    fkpage.goToSlide(dstPage + 1);
+                    jumpToPage(dstPage + 1);
                 });
                 let index_map = {
                     1: 0,
@@ -230,7 +230,10 @@ $('.page.dimmer').dimmer('show');
 
 $('#loading').load(function () {
     $('page-process').show();
-    $('#page-process').progress({
-        percent: 50
-    });
+    if($('#page-process').attr('data-precent') < 50) {
+        $('#page-process').progress({
+            percent: 50
+        });
+    }
+    
 });
