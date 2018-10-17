@@ -77,3 +77,5 @@ python3 -m http.server
 - HP(Overview, silver, gold, public engagement)
 - Collaboration(XMU, SCUT, WHU, XJTU)
 - Interlab(all)
+- Team(overview)
+- Safety(all)
