@@ -172,8 +172,12 @@ http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png
 ![](http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png)
 
 **overview**
-http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png
-![](http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png)
+以下两个不用。
+<!-- http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png -->
+<!-- ![](http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png) -->
+
+http://2018.igem.org/wiki/images/4/4f/T--SYSU-Software--designOverviewTrue.png
+![](http://2018.igem.org/wiki/images/4/4f/T--SYSU-Software--designOverviewTrue.png)
 
 http://2018.igem.org/wiki/images/8/8f/T--SYSU-Software--d_overview2.png
 ![](http://2018.igem.org/wiki/images/8/8f/T--SYSU-Software--d_overview2.png)
@@ -183,6 +187,10 @@ http://2018.igem.org/wiki/images/f/fb/T--SYSU-Software--recommend.png
 
 **数模更新的照片**（虽然是。mov，但它是照片，用<img>引入）
 http://2018.igem.org/wiki/images/1/1b/T--SYSU-Software--mathplus.mov
+![](http://2018.igem.org/wiki/images/1/1b/T--SYSU-Software--mathplus.mov)
+
+http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--mathplus2.png
+![](http://2018.igem.org/wiki/images/1/12/T--SYSU-Software--mathplus2.png)
 **macos**
 http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png
 ![](http://2018.igem.org/wiki/images/9/9c/T--SYSU-Software--macos_run.png)
