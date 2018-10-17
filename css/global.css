@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Trajan Pro';
-    src: url('../fonts/TrajanPro3-Regular.otf');
+    src: url('http://2018.igem.org/wiki/images/1/1d/T--SYSU-Software--TrajanPro3-Regular.otf');
 }
 
 @font-face {
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'Chalkboard';
-    src: url('../fonts/Chalkboard.ttc');
+    src: url('http://2018.igem.org/wiki/images/c/c4/T--SYSU-Software--ChalkboardSE-Light.ttf');
 }
 
 .page-container {
@@ -51,7 +51,7 @@
     line-height: 40px;
     color: #1A2640;
     font-size: 30px;
-    font-family: 'Geneva';
+    font-family: 'Montserrat';
     padding-left: 10px;
     border-left: 10px solid #1A2640;
 }
@@ -63,7 +63,7 @@
     line-height: 20px;
     color: #1A2640;
     font-size: 20px;
-    font-family: 'Geneva';
+    font-family: 'Montserrat';
     font-weight: bold;
     text-decoration: underline;
 }
@@ -71,6 +71,7 @@
     margin: 20px, 0;
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Montserrat';
 }
 
 
