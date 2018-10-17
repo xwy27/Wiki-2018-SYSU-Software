@@ -636,6 +636,6 @@ http://2018.igem.org/wiki/images/2/2b/T--SYSU-Software--fx.png
 http://2018.igem.org/wiki/images/f/f7/T--SYSU-Software--startnow.mov
 
 ## 字体
+http://2018.igem.org/wiki/images/8/87/T--SYSU-Software--Montserrat-Regular.ttf
 
 ## 介绍短视频
-http://2018.igem.org/wiki/images/8/87/T--SYSU-Software--Montserrat-Regular.ttf
