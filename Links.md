@@ -637,4 +637,4 @@ http://2018.igem.org/wiki/images/f/f7/T--SYSU-Software--startnow.mov
 
 ## 字体
 
-http://2018.igem.org/wiki/images/d/db/T--SYSU-Software--Montserrat.woff
+http://2018.igem.org/wiki/images/8/87/T--SYSU-Software--Montserrat-Regular.ttf
