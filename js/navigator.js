@@ -8,7 +8,7 @@ let data = {
         'Demo',
         "Contribution",
         'Improvement',
-        'Demostrate'],
+        'Demostration'],
     'Modeling': [
         'Overview',
         'Search & Recommendation System',
