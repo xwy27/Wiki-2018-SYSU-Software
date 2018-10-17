@@ -2,7 +2,7 @@
 
 <!-- TOC -->
 
-- [已有文件链接](#%E5%B7%B2%E6%9C%89%E6%96%87%E4%BB%B6%E9%93%BE%E6%8E%A5)
+- [已有文件链接](#已有文件链接)
   - [CSS](#css)
   - [JS](#js)
   - [HTML](#html)
@@ -17,8 +17,13 @@
     - [Collaboration](#collaboration)
     - [Interlab](#interlab)
     - [Safety](#safety)
-    - [学院图标](#%E5%AD%A6%E9%99%A2%E5%9B%BE%E6%A0%87)
+    - [学院图标](#学院图标)
     - [Modeling](#modeling)
+  - [队员照片](#队员照片)
+  - [advisor](#advisor)
+  - [advisor](#advisor)
+  - [首页视频](#首页视频)
+  - [字体](#字体)
 
 <!-- /TOC -->
 
@@ -455,6 +460,12 @@ http://2018.igem.org/wiki/images/e/ed/T--SYSU-Software--Physical.png
 
 ![](http://2018.igem.org/wiki/images/e/ed/T--SYSU-Software--Physical.png)
 
+**EarthScience**
+
+http://2018.igem.org/wiki/images/d/d2/T--SYSU-Software--EarthScientist.png
+
+![](http://2018.igem.org/wiki/images/d/d2/T--SYSU-Software--EarthScientist.png)
+
 **SYSU**
 
 http://2018.igem.org/wiki/images/6/66/T--SYSU-Software--SYSU.png
@@ -624,4 +635,7 @@ http://2018.igem.org/wiki/images/2/2b/T--SYSU-Software--fx.png
 ## 首页视频
 http://2018.igem.org/wiki/images/f/f7/T--SYSU-Software--startnow.mov
 
+## 字体
+
 ## 介绍短视频
+http://2018.igem.org/wiki/images/8/87/T--SYSU-Software--Montserrat-Regular.ttf
