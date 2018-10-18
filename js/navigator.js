@@ -91,8 +91,14 @@ function jumpToPage(pageId) {
             $(".side-bar").show();
         }
         fkpage.goToSlide(pageId);
-        initTopBar(pageList[pageId - 1]);
-        backToTop(pageList[pageId - 1]);
+        let name = pageList[pageId - 1];
+        initTopBar(name);
+        backToTop(name);
+        if (history.pushState) {
+            history.pushState(null, null, `/?${name}`);
+        } else {
+            history.hash(`/?${name}`);
+        }
     }
 }
 
