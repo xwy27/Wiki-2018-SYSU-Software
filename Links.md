@@ -190,6 +190,12 @@ http://2018.igem.org/wiki/images/9/9e/T--SYSU-Software--simulation0.png
 http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png
 ![](http://2018.igem.org/wiki/images/4/4a/T--SYSU-Software--simulation1.png)
 
+http://2018.igem.org/wiki/images/2/27/T--SYSU-Software--simulation2.png
+![](http://2018.igem.org/wiki/images/2/27/T--SYSU-Software--simulation2.png)
+
+http://2018.igem.org/wiki/images/2/2f/T--SYSU-Software--simulation3.png
+![](http://2018.igem.org/wiki/images/2/2f/T--SYSU-Software--simulation3.png)
+
 **overview**
 以下两个不用。
 <!-- http://2018.igem.org/wiki/images/0/09/T--SYSU-Software--pj_overview.png -->
